@@ -1,0 +1,55 @@
+{
+  "timestamp": "2025-11-30 17:52:05",
+  "total_tasks": 7,
+  "results": [
+    {
+      "task_id": "LHF_01",
+      "name": "Matrix Commutator Algebra",
+      "success": true,
+      "file": "LHF_01_commutator/LHF_01.lean",
+      "length": 42319
+    },
+    {
+      "task_id": "LHF_02",
+      "name": "GKT Scaling Invariance",
+      "success": true,
+      "file": "LHF_02_gkt_scaling/LHF_02.lean",
+      "length": 28640
+    },
+    {
+      "task_id": "LHF_03",
+      "name": "Toy Gaussian GKT Scaling",
+      "success": true,
+      "file": "LHF_03_gaussian/LHF_03.lean",
+      "length": 32766
+    },
+    {
+      "task_id": "LHF_04",
+      "name": "Gronwall ODE for Rotor Coherence",
+      "success": true,
+      "file": "LHF_04_gronwall/LHF_04.lean",
+      "length": 33951
+    },
+    {
+      "task_id": "LHF_05",
+      "name": "Gagliardo-Nirenberg L\u00b3 Inequality",
+      "success": true,
+      "file": "LHF_05_gagliardo/LHF_05.lean",
+      "length": 34605
+    },
+    {
+      "task_id": "LHF_06",
+      "name": "Log-Sobolev for Standard Gaussian",
+      "success": true,
+      "file": "LHF_06_logsobolev/LHF_06.lean",
+      "length": 808
+    },
+    {
+      "task_id": "LHF_07",
+      "name": "Campanato \u2192 H\u00f6lder",
+      "success": true,
+      "file": "LHF_07_campanato/LHF_07.lean",
+      "length": 23667
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+﻿cff-version: 1.2.0
+message: "If you use this software, please cite it as below."
+title: "Lean-Navier-Stokes: Lean 4 formalization artifacts for the Î›_L / spectral-lock Navierâ€“Stokes program"
+authors:
+  - family-names: "Mathews"
+    given-names: "R. J."
+repository-code: "https://github.com/kantrarian/Lean-Navier-Stokes"
+license: "MIT"
+# Tip: after you create a GitHub Release, fill in:
+# version: "v0.1"
+# date-released: "2025-12-12"

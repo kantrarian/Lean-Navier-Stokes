@@ -1,0 +1,17 @@
+﻿# Lean/Lake
+.lake/
+build/
+
+# OS/editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+# Cursor/agent artifacts
+.claude/
+
+# TeX artifacts
+*.log
+*.aux
+*.out
+*.toc

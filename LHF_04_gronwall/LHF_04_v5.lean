@@ -1,0 +1,1 @@
+import Mathlib.Analysis.Calculus.Deriv.Basic(h₀ : Continuous fun x => (x - c)) := by continuity

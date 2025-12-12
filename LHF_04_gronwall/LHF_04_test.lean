@@ -1,0 +1,1 @@
+### Lean Theorem Statement:```lean theorem main_theorem : True := by exact? ```
