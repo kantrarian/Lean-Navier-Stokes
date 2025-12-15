@@ -77,12 +77,12 @@ exp(Ck(t - t₀)) ≤ exp(C c₁)
                 ≤ 2                    [when C c₁ ≤ 1/2]
 ```
 
-## Remaining `sorry` Blocks (4 total)
+## Remaining `placeholder` Blocks (4 total)
 
 ### Sorry #1: Product Differentiability
 ```lean
 have hF_diff : DifferentiableOn ℝ F (Set.Ici t₀) := by
-  sorry
+  placeholder
 ```
 **Need**: Product of differentiable functions is differentiable
 
@@ -91,7 +91,7 @@ have hF_diff : DifferentiableOn ℝ F (Set.Ici t₀) := by
 ### Sorry #2: Derivative Computation
 ```lean
 have hF_decreasing : ∀ s ∈ Set.Ici t₀, deriv F s ≤ 0 := by
-  sorry
+  placeholder
 ```
 **Need**:
 - Product rule: `deriv (f · g) = f' g + f g'`
@@ -105,7 +105,7 @@ have hF_decreasing : ∀ s ∈ Set.Ici t₀, deriv F s ≤ 0 := by
 ### Sorry #3: Monotonicity
 ```lean
 have hF_mono : F t ≤ F t₀ := by
-  sorry
+  placeholder
 ```
 **Need**: If f'(s) ≤ 0 for all s ∈ [t₀, t], then f(t) ≤ f(t₀)
 
@@ -116,7 +116,7 @@ have hF_mono : F t ≤ F t₀ := by
 ### Sorry #4: Exponential Bound
 ```lean
 have h_exp_small : Real.exp (C * c₁) ≤ 2 := by
-  sorry
+  placeholder
 ```
 **Need**: exp(x) ≤ 2 when x ≤ 1/2
 

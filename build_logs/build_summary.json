@@ -1,0 +1,44 @@
+﻿[
+    {
+        "Module":  "HPDE_common",
+        "ExitCode":  0,
+        "Success":  true,
+        "Log":  "C:\\v2_files\\lean_proofs\\build_logs\\HPDE_common.log"
+    },
+    {
+        "Module":  "HPDE_01_caccioppoli",
+        "ExitCode":  0,
+        "Success":  true,
+        "Log":  "C:\\v2_files\\lean_proofs\\build_logs\\HPDE_01_caccioppoli.log"
+    },
+    {
+        "Module":  "LHF_01_commutator",
+        "ExitCode":  1,
+        "Success":  false,
+        "Log":  "C:\\v2_files\\lean_proofs\\build_logs\\LHF_01_commutator.log"
+    },
+    {
+        "Module":  "LHF_02_scaling",
+        "ExitCode":  1,
+        "Success":  false,
+        "Log":  "C:\\v2_files\\lean_proofs\\build_logs\\LHF_02_scaling.log"
+    },
+    {
+        "Module":  "LHF_03_gaussian",
+        "ExitCode":  1,
+        "Success":  false,
+        "Log":  "C:\\v2_files\\lean_proofs\\build_logs\\LHF_03_gaussian.log"
+    },
+    {
+        "Module":  "LHF_04_gronwall",
+        "ExitCode":  0,
+        "Success":  true,
+        "Log":  "C:\\v2_files\\lean_proofs\\build_logs\\LHF_04_gronwall.log"
+    },
+    {
+        "Module":  "LHF_05_GN",
+        "ExitCode":  0,
+        "Success":  true,
+        "Log":  "C:\\v2_files\\lean_proofs\\build_logs\\LHF_05_GN.log"
+    }
+]

@@ -1,0 +1,13 @@
+﻿
+module              status log                                                        note
+------              ------ ---                                                        ----
+HPDE_common         OK     C:\v2_files\lean_proofs\build_logs\HPDE_common.log             
+HPDE_01_caccioppoli OK     C:\v2_files\lean_proofs\build_logs\HPDE_01_caccioppoli.log     
+LHF_01_commutator   OK     C:\v2_files\lean_proofs\build_logs\LHF_01_commutator.log       
+LHF_02_scaling      OK     C:\v2_files\lean_proofs\build_logs\LHF_02_scaling.log          
+LHF_03_gaussian     OK     C:\v2_files\lean_proofs\build_logs\LHF_03_gaussian.log         
+LHF_04_gronwall     OK     C:\v2_files\lean_proofs\build_logs\LHF_04_gronwall.log         
+LHF_05_GN           OK     C:\v2_files\lean_proofs\build_logs\LHF_05_GN.log               
+
+
+

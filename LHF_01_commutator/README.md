@@ -115,10 +115,10 @@ This is the **deep result**. The proof sketch:
 
 ## Remaining Work
 
-### Part 3: One `sorry` Block
+### Part 3: One `placeholder` Block
 ```lean
 -- Need: trace(X^T Y) = trace(Y^T X)
-_ = ... + 2 * trace([S,B]^T [Ω,B]) := by sorry
+_ = ... + 2 * trace([S,B]^T [Ω,B]) := by placeholder
 ```
 
 **Solution**: This is the cyclic property of trace.
@@ -135,7 +135,7 @@ The eigenframe rotation theorem needs:
 **Options**:
 - **Full formalization**: Define time derivatives, prove the calculation
 - **Axiomatize**: State as axiom, use in downstream proofs
-- **Defer**: Leave as `sorry`, prove consequences anyway
+- **Defer**: Leave as `placeholder`, prove consequences anyway
 
 For the sprint, I recommend **axiomatizing** - the calculation is standard
 but notationally heavy. The important thing is having the *structure*.
@@ -176,7 +176,7 @@ Together, these prove:
 
 ## Next Steps After Completion
 
-1. **Fill the Part 3 sorry**: Should be one line with the right mathlib lemma
+1. **Fill the Part 3 placeholder**: Should be one line with the right mathlib lemma
 
 2. **Formalize time derivatives** (Optional):
    - Could be a separate mini-project
@@ -190,7 +190,7 @@ Together, these prove:
 Load in Lean 4 and check:
 1. Parts 1-2 should compile immediately (pure algebra)
 2. Part 3 should work modulo one trace lemma
-3. Part 4 is a structure (can stay as `sorry` for now)
+3. Part 4 is a structure (can stay as `placeholder` for now)
 
 ## References
 

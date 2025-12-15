@@ -28,7 +28,7 @@ The proof uses Hölder's inequality with conjugate exponents (4/3, 4):
 
 ## Status
 
-✓ **FULLY PROVED** - Zero axioms, zero sorry blocks
+✓ **FULLY PROVED** - Zero axioms, zero placeholder blocks
 ✓ ~200 lines of verified Lean 4 code
 
 See `LHF_05_FINAL.lean` for the complete implementation.

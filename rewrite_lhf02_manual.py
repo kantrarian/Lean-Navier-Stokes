@@ -1,4 +1,6 @@
-import Mathlib.Analysis.SpecialFunctions.Pow.Real
+from pathlib import Path
+
+out = r"""import Mathlib.Analysis.SpecialFunctions.Pow.Real
 import Mathlib.Tactic
 
 namespace LHF_02_manual
@@ -17,15 +19,22 @@ theorem quartic_power_law_scaling (C : Real) :
   intro r I hr hI
   -- (I*r)^4 = I^4 * r^4
   simp [satisfies_gkt_scaling, mul_pow, mul_assoc, mul_left_comm, mul_comm]
+  ring
 
 /-- Existence of a functional with the correct scaling behavior. -/
 theorem gkt_scaling_law : Exists (fun A_omega : Real -> Real => satisfies_gkt_scaling A_omega) := by
-  refine Exists.intro (fun r => r^(4:Nat)) ?_
+  refine âŸ¨fun r => r^(4:Nat), ?_âŸ©
   intro r I hr hI
   simp [satisfies_gkt_scaling, mul_pow, mul_assoc, mul_left_comm, mul_comm]
+  ring
 
 /-- Critical exponent is zero for (p,q)=(2,3). -/
 theorem critical_exponent_is_zero : (2:Real) - 2/(2:Real) - 3/(3:Real) = 0 := by
   norm_num
 
 end LHF_02_manual
+"""
+
+p = Path(r"C:\v2_files\lean_proofs\LHF_02_scaling\LHF_02_scaling\LHF_02_manual.lean")
+p.write_text(out, encoding="utf-8")
+print("rewrote", p)

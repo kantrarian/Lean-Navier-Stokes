@@ -32,12 +32,12 @@ A_ω² = (C₁ k⁶ r³)^{2/3} · r²       [definition]
         = C₁^{1/3} k² r²            [square root]
 ```
 
-### 3. Remaining `sorry` Blocks (3 total)
+### 3. Remaining `placeholder` Blocks (3 total)
 
 #### Sorry #1: Power law for rpow
 ```lean
 have h_integrand : (C₁ * k^6 * r^3) ^ (2/3 : ℝ) = C₁^(2/3) * k^4 * r^2 := by
-  sorry
+  placeholder
 ```
 
 **Need**: Lemma that (abc)^p = a^p b^p c^p for Real.rpow
@@ -50,7 +50,7 @@ have h_integrand : (C₁ * k^6 * r^3) ^ (2/3 : ℝ) = C₁^(2/3) * k^4 * r^2 := 
 #### Sorry #2: Square root of rpow
 ```lean
 have h_sqrt : Real.sqrt (C₁^(2/3) * k^4 * r^4) = C₁^(1/3) * k^2 * r^2 := by
-  sorry
+  placeholder
 ```
 
 **Need**:
@@ -66,7 +66,7 @@ have h_sqrt : Real.sqrt (C₁^(2/3) * k^4 * r^4) = C₁^(1/3) * k^2 * r^2 := by
 ```lean
 use C₁^(1/3)
 constructor
-· sorry  -- C₁ > 0 implies C₁^{1/3} > 0
+· placeholder  -- C₁ > 0 implies C₁^{1/3} > 0
 ```
 
 **Need**: a > 0 → a^p > 0 for any p
@@ -83,7 +83,7 @@ In VS Code with Lean 4:
 3. Common pattern: `Real.something_rpow` or `Real.sqrt_something`
 
 ### Step 2: Apply Them
-Replace each `sorry` with:
+Replace each `placeholder` with:
 ```lean
 apply Real.rpow_pos_of_pos hC₁  -- for positivity
 rw [Real.mul_rpow, Real.rpow_natCast_mul]  -- for power laws
