@@ -1,0 +1,5 @@
+KissingNumber/TestCCSplit.lean:24:6: warning: declaration uses `sorry`
+KissingNumber/TestCCSplit.lean:42:6: warning: declaration uses `sorry`
+KissingNumber/TestCCSplit.lean:48:6: warning: declaration uses `sorry`
+KissingNumber/TestCCSplit.lean:54:6: warning: declaration uses `sorry`
+SUCCESS

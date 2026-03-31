@@ -1,0 +1,19 @@
+﻿KissingNumber/TestBCSplit.lean:331:62: error: unsolved goals
+x y : EuclideanSpace ℝ (Fin 8)
+hx : ‖x‖ = 1
+hy : ‖y‖ = 1
+s : ℝ := ⟪x, y⟫
+hs : s = ∑ a, x.ofLp a * y.ofLp a
+hxn : ∑ a, x.ofLp a * x.ofLp a = 1
+hyn : ∑ a, y.ofLp a * y.ofLp a = 1
+⊢ 1 * 1 * 1 = 1
+KissingNumber/TestBCSplit.lean:338:62: error: unsolved goals
+x y : EuclideanSpace ℝ (Fin 8)
+hx : ‖x‖ = 1
+hy : ‖y‖ = 1
+s : ℝ := ⟪x, y⟫
+hs : s = ∑ a, x.ofLp a * y.ofLp a
+hxn : ∑ a, x.ofLp a * x.ofLp a = 1
+hyn : ∑ a, y.ofLp a * y.ofLp a = 1
+h_c1 : ∑ x_1, ∑ x_2, ∑ x_3, x.ofLp x_1 ^ 2 * x.ofLp x_3 ^ 2 * y.ofLp x_2 ^ 2 = 1
+⊢ 1 * 1 * 1 = 1

@@ -1,0 +1,24 @@
+﻿⚠ [3069/3070] Replayed KissingNumber.TestBBSplit
+warning: KissingNumber/TestBBSplit.lean:266:70: This simp argument is unused:
+  Finset.sum_ite_eq'
+
+Hint: Omit it from the simp argument list.
+  simp (config := { maxSteps := 800000000 }) only [Finset.sum_ite_eq, F̵i̵n̵s̵e̵t̵.̵s̵u̵m̵_̵i̵t̵e̵_̵e̵q̵'̵,̵ ̵Finset.mem_univ, ite_true]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: KissingNumber/TestBBSplit.lean:268:70: This simp argument is unused:
+  Finset.sum_ite_eq'
+
+Hint: Omit it from the simp argument list.
+  simp (config := { maxSteps := 800000000 }) only [Finset.sum_ite_eq, F̵i̵n̵s̵e̵t̵.̵s̵u̵m̵_̵i̵t̵e̵_̵e̵q̵'̵,̵ ̵Finset.mem_univ, ite_true]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: KissingNumber/TestBBSplit.lean:270:70: This simp argument is unused:
+  Finset.sum_ite_eq'
+
+Hint: Omit it from the simp argument list.
+  simp (config := { maxSteps := 800000000 }) only [Finset.sum_ite_eq, F̵i̵n̵s̵e̵t̵.̵s̵u̵m̵_̵i̵t̵e̵_̵e̵q̵'̵,̵ ̵Finset.mem_univ, ite_true]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+✔ [3070/3070] Built KissingNumber.TestBCSplit (2268s)
+Build completed successfully (3070 jobs).

@@ -1,0 +1,183 @@
+﻿KissingNumber/TestBD.lean:18:17: error: unsolved goals
+x y : EuclideanSpace Γä¥ (Fin 8)
+hx : ΓÇûxΓÇû = 1
+hy : ΓÇûyΓÇû = 1
+hxn : Γêæ a, x.ofLp a * x.ofLp a = 1
+r1 : ΓêÇ (a b : Fin 8), x.ofLp a * x.ofLp a * x.ofLp b * x.ofLp b = x.ofLp a * x.ofLp a * (x.ofLp b * x.ofLp b)
+r2 : ΓêÇ (a b : Fin 8), x.ofLp a * x.ofLp b * x.ofLp a * x.ofLp b = x.ofLp a * x.ofLp a * (x.ofLp b * x.ofLp b)
+r3 : ΓêÇ (a b : Fin 8), x.ofLp a * x.ofLp b * x.ofLp b * x.ofLp a = x.ofLp a * x.ofLp a * (x.ofLp b * x.ofLp b)
+Γèó 16 + Γêæ x_1, 8 * (x.ofLp x_1 * x.ofLp x_1) + 1 + 1 + 1 + 1 +
+                  Γêæ x_1, Γêæ x_2, 8 * (x.ofLp x_1 * x.ofLp x_1 * (x.ofLp x_2 * x.ofLp x_2)) +
+                (17 + Γêæ x_1, 8 * (x.ofLp x_1 * x.ofLp x_1) + 1 +
+                      Γêæ x_1, Γêæ x_2, x.ofLp x_1 * x.ofLp x_1 * x.ofLp x_2 * x.ofLp x_2 +
+                    Γêæ x_1, Γêæ x_2, 8 * (x.ofLp x_1 * x.ofLp x_1 * (x.ofLp x_2 * x.ofLp x_2)) +
+                  1) +
+              (18 + Γêæ x_1, 8 * (x.ofLp x_1 * x.ofLp x_1) +
+                    Γêæ x_1, Γêæ x_2, 8 * (x.ofLp x_1 * x.ofLp x_1 * (x.ofLp x_2 * x.ofLp x_2)) +
+                  Γêæ x_1, Γêæ x_2, x.ofLp x_1 * x.ofLp x_1 * x.ofLp x_2 * x.ofLp x_2 +
+                Γêæ x_1, Γêæ x_2, x.ofLp x_1 * x.ofLp x_1 * x.ofLp x_2 * x.ofLp x_2) +
+            (10 + Γêæ x_1, Γêæ x_2, x.ofLp x_2 * x.ofLp x_2 * (x.ofLp x_1 * x.ofLp x_1) +
+                                      Γêæ x_1, Γêæ x_2, x.ofLp x_2 * x.ofLp x_2 * (x.ofLp x_1 * x.ofLp x_1) +
+                                    Γêæ x_1, Γêæ x_2, x.ofLp x_1 * x.ofLp x_1 * x.ofLp x_2 * x.ofLp x_2 +
+                                  Γêæ x_1, 8 * (x.ofLp x_1 * x.ofLp x_1) +
+                                1 +
+                              1 +
+                            1 +
+                          1 +
+                        1 +
+                      1 +
+                    1 +
+                  Γêæ x_1, Γêæ x_2, 8 * (x.ofLp x_1 * x.ofLp x_1 * (x.ofLp x_2 * x.ofLp x_2)) +
+                (9 + Γêæ x_1, Γêæ x_2, x.ofLp x_2 * x.ofLp x_2 * (x.ofLp x_1 * x.ofLp x_1) + 1 +
+                                      Γêæ x_1, Γêæ x_2, x.ofLp x_2 * x.ofLp x_2 * (x.ofLp x_1 * x.ofLp x_1) +
+                                    Γêæ x_1, Γêæ x_2, x.ofLp x_1 * x.ofLp x_2 * x.ofLp x_1 * x.ofLp x_2 +
+                                  1 +
+                                Γêæ x_1, 8 * (x.ofLp x_1 * x.ofLp x_1) +
+                              1 +
+                            1 +
+                          1 +
+                        1 +
+                      Γêæ x_1, Γêæ x_2, x.ofLp x_1 * x.ofLp x_2 * x.ofLp x_1 * x.ofLp x_2 +
+                    Γêæ x_1, Γêæ x_2, 8 * (x.ofLp x_1 * x.ofLp x_1 * (x.ofLp x_2 * x.ofLp x_2)) +
+                  1) +
+              (9 + Γêæ x_1, Γêæ x_2, x.ofLp x_2 * x.ofLp x_2 * (x.ofLp x_1 * x.ofLp x_1) +
+                                      Γêæ x_1, Γêæ x_2, x.ofLp x_2 * x.ofLp x_2 * (x.ofLp x_1 * x.ofLp x_1) +
+                                    1 +
+                                  Γêæ x_1, Γêæ x_2, x.ofLp x_1 * x.ofLp x_2 * x.ofLp x_2 * x.ofLp x_1 +
+                                1 +
+                              1 +
+                            Γêæ x_1, 8 * (x.ofLp x_1 * x.ofLp x_1) +
+                          1 +
+                        1 +
+                      1 +
+                    Γêæ x_1, Γêæ x_2, 8 * (x.ofLp x_1 * x.ofLp x_1 * (x.ofLp x_2 * x.ofLp x_2)) +
+                  Γêæ x_1, Γêæ x_2, x.ofLp x_1 * x.ofLp x_2 * x.ofLp x_1 * x.ofLp x_2 +
+                Γêæ x_1, Γêæ x_2, x.ofLp x_1 * x.ofLp x_2 * x.ofLp x_1 * x.ofLp x_2)) +
+          (10 + Γêæ x_1, Γêæ x_2, x.ofLp x_2 * x.ofLp x_2 * (x.ofLp x_1 * x.ofLp x_1) +
+                                    Γêæ x_1, Γêæ x_2, x.ofLp x_2 * x.ofLp x_2 * (x.ofLp x_1 * x.ofLp x_1) +
+                                  Γêæ x_1, 8 * (x.ofLp x_1 * x.ofLp x_1) +
+                                Γêæ x_1, Γêæ x_2, x.ofLp x_1 * x.ofLp x_1 * x.ofLp x_2 * x.ofLp x_2 +
+                              1 +
+                            1 +
+                          Γêæ x_1, Γêæ x_2, x.ofLp x_1 * x.ofLp x_1 * x.ofLp x_2 * x.ofLp x_2 +
+                        1 +
+                      1 +
+                    1 +
+                  1 +
+                Γêæ x_1, Γêæ x_2, 8 * (x.ofLp x_1 * x.ofLp x_1 * (x.ofLp x_2 * x.ofLp x_2)) +
+              (Γêæ x_1, Γêæ x_2, x.ofLp x_2 * x.ofLp x_2 * (x.ofLp x_1 * x.ofLp x_1) +
+                                          Γêæ x_1, Γêæ x_2, x.ofLp x_2 * x.ofLp x_2 * (x.ofLp x_1 * x.ofLp x_1) +
+                                        8 +
+                                      1 +
+                                    Γêæ x_1, Γêæ x_2, x.ofLp x_2 * x.ofLp x_2 * (x.ofLp x_1 * x.ofLp x_1) +
+                                  1 +
+                                Γêæ x_1, Γêæ x_2, x.ofLp x_1 * x.ofLp x_2 * x.ofLp x_1 * x.ofLp x_2 +
+                              Γêæ x_1, 8 * (x.ofLp x_1 * x.ofLp x_1) +
+                            1 +
+                          Γêæ x_1, Γêæ x_2, x.ofLp x_1 * x.ofLp x_2 * x.ofLp x_2 * x.ofLp x_1 +
+                        Γêæ x_1, Γêæ x_2, x.ofLp x_1 * x.ofLp x_2 * x.ofLp x_1 * x.ofLp x_2 +
+                      Γêæ x_1, Γêæ x_2, 8 * (x.ofLp x_1 * x.ofLp x_1 * (x.ofLp x_2 * x.ofLp x_2)) +
+                    1 +
+                  1 +
+                1) +
+            (Γêæ x_1, Γêæ x_2, x.ofLp x_2 * x.ofLp x_2 * (x.ofLp x_1 * x.ofLp x_1) +
+                                        Γêæ x_1, Γêæ x_2, x.ofLp x_2 * x.ofLp x_2 * (x.ofLp x_1 * x.ofLp x_1) +
+                                      8 +
+                                    Γêæ x_1, Γêæ x_2, x.ofLp x_2 * x.ofLp x_2 * (x.ofLp x_1 * x.ofLp x_1) +
+                                  1 +
+                                1 +
+                              Γêæ x_1, Γêæ x_2, x.ofLp x_1 * x.ofLp x_2 * x.ofLp x_2 * x.ofLp x_1 +
+                            1 +
+                          Γêæ x_1, 8 * (x.ofLp x_1 * x.ofLp x_1) +
+                        Γêæ x_1, Γêæ x_2, x.ofLp x_1 * x.ofLp x_2 * x.ofLp x_1 * x.ofLp x_2 +
+                      Γêæ x_1, Γêæ x_2, 8 * (x.ofLp x_1 * x.ofLp x_1 * (x.ofLp x_2 * x.ofLp x_2)) +
+                    Γêæ x_1, Γêæ x_2, x.ofLp x_1 * x.ofLp x_2 * x.ofLp x_1 * x.ofLp x_2 +
+                  1 +
+                1 +
+              Γêæ x_1, Γêæ x_2, x.ofLp x_1 * x.ofLp x_2 * x.ofLp x_2 * x.ofLp x_1)) +
+        (2 + Γêæ x_1, Γêæ x_2, x.ofLp x_2 * x.ofLp x_2 * (x.ofLp x_1 * x.ofLp x_1) + 8 +
+                                  Γêæ x_1, Γêæ x_2, x.ofLp x_2 * x.ofLp x_2 * (x.ofLp x_1 * x.ofLp x_1) +
+                                Γêæ x_1, 8 * (x.ofLp x_1 * x.ofLp x_1) +
+                              1 +
+                            Γêæ x_1, Γêæ x_2, x.ofLp x_1 * x.ofLp x_1 * x.ofLp x_2 * x.ofLp x_2 +
+                          1 +
+                        1 +
+                      Γêæ x_1, Γêæ x_2, x.ofLp x_1 * x.ofLp x_1 * x.ofLp x_2 * x.ofLp x_2 +
+                    1 +
+                  Γêæ x_1, Γêæ x_2, x.ofLp x_1 * x.ofLp x_2 * x.ofLp x_2 * x.ofLp x_1 +
+                Γêæ x_1, Γêæ x_2, 8 * (x.ofLp x_1 * x.ofLp x_1 * (x.ofLp x_2 * x.ofLp x_2)) +
+              1 +
+            (Γêæ x_1, Γêæ x_2, x.ofLp x_2 * x.ofLp x_2 * (x.ofLp x_1 * x.ofLp x_1) +
+                                        Γêæ x_1, Γêæ x_2, x.ofLp x_2 * x.ofLp x_2 * (x.ofLp x_1 * x.ofLp x_1) +
+                                      1 +
+                                    8 +
+                                  Γêæ x_1, Γêæ x_2, x.ofLp x_2 * x.ofLp x_2 * (x.ofLp x_1 * x.ofLp x_1) +
+                                1 +
+                              Γêæ x_1, 8 * (x.ofLp x_1 * x.ofLp x_1) +
+                            Γêæ x_1, Γêæ x_2, x.ofLp x_1 * x.ofLp x_2 * x.ofLp x_1 * x.ofLp x_2 +
+                          1 +
+                        Γêæ x_1, Γêæ x_2, x.ofLp x_1 * x.ofLp x_2 * x.ofLp x_1 * x.ofLp x_2 +
+                      Γêæ x_1, Γêæ x_2, x.ofLp x_1 * x.ofLp x_2 * x.ofLp x_2 * x.ofLp x_1 +
+                    Γêæ x_1, Γêæ x_2, 8 * (x.ofLp x_1 * x.ofLp x_1 * (x.ofLp x_2 * x.ofLp x_2)) +
+                  Γêæ x_1, Γêæ x_2, x.ofLp x_1 * x.ofLp x_1 * x.ofLp x_2 * x.ofLp x_2 +
+                1 +
+              1) +
+          (Γêæ x_1, Γêæ x_2, x.ofLp x_2 * x.ofLp x_2 * (x.ofLp x_1 * x.ofLp x_1) +
+                                      Γêæ x_1, Γêæ x_2, x.ofLp x_2 * x.ofLp x_2 * (x.ofLp x_1 * x.ofLp x_1) +
+                                    Γêæ x_1, Γêæ x_2, x.ofLp x_2 * x.ofLp x_2 * (x.ofLp x_1 * x.ofLp x_1) +
+                                  8 +
+                                1 +
+                              1 +
+                            1 +
+                          Γêæ x_1, Γêæ x_2, x.ofLp x_1 * x.ofLp x_2 * x.ofLp x_2 * x.ofLp x_1 +
+                        Γêæ x_1, 8 * (x.ofLp x_1 * x.ofLp x_1) +
+                      Γêæ x_1, Γêæ x_2, 8 * (x.ofLp x_1 * x.ofLp x_1 * (x.ofLp x_2 * x.ofLp x_2)) +
+                    Γêæ x_1, Γêæ x_2, x.ofLp x_1 * x.ofLp x_2 * x.ofLp x_1 * x.ofLp x_2 +
+                  Γêæ x_1, Γêæ x_2, x.ofLp x_1 * x.ofLp x_2 * x.ofLp x_2 * x.ofLp x_1 +
+                Γêæ x_1, Γêæ x_2, x.ofLp x_1 * x.ofLp x_2 * x.ofLp x_1 * x.ofLp x_2 +
+              Γêæ x_1, Γêæ x_2, x.ofLp x_1 * x.ofLp x_2 * x.ofLp x_2 * x.ofLp x_1 +
+            1)) +
+      (2 + Γêæ x_1, Γêæ x_2, x.ofLp x_2 * x.ofLp x_2 * (x.ofLp x_1 * x.ofLp x_1) +
+                                  Γêæ x_1, Γêæ x_2, x.ofLp x_2 * x.ofLp x_2 * (x.ofLp x_1 * x.ofLp x_1) +
+                                8 +
+                              Γêæ x_1, 8 * (x.ofLp x_1 * x.ofLp x_1) +
+                            1 +
+                          1 +
+                        Γêæ x_1, Γêæ x_2, x.ofLp x_1 * x.ofLp x_1 * x.ofLp x_2 * x.ofLp x_2 +
+                      1 +
+                    1 +
+                  Γêæ x_1, Γêæ x_2, x.ofLp x_1 * x.ofLp x_1 * x.ofLp x_2 * x.ofLp x_2 +
+                Γêæ x_1, Γêæ x_2, 8 * (x.ofLp x_1 * x.ofLp x_1 * (x.ofLp x_2 * x.ofLp x_2)) +
+              Γêæ x_1, Γêæ x_2, x.ofLp x_1 * x.ofLp x_2 * x.ofLp x_2 * x.ofLp x_1 +
+            Γêæ x_1, Γêæ x_2, x.ofLp x_1 * x.ofLp x_2 * x.ofLp x_2 * x.ofLp x_1 +
+          (Γêæ x_1, Γêæ x_2, x.ofLp x_2 * x.ofLp x_2 * (x.ofLp x_1 * x.ofLp x_1) +
+                                      Γêæ x_1, Γêæ x_2, x.ofLp x_2 * x.ofLp x_2 * (x.ofLp x_1 * x.ofLp x_1) +
+                                    1 +
+                                  Γêæ x_1, Γêæ x_2, x.ofLp x_2 * x.ofLp x_2 * (x.ofLp x_1 * x.ofLp x_1) +
+                                8 +
+                              1 +
+                            Γêæ x_1, 8 * (x.ofLp x_1 * x.ofLp x_1) +
+                          1 +
+                        Γêæ x_1, Γêæ x_2, x.ofLp x_1 * x.ofLp x_2 * x.ofLp x_1 * x.ofLp x_2 +
+                      Γêæ x_1, Γêæ x_2, x.ofLp x_1 * x.ofLp x_2 * x.ofLp x_2 * x.ofLp x_1 +
+                    Γêæ x_1, Γêæ x_2, 8 * (x.ofLp x_1 * x.ofLp x_1 * (x.ofLp x_2 * x.ofLp x_2)) +
+                  Γêæ x_1, Γêæ x_2, x.ofLp x_1 * x.ofLp x_2 * x.ofLp x_2 * x.ofLp x_1 +
+                1 +
+              Γêæ x_1, Γêæ x_2, x.ofLp x_1 * x.ofLp x_1 * x.ofLp x_2 * x.ofLp x_2 +
+            Γêæ x_1, Γêæ x_2, x.ofLp x_1 * x.ofLp x_2 * x.ofLp x_1 * x.ofLp x_2) +
+        (Γêæ x_1, Γêæ x_2, x.ofLp x_2 * x.ofLp x_2 * (x.ofLp x_1 * x.ofLp x_1) +
+                                    Γêæ x_1, Γêæ x_2, x.ofLp x_2 * x.ofLp x_2 * (x.ofLp x_1 * x.ofLp x_1) +
+                                  Γêæ x_1, Γêæ x_2, x.ofLp x_2 * x.ofLp x_2 * (x.ofLp x_1 * x.ofLp x_1) +
+                                1 +
+                              8 +
+                            1 +
+                          1 +
+                        Γêæ x_1, 8 * (x.ofLp x_1 * x.ofLp x_1) +
+                      Γêæ x_1, Γêæ x_2, x.ofLp x_1 * x.ofLp x_2 * x.ofLp x_2 * x.ofLp x_1 +
+                    Γêæ x_1, Γêæ x_2, 8 * (x.ofLp x_1 * x.ofLp x_1 * (x.ofLp x_2 * x.ofLp x_2)) +
+                  Γêæ x_1, Γêæ x_2, x.ofLp x_1 * x.ofLp x_2 * x.ofLp x_2 * x.ofLp x_1 +
+                Γêæ x_1, Γêæ x_2, x.ofLp x_1 * x.ofLp x_2 * x.ofLp x_1 * x.ofLp x_2 +
+              Γêæ x_1, Γêæ x_2, x.ofLp x_1 * x.ofLp x_2 * x.ofLp x_2 * x.ofLp x_1 +
+            Γêæ x_1, Γêæ x_2, x.ofLp x_1 * x.ofLp x_2 * x.ofLp x_1 * x.ofLp x_2 +
+          Γêæ x_1, Γêæ x_2, x.ofLp x_1 * x.ofLp x_1 * x.ofLp x_2 * x.ofLp x_2)) =
+    540

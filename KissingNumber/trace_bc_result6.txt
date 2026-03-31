@@ -1,0 +1,3 @@
+﻿KissingNumber\TestBCSplit.lean:178:25: error: `simp` made no progress
+KissingNumber\TestBCSplit.lean:183:6: warning: declaration uses `sorry`
+KissingNumber\TestBCSplit.lean:189:6: warning: declaration uses `sorry`

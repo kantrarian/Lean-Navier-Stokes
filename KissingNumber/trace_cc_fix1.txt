@@ -1,0 +1,13 @@
+﻿KissingNumber/TestCCSplit.lean:149:11: error: `simp` made no progress
+KissingNumber/TestCCSplit.lean:173:6: warning: declaration uses `sorry`
+KissingNumber/TestCCSplit.lean:178:6: warning: declaration uses `sorry`
+KissingNumber/TestCCSplit.lean:183:6: warning: declaration uses `sorry`
+KissingNumber/TestCCSplit.lean:188:6: warning: declaration uses `sorry`
+KissingNumber/TestCCSplit.lean:193:6: warning: declaration uses `sorry`
+KissingNumber/TestCCSplit.lean:198:6: warning: declaration uses `sorry`
+KissingNumber/TestCCSplit.lean:252:11: error: `simp` made no progress
+KissingNumber/TestCCSplit.lean:257:6: warning: declaration uses `sorry`
+KissingNumber/TestCCSplit.lean:262:6: warning: declaration uses `sorry`
+KissingNumber/TestCCSplit.lean:267:6: warning: declaration uses `sorry`
+KissingNumber/TestCCSplit.lean:272:6: warning: declaration uses `sorry`
+KissingNumber/TestCCSplit.lean:277:6: warning: declaration uses `sorry`

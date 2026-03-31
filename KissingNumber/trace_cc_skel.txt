@@ -1,0 +1,74 @@
+KissingNumber/TestCCSplit.lean:70:6: warning: declaration uses `sorry`
+KissingNumber/TestCCSplit.lean:87:6: warning: declaration uses `sorry`
+KissingNumber/TestCCSplit.lean:93:6: warning: declaration uses `sorry`
+KissingNumber/TestCCSplit.lean:105:4: error: Type mismatch
+  sum_C6a1_C6a2 y x hy hx
+has type
+  ∑ p, C6a1 y p * C6a2 x p = 180 * ⟪y, x⟫ ^ 2
+but is expected to have type
+  ∑ x_1, C6a1 y x_1 * C6a2 x x_1 = 180 * ⟪x, y⟫ ^ 2
+KissingNumber/TestCCSplit.lean:108:62: error: unsolved goals
+case e_f.h
+x y : EuclideanSpace ℝ (Fin 8)
+hx : ‖x‖ = 1
+hy : ‖y‖ = 1
+h11 : ∑ p, C6a1 x p * C6a1 y p = 540 * ⟪x, y⟫ ^ 2
+h12 : ∑ p, C6a1 x p * C6a2 y p = 180 * ⟪x, y⟫ ^ 2
+h21 : ∑ p, C6a2 x p * C6a1 y p = 180 * ⟪x, y⟫ ^ 2
+h22 : ∑ p, C6a2 x p * C6a2 y p = 900 * ⟪x, y⟫ ^ 2
+p : T6k
+⊢ (C6a1 x p + C6a2 x p) * TestBCSplit.C6a y p = (C6a1 x p + C6a2 x p) * (C6a1 y p + C6a2 y p)
+KissingNumber/TestCCSplit.lean:118:6: warning: declaration uses `sorry`
+KissingNumber/TestCCSplit.lean:123:6: warning: declaration uses `sorry`
+KissingNumber/TestCCSplit.lean:128:6: warning: declaration uses `sorry`
+KissingNumber/TestCCSplit.lean:133:6: warning: declaration uses `sorry`
+KissingNumber/TestCCSplit.lean:138:6: warning: declaration uses `sorry`
+KissingNumber/TestCCSplit.lean:143:6: warning: declaration uses `sorry`
+KissingNumber/TestCCSplit.lean:170:2: error: Type mismatch
+  sum_C6a_C6b y x hy hx
+has type
+  ∑ p, TestBCSplit.C6a y p * TestBCSplit.C6b x p = 720 * ⟪y, x⟫ ^ 2 + 360
+but is expected to have type
+  ∑ x_1, TestBCSplit.C6a y x_1 * TestBCSplit.C6b x x_1 = 720 * ⟪x, y⟫ ^ 2 + 360
+KissingNumber/TestCCSplit.lean:173:6: warning: declaration uses `sorry`
+KissingNumber/TestCCSplit.lean:178:6: warning: declaration uses `sorry`
+KissingNumber/TestCCSplit.lean:183:6: warning: declaration uses `sorry`
+KissingNumber/TestCCSplit.lean:188:6: warning: declaration uses `sorry`
+KissingNumber/TestCCSplit.lean:193:6: warning: declaration uses `sorry`
+KissingNumber/TestCCSplit.lean:198:6: warning: declaration uses `sorry`
+KissingNumber/TestCCSplit.lean:210:4: error: Type mismatch
+  sum_C6b1_C6b2 y x hy hx
+has type
+  ∑ p, C6b1 y p * C6b2 x p = 218 * ⟪y, x⟫ ^ 2 + 24
+but is expected to have type
+  ∑ x_1, C6b1 y x_1 * C6b2 x x_1 = 218 * ⟪x, y⟫ ^ 2 + 24
+KissingNumber/TestCCSplit.lean:215:4: error: Type mismatch
+  sum_C6b1_C6b3 y x hy hx
+has type
+  ∑ p, C6b1 y p * C6b3 x p = 178 * ⟪y, x⟫ ^ 2 + 84
+but is expected to have type
+  ∑ x_1, C6b1 y x_1 * C6b3 x x_1 = 178 * ⟪x, y⟫ ^ 2 + 84
+KissingNumber/TestCCSplit.lean:218:4: error: Type mismatch
+  sum_C6b2_C6b3 y x hy hx
+has type
+  ∑ p, C6b2 y p * C6b3 x p = 282 * ⟪y, x⟫ ^ 2 + 36
+but is expected to have type
+  ∑ x_1, C6b2 y x_1 * C6b3 x x_1 = 282 * ⟪x, y⟫ ^ 2 + 36
+KissingNumber/TestCCSplit.lean:221:84: error: unsolved goals
+case e_f.h
+x y : EuclideanSpace ℝ (Fin 8)
+hx : ‖x‖ = 1
+hy : ‖y‖ = 1
+h11 : ∑ p, C6b1 x p * C6b1 y p = 900 * ⟪x, y⟫ ^ 2
+h12 : ∑ p, C6b1 x p * C6b2 y p = 218 * ⟪x, y⟫ ^ 2 + 24
+h13 : ∑ p, C6b1 x p * C6b3 y p = 178 * ⟪x, y⟫ ^ 2 + 84
+h21 : ∑ p, C6b2 x p * C6b1 y p = 218 * ⟪x, y⟫ ^ 2 + 24
+h22 : ∑ p, C6b2 x p * C6b2 y p = 796 * ⟪x, y⟫ ^ 2 + 48
+h23 : ∑ p, C6b2 x p * C6b3 y p = 282 * ⟪x, y⟫ ^ 2 + 36
+h31 : ∑ p, C6b3 x p * C6b1 y p = 178 * ⟪x, y⟫ ^ 2 + 84
+h32 : ∑ p, C6b3 x p * C6b2 y p = 282 * ⟪x, y⟫ ^ 2 + 36
+h33 : ∑ p, C6b3 x p * C6b3 y p = 1268 * ⟪x, y⟫ ^ 2 + 24
+p : T6k
+⊢ (C6b1 x p + C6b2 x p + C6b3 x p) * TestBCSplit.C6b y p =
+    (C6b1 x p + C6b2 x p + C6b3 x p) * (C6b1 y p + C6b2 y p + C6b3 y p)
+EXIT:1

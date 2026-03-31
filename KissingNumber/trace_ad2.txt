@@ -1,0 +1,7 @@
+﻿KissingNumber\TestAD.lean:60:22: warning: This simp argument is unused:
+  one_mul
+
+Hint: Omit it from the simp argument list.
+  simp only [mul_one,╠╡ ╠╡o╠╡n╠╡e╠╡_╠╡m╠╡u╠╡l╠╡]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`

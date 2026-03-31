@@ -1,0 +1,343 @@
+KissingNumber/TestCCSplit.lean:42:2: error: Type mismatch
+  Nat.zero
+has type
+  ℕ
+of sort `Type` but is expected to have type
+  ∑ x_1, ∑ x_2, ∑ x_3, ∑ x_4, x.ofLp x_1 * x.ofLp x_2 * (y.ofLp x_1 * y.ofLp x_2) +
+                            ∑ x_1, ∑ x_2, ∑ x_3, x.ofLp x_1 * x.ofLp x_2 * (y.ofLp x_1 * y.ofLp x_2) +
+                          ∑ x_1, ∑ x_2, ∑ x_3, x.ofLp x_1 * x.ofLp x_2 * (y.ofLp x_1 * y.ofLp x_2) +
+                        (∑ x_1, ∑ x_2, ∑ x_3, x.ofLp x_1 * x.ofLp x_2 * (y.ofLp x_1 * y.ofLp x_2) +
+                            ∑ x_1, ∑ x_2, x.ofLp x_1 * x.ofLp x_2 * (y.ofLp x_1 * y.ofLp x_2) +
+                          ∑ x_1, ∑ x_2, x.ofLp x_1 * x.ofLp x_2 * (y.ofLp x_1 * y.ofLp x_2)) +
+                      (∑ x_1, ∑ x_2, ∑ x_3, x.ofLp x_1 * x.ofLp x_2 * (y.ofLp x_1 * y.ofLp x_2) +
+                          ∑ x_1, ∑ x_2, x.ofLp x_1 * x.ofLp x_2 * (y.ofLp x_1 * y.ofLp x_2) +
+                        ∑ x_1, ∑ x_2, x.ofLp x_1 * x.ofLp x_2 * (y.ofLp x_1 * y.ofLp x_2)) +
+                    (∑ x_1, ∑ x_2, x.ofLp x_1 * x.ofLp x_2 * (y.ofLp x_1 * y.ofLp x_2) +
+                        ∑ x_1, ∑ x_2, x.ofLp x_1 * x.ofLp x_2 * (y.ofLp x_1 * y.ofLp x_2) +
+                      ∑ x_1, ∑ x_2, ∑ x_3, x.ofLp x_1 * x.ofLp x_2 * (y.ofLp x_1 * y.ofLp x_2)) +
+                  (∑ x_1, ∑ x_2, x.ofLp x_1 * x.ofLp x_2 * (y.ofLp x_1 * y.ofLp x_2) +
+                      ∑ x_1, ∑ x_2, x.ofLp x_1 * x.ofLp x_2 * (y.ofLp x_1 * y.ofLp x_2) +
+                    ∑ x_1, ∑ x_2, ∑ x_3, x.ofLp x_1 * x.ofLp x_2 * (y.ofLp x_1 * y.ofLp x_2)) +
+                (∑ x_1, ∑ x_2, ∑ x_3, x.ofLp x_1 * x.ofLp x_2 * (y.ofLp x_1 * y.ofLp x_2) +
+                            ∑ x_1, ∑ x_2, ∑ x_3, ∑ x_4, x.ofLp x_1 * x.ofLp x_2 * (y.ofLp x_1 * y.ofLp x_2) +
+                          ∑ x_1, ∑ x_2, ∑ x_3, x.ofLp x_1 * x.ofLp x_2 * (y.ofLp x_1 * y.ofLp x_2) +
+                        (∑ x_1, ∑ x_2, x.ofLp x_1 * x.ofLp x_2 * (y.ofLp x_1 * y.ofLp x_2) +
+                            ∑ x_1, ∑ x_2, ∑ x_3, x.ofLp x_1 * x.ofLp x_2 * (y.ofLp x_1 * y.ofLp x_2) +
+                          ∑ x_1, ∑ x_2, x.ofLp x_1 * x.ofLp x_2 * (y.ofLp x_1 * y.ofLp x_2)) +
+                      (∑ x_1, ∑ x_2, x.ofLp x_1 * x.ofLp x_2 * (y.ofLp x_1 * y.ofLp x_2) +
+                          ∑ x_1, ∑ x_2, x.ofLp x_1 * x.ofLp x_2 * (y.ofLp x_1 * y.ofLp x_2) +
+                        ∑ x_1, ∑ x_2, ∑ x_3, x.ofLp x_1 * x.ofLp x_2 * (y.ofLp x_1 * y.ofLp x_2)) +
+                    (∑ x_1, ∑ x_2, ∑ x_3, x.ofLp x_1 * x.ofLp x_2 * (y.ofLp x_1 * y.ofLp x_2) +
+                        ∑ x_1, ∑ x_2, x.ofLp x_1 * x.ofLp x_2 * (y.ofLp x_1 * y.ofLp x_2) +
+                      ∑ x_1, ∑ x_2, x.ofLp x_1 * x.ofLp x_2 * (y.ofLp x_1 * y.ofLp x_2)) +
+                  (∑ x_1, ∑ x_2, x.ofLp x_1 * x.ofLp x_2 * (y.ofLp x_1 * y.ofLp x_2) +
+                      ∑ x_1, ∑ x_2, ∑ x_3, x.ofLp x_1 * x.ofLp x_2 * (y.ofLp x_1 * y.ofLp x_2) +
+                    ∑ x_1, ∑ x_2, x.ofLp x_1 * x.ofLp x_2 * (y.ofLp x_1 * y.ofLp x_2))) +
+              (∑ x_1, ∑ x_2, ∑ x_3, x.ofLp x_1 * x.ofLp x_2 * (y.ofLp x_1 * y.ofLp x_2) +
+                          ∑ x_1, ∑ x_2, ∑ x_3, x.ofLp x_1 * x.ofLp x_2 * (y.ofLp x_1 * y.ofLp x_2) +
+                        ∑ x_1, ∑ x_2, ∑ x_3, ∑ x_4, x.ofLp x_1 * x.ofLp x_2 * (y.ofLp x_1 * y.ofLp x_2) +
+                      (∑ x_1, ∑ x_2, x.ofLp x_1 * x.ofLp x_2 * (y.ofLp x_1 * y.ofLp x_2) +
+                          ∑ x_1, ∑ x_2, x.ofLp x_1 * x.ofLp x_2 * (y.ofLp x_1 * y.ofLp x_2) +
+                        ∑ x_1,
+                          ∑ x_2,
+                            ∑ x_3,
+                              ∑ x_4, if x_2 = x_3 then x.ofLp x_1 * x.ofLp x_3 * (y.ofLp x_1 * y.ofLp x_2) else 0) +
+                    (∑ x_1, ∑ x_2, x.ofLp x_1 * x.ofLp x_2 * (y.ofLp x_1 * y.ofLp x_2) +
+                        ∑ x_1, ∑ x_2, ∑ x_3, x.ofLp x_1 * x.ofLp x_2 * (y.ofLp x_1 * y.ofLp x_2) +
+                      ∑ x_1, ∑ x_2, x.ofLp x_1 * x.ofLp x_2 * (y.ofLp x_1 * y.ofLp x_2)) +
+                  (∑ x_1, ∑ x_2, x.ofLp x_1 * x.ofLp x_2 * (y.ofLp x_1 * y.ofLp x_2) +
+                      ∑ x_1, ∑ x_2, ∑ x_3, x.ofLp x_1 * x.ofLp x_2 * (y.ofLp x_1 * y.ofLp x_2) +
+                    ∑ x_1, ∑ x_2, x.ofLp x_1 * x.ofLp x_2 * (y.ofLp x_1 * y.ofLp x_2)) +
+                ((∑ x_1,
+                      ∑ x_2,
+                        ∑ x_3, ∑ x_4, if x_2 = x_3 then x.ofLp x_1 * x.ofLp x_3 * (y.ofLp x_1 * y.ofLp x_2) else 0) +
+                    ∑ x_1, ∑ x_2, x.ofLp x_1 * x.ofLp x_2 * (y.ofLp x_1 * y.ofLp x_2) +
+                  ∑ x_1, ∑ x_2, x.ofLp x_1 * x.ofLp x_2 * (y.ofLp x_1 * y.ofLp x_2))) +
+            (∑ x_1, ∑ x_2, ∑ x_3, x.ofLp x_1 * x.ofLp x_2 * (y.ofLp x_1 * y.ofLp x_2) +
+                            ∑ x_1, ∑ x_2, x.ofLp x_1 * x.ofLp x_2 * (y.ofLp x_1 * y.ofLp x_2) +
+                          ∑ x_1, ∑ x_2, x.ofLp x_1 * x.ofLp x_2 * (y.ofLp x_1 * y.ofLp x_2) +
+                        (∑ x_1, ∑ x_2, ∑ x_3, ∑ x_4, x.ofLp x_1 * x.ofLp x_3 * (y.ofLp x_1 * y.ofLp x_3) +
+                            ∑ x_1, ∑ x_2, ∑ x_3, x.ofLp x_1 * x.ofLp x_3 * (y.ofLp x_1 * y.ofLp x_3) +
+                          ∑ x_1, ∑ x_2, ∑ x_3, x.ofLp x_1 * x.ofLp x_3 * (y.ofLp x_1 * y.ofLp x_3)) +
+                      (∑ x_1, ∑ x_2, ∑ x_3, x.ofLp x_1 * x.ofLp x_2 * (y.ofLp x_1 * y.ofLp x_2) +
+                          ∑ x_1, ∑ x_2, x.ofLp x_1 * x.ofLp x_2 * (y.ofLp x_1 * y.ofLp x_2) +
+                        ∑ x_1, ∑ x_2, x.ofLp x_1 * x.ofLp x_2 * (y.ofLp x_1 * y.ofLp x_2)) +
+                    (∑ x_1, ∑ x_2, x.ofLp x_1 * x.ofLp x_2 * (y.ofLp x_1 * y.ofLp x_2) +
+                        ∑ x_1, ∑ x_2, ∑ x_3, x.ofLp x_1 * x.ofLp x_3 * (y.ofLp x_1 * y.ofLp x_3) +
+                      ∑ x_1, ∑ x_2, x.ofLp x_1 * x.ofLp x_2 * (y.ofLp x_1 * y.ofLp x_2)) +
+                  (∑ x_1, ∑ x_2, x.ofLp x_1 * x.ofLp x_2 * (y.ofLp x_1 * y.ofLp x_2) +
+                      ∑ x_1, ∑ x_2, ∑ x_3, x.ofLp x_1 * x.ofLp x_3 * (y.ofLp x_1 * y.ofLp x_3) +
+                    ∑ x_1, ∑ x_2, x.ofLp x_1 * x.ofLp x_2 * (y.ofLp x_1 * y.ofLp x_2)) +
+                (∑ x_1, ∑ x_2, x.ofLp x_1 * x.ofLp x_2 * (y.ofLp x_1 * y.ofLp x_2) +
+                            ∑ x_1, ∑ x_2, ∑ x_3, x.ofLp x_1 * x.ofLp x_2 * (y.ofLp x_1 * y.ofLp x_2) +
+                          ∑ x_1, ∑ x_2, x.ofLp x_1 * x.ofLp x_2 * (y.ofLp x_1 * y.ofLp x_2) +
+                        (∑ x_1, ∑ x_2, ∑ x_3, x.ofLp x_1 * x.ofLp x_3 * (y.ofLp x_1 * y.ofLp x_3) +
+                            ∑ x_1, ∑ x_2, ∑ x_3, ∑ x_4, x.ofLp x_1 * x.ofLp x_3 * (y.ofLp x_1 * y.ofLp x_3) +
+                          ∑ x_1, ∑ x_2, ∑ x_3, x.ofLp x_1 * x.ofLp x_3 * (y.ofLp x_1 * y.ofLp x_3)) +
+                      (∑ x_1, ∑ x_2, x.ofLp x_1 * x.ofLp x_2 * (y.ofLp x_1 * y.ofLp x_2) +
+                          ∑ x_1, ∑ x_2, ∑ x_3, x.ofLp x_1 * x.ofLp x_3 * (y.ofLp x_1 * y.ofLp x_3) +
+                        ∑ x_1, ∑ x_2, x.ofLp x_1 * x.ofLp x_2 * (y.ofLp x_1 * y.ofLp x_2)) +
+                    (∑ x_1, ∑ x_2, ∑ x_3, x.ofLp x_1 * x.ofLp x_2 * (y.ofLp x_1 * y.ofLp x_2) +
+                        ∑ x_1, ∑ x_2, x.ofLp x_1 * x.ofLp x_2 * (y.ofLp x_1 * y.ofLp x_2) +
+                      ∑ x_1, ∑ x_2, x.ofLp x_1 * x.ofLp x_2 * (y.ofLp x_1 * y.ofLp x_2)) +
+                  (∑ x_1, ∑ x_2, x.ofLp x_1 * x.ofLp x_2 * (y.ofLp x_1 * y.ofLp x_2) +
+                      ∑ x_1, ∑ x_2, x.ofLp x_1 * x.ofLp x_2 * (y.ofLp x_1 * y.ofLp x_2) +
+                    ∑ x_1, ∑ x_2, ∑ x_3, x.ofLp x_1 * x.ofLp x_3 * (y.ofLp x_1 * y.ofLp x_3))) +
+              ((∑ x_1, ∑ x_2, x.ofLp x_1 * x.ofLp x_2 * (y.ofLp x_1 * y.ofLp x_2) +
+                          ∑ x_1, ∑ x_2, x.ofLp x_1 * x.ofLp x_2 * (y.ofLp x_1 * y.ofLp x_2) +
+                        ∑ x_1,
+                          ∑ x_2,
+                            ∑ x_3,
+                              ∑ x_4, if x_3 = x_2 then x.ofLp x_1 * x.ofLp x_2 * (y.ofLp x_1 * y.ofLp x_3) else 0) +
+                      (∑ x_1, ∑ x_2, ∑ x_3, x.ofLp x_1 * x.ofLp x_3 * (y.ofLp x_1 * y.ofLp x_3) +
+                          ∑ x_1, ∑ x_2, ∑ x_3, x.ofLp x_1 * x.ofLp x_3 * (y.ofLp x_1 * y.ofLp x_3) +
+                        ∑ x_1, ∑ x_2, ∑ x_3, ∑ x_4, x.ofLp x_1 * x.ofLp x_3 * (y.ofLp x_1 * y.ofLp x_3)) +
+                    ((∑ x_1, ∑ x_2, x.ofLp x_1 * x.ofLp x_2 * (y.ofLp x_1 * y.ofLp x_2) +
+                        ∑ x_1,
+                          ∑ x_2,
+                            ∑ x_3,
+                              ∑ x_4,
+                                if x_3 = x_2 then
+                                  if x_2 = x_4 then x.ofLp x_1 * x.ofLp x_4 * (y.ofLp x_1 * y.ofLp x_3) else 0
+                                else 0) +
+                      ∑ x_1, ∑ x_2, ∑ x_3, x.ofLp x_1 * x.ofLp x_3 * (y.ofLp x_1 * y.ofLp x_3)) +
+                  ((∑ x_1, ∑ x_2, x.ofLp x_1 * x.ofLp x_2 * (y.ofLp x_1 * y.ofLp x_2) +
+                      ∑ x_1,
+                        ∑ x_2,
+                          ∑ x_3,
+                            ∑ x_4,
+                              if x_3 = x_2 then
+                                if x_2 = x_4 then x.ofLp x_1 * x.ofLp x_4 * (y.ofLp x_1 * y.ofLp x_3) else 0
+                              else 0) +
+                    ∑ x_1, ∑ x_2, ∑ x_3, x.ofLp x_1 * x.ofLp x_3 * (y.ofLp x_1 * y.ofLp x_3)) +
+                ((∑ x_1,
+                      ∑ x_2,
+                        ∑ x_3, ∑ x_4, if x_2 = x_3 then x.ofLp x_1 * x.ofLp x_2 * (y.ofLp x_1 * y.ofLp x_3) else 0) +
+                    ∑ x_1, ∑ x_2, x.ofLp x_1 * x.ofLp x_2 * (y.ofLp x_1 * y.ofLp x_2) +
+                  ∑ x_1, ∑ x_2, x.ofLp x_1 * x.ofLp x_2 * (y.ofLp x_1 * y.ofLp x_2)))) +
+          (∑ x_1, ∑ x_2, ∑ x_3, x.ofLp x_1 * x.ofLp x_2 * (y.ofLp x_1 * y.ofLp x_2) +
+                          ∑ x_1, ∑ x_2, x.ofLp x_1 * x.ofLp x_2 * (y.ofLp x_1 * y.ofLp x_2) +
+                        ∑ x_1, ∑ x_2, x.ofLp x_1 * x.ofLp x_2 * (y.ofLp x_1 * y.ofLp x_2) +
+                      (∑ x_1, ∑ x_2, ∑ x_3, x.ofLp x_1 * x.ofLp x_2 * (y.ofLp x_1 * y.ofLp x_2) +
+                          ∑ x_1, ∑ x_2, x.ofLp x_1 * x.ofLp x_2 * (y.ofLp x_1 * y.ofLp x_2) +
+                        ∑ x_1, ∑ x_2, x.ofLp x_1 * x.ofLp x_2 * (y.ofLp x_1 * y.ofLp x_2)) +
+                    (∑ x_1, ∑ x_2, ∑ x_3, ∑ x_4, x.ofLp x_1 * x.ofLp x_3 * (y.ofLp x_1 * y.ofLp x_3) +
+                        ∑ x_1, ∑ x_2, ∑ x_3, x.ofLp x_1 * x.ofLp x_3 * (y.ofLp x_1 * y.ofLp x_3) +
+                      ∑ x_1, ∑ x_2, ∑ x_3, x.ofLp x_1 * x.ofLp x_3 * (y.ofLp x_1 * y.ofLp x_3)) +
+                  (∑ x_1, ∑ x_2, ∑ x_3, x.ofLp x_1 * x.ofLp x_3 * (y.ofLp x_1 * y.ofLp x_3) +
+                      ∑ x_1, ∑ x_2, x.ofLp x_1 * x.ofLp x_2 * (y.ofLp x_1 * y.ofLp x_2) +
+                    ∑ x_1, ∑ x_2, x.ofLp x_1 * x.ofLp x_2 * (y.ofLp x_1 * y.ofLp x_2)) +
+                (∑ x_1, ∑ x_2, ∑ x_3, x.ofLp x_1 * x.ofLp x_3 * (y.ofLp x_1 * y.ofLp x_3) +
+                    ∑ x_1, ∑ x_2, x.ofLp x_1 * x.ofLp x_2 * (y.ofLp x_1 * y.ofLp x_2) +
+                  ∑ x_1, ∑ x_2, x.ofLp x_1 * x.ofLp x_2 * (y.ofLp x_1 * y.ofLp x_2)) +
+              (∑ x_1, ∑ x_2, x.ofLp x_1 * x.ofLp x_2 * (y.ofLp x_1 * y.ofLp x_2) +
+                          ∑ x_1, ∑ x_2, x.ofLp x_1 * x.ofLp x_2 * (y.ofLp x_1 * y.ofLp x_2) +
+                        ∑ x_1, ∑ x_2, ∑ x_3, x.ofLp x_1 * x.ofLp x_2 * (y.ofLp x_1 * y.ofLp x_2) +
+                      (∑ x_1, ∑ x_2, x.ofLp x_1 * x.ofLp x_2 * (y.ofLp x_1 * y.ofLp x_2) +
+                          ∑ x_1, ∑ x_2, ∑ x_3, x.ofLp x_1 * x.ofLp x_3 * (y.ofLp x_1 * y.ofLp x_3) +
+                        ∑ x_1, ∑ x_2, x.ofLp x_1 * x.ofLp x_2 * (y.ofLp x_1 * y.ofLp x_2)) +
+                    (∑ x_1, ∑ x_2, ∑ x_3, x.ofLp x_1 * x.ofLp x_3 * (y.ofLp x_1 * y.ofLp x_3) +
+                        ∑ x_1, ∑ x_2, ∑ x_3, ∑ x_4, x.ofLp x_1 * x.ofLp x_4 * (y.ofLp x_1 * y.ofLp x_4) +
+                      ∑ x_1, ∑ x_2, ∑ x_3, x.ofLp x_1 * x.ofLp x_3 * (y.ofLp x_1 * y.ofLp x_3)) +
+                  (∑ x_1, ∑ x_2, x.ofLp x_1 * x.ofLp x_2 * (y.ofLp x_1 * y.ofLp x_2) +
+                      ∑ x_1, ∑ x_2, ∑ x_3, x.ofLp x_1 * x.ofLp x_2 * (y.ofLp x_1 * y.ofLp x_2) +
+                    ∑ x_1, ∑ x_2, x.ofLp x_1 * x.ofLp x_2 * (y.ofLp x_1 * y.ofLp x_2)) +
+                (∑ x_1, ∑ x_2, x.ofLp x_1 * x.ofLp x_2 * (y.ofLp x_1 * y.ofLp x_2) +
+                    ∑ x_1, ∑ x_2, x.ofLp x_1 * x.ofLp x_2 * (y.ofLp x_1 * y.ofLp x_2) +
+                  ∑ x_1, ∑ x_2, ∑ x_3, x.ofLp x_1 * x.ofLp x_3 * (y.ofLp x_1 * y.ofLp x_3))) +
+            ((∑ x_1,
+                          ∑ x_2,
+                            ∑ x_3,
+                              ∑ x_4,
+                                if x_3 = x_2 then
+                                  if x_3 = x_4 then x.ofLp x_1 * x.ofLp x_2 * (y.ofLp x_1 * y.ofLp x_4) else 0
+                                else 0) +
+                        ∑ x_1, ∑ x_2, ∑ x_3, x.ofLp x_1 * x.ofLp x_2 * (y.ofLp x_1 * y.ofLp x_2) +
+                      ∑ x_1, ∑ x_2, x.ofLp x_1 * x.ofLp x_2 * (y.ofLp x_1 * y.ofLp x_2) +
+                    ((∑ x_1,
+                          ∑ x_2,
+                            ∑ x_3,
+                              ∑ x_4,
+                                if x_3 = x_2 then
+                                  if x_2 = x_4 then x.ofLp x_1 * x.ofLp x_3 * (y.ofLp x_1 * y.ofLp x_4) else 0
+                                else 0) +
+                        ∑ x_1, ∑ x_2, x.ofLp x_1 * x.ofLp x_2 * (y.ofLp x_1 * y.ofLp x_2) +
+                      ∑ x_1, ∑ x_2, ∑ x_3, x.ofLp x_1 * x.ofLp x_3 * (y.ofLp x_1 * y.ofLp x_3)) +
+                  (((∑ x_1,
+                        ∑ x_2,
+                          ∑ x_3,
+                            ∑ x_4,
+                              if x_3 = x_2 then
+                                if x_2 = x_3 then x.ofLp x_1 * x.ofLp x_4 * (y.ofLp x_1 * y.ofLp x_4) else 0
+                              else 0) +
+                      ∑ x_1,
+                        ∑ x_2,
+                          ∑ x_3,
+                            ∑ x_4,
+                              if x_3 = x_2 then
+                                if x_2 = x_3 then x.ofLp x_1 * x.ofLp x_4 * (y.ofLp x_1 * y.ofLp x_4) else 0
+                              else 0) +
+                    ∑ x_1, ∑ x_2, ∑ x_3, ∑ x_4, x.ofLp x_1 * x.ofLp x_4 * (y.ofLp x_1 * y.ofLp x_4)) +
+                ((∑ x_1, ∑ x_2, x.ofLp x_1 * x.ofLp x_2 * (y.ofLp x_1 * y.ofLp x_2) +
+                    ∑ x_1,
+                      ∑ x_2,
+                        ∑ x_3,
+                          ∑ x_4,
+                            if x_3 = x_2 then
+                              if x_2 = x_4 then x.ofLp x_1 * x.ofLp x_3 * (y.ofLp x_1 * y.ofLp x_4) else 0
+                            else 0) +
+                  ∑ x_1, ∑ x_2, ∑ x_3, x.ofLp x_1 * x.ofLp x_3 * (y.ofLp x_1 * y.ofLp x_3)) +
+              (∑ x_1, ∑ x_2, x.ofLp x_1 * x.ofLp x_2 * (y.ofLp x_1 * y.ofLp x_2) +
+                  ∑ x_1, ∑ x_2, ∑ x_3, x.ofLp x_1 * x.ofLp x_2 * (y.ofLp x_1 * y.ofLp x_2) +
+                ∑ x_1, ∑ x_2, x.ofLp x_1 * x.ofLp x_2 * (y.ofLp x_1 * y.ofLp x_2)))) +
+        (∑ x_1, ∑ x_2, x.ofLp x_1 * x.ofLp x_2 * (y.ofLp x_1 * y.ofLp x_2) +
+                        ∑ x_1, ∑ x_2, ∑ x_3, x.ofLp x_1 * x.ofLp x_2 * (y.ofLp x_1 * y.ofLp x_2) +
+                      ∑ x_1, ∑ x_2, x.ofLp x_1 * x.ofLp x_2 * (y.ofLp x_1 * y.ofLp x_2) +
+                    (∑ x_1, ∑ x_2, x.ofLp x_1 * x.ofLp x_2 * (y.ofLp x_1 * y.ofLp x_2) +
+                        ∑ x_1, ∑ x_2, ∑ x_3, x.ofLp x_1 * x.ofLp x_2 * (y.ofLp x_1 * y.ofLp x_2) +
+                      ∑ x_1, ∑ x_2, x.ofLp x_1 * x.ofLp x_2 * (y.ofLp x_1 * y.ofLp x_2)) +
+                  (∑ x_1, ∑ x_2, ∑ x_3, x.ofLp x_1 * x.ofLp x_3 * (y.ofLp x_1 * y.ofLp x_3) +
+                      ∑ x_1, ∑ x_2, x.ofLp x_1 * x.ofLp x_2 * (y.ofLp x_1 * y.ofLp x_2) +
+                    ∑ x_1, ∑ x_2, x.ofLp x_1 * x.ofLp x_2 * (y.ofLp x_1 * y.ofLp x_2)) +
+                (∑ x_1, ∑ x_2, ∑ x_3, ∑ x_4, x.ofLp x_1 * x.ofLp x_4 * (y.ofLp x_1 * y.ofLp x_4) +
+                    ∑ x_1, ∑ x_2, ∑ x_3, x.ofLp x_1 * x.ofLp x_3 * (y.ofLp x_1 * y.ofLp x_3) +
+                  ∑ x_1, ∑ x_2, ∑ x_3, x.ofLp x_1 * x.ofLp x_3 * (y.ofLp x_1 * y.ofLp x_3)) +
+              (∑ x_1, ∑ x_2, ∑ x_3, x.ofLp x_1 * x.ofLp x_3 * (y.ofLp x_1 * y.ofLp x_3) +
+                  ∑ x_1, ∑ x_2, x.ofLp x_1 * x.ofLp x_2 * (y.ofLp x_1 * y.ofLp x_2) +
+                ∑ x_1, ∑ x_2, x.ofLp x_1 * x.ofLp x_2 * (y.ofLp x_1 * y.ofLp x_2)) +
+            (∑ x_1, ∑ x_2, x.ofLp x_1 * x.ofLp x_2 * (y.ofLp x_1 * y.ofLp x_2) +
+                        ∑ x_1, ∑ x_2, x.ofLp x_1 * x.ofLp x_2 * (y.ofLp x_1 * y.ofLp x_2) +
+                      ∑ x_1, ∑ x_2, ∑ x_3, x.ofLp x_1 * x.ofLp x_2 * (y.ofLp x_1 * y.ofLp x_2) +
+                    (∑ x_1, ∑ x_2, ∑ x_3, x.ofLp x_1 * x.ofLp x_3 * (y.ofLp x_1 * y.ofLp x_3) +
+                        ∑ x_1, ∑ x_2, x.ofLp x_1 * x.ofLp x_2 * (y.ofLp x_1 * y.ofLp x_2) +
+                      ∑ x_1, ∑ x_2, x.ofLp x_1 * x.ofLp x_2 * (y.ofLp x_1 * y.ofLp x_2)) +
+                  (∑ x_1, ∑ x_2, x.ofLp x_1 * x.ofLp x_2 * (y.ofLp x_1 * y.ofLp x_2) +
+                      ∑ x_1, ∑ x_2, ∑ x_3, x.ofLp x_1 * x.ofLp x_2 * (y.ofLp x_1 * y.ofLp x_2) +
+                    ∑ x_1, ∑ x_2, x.ofLp x_1 * x.ofLp x_2 * (y.ofLp x_1 * y.ofLp x_2)) +
+                (∑ x_1, ∑ x_2, ∑ x_3, x.ofLp x_1 * x.ofLp x_3 * (y.ofLp x_1 * y.ofLp x_3) +
+                    ∑ x_1, ∑ x_2, ∑ x_3, ∑ x_4, x.ofLp x_1 * x.ofLp x_4 * (y.ofLp x_1 * y.ofLp x_4) +
+                  ∑ x_1, ∑ x_2, ∑ x_3, x.ofLp x_1 * x.ofLp x_3 * (y.ofLp x_1 * y.ofLp x_3)) +
+              (∑ x_1, ∑ x_2, x.ofLp x_1 * x.ofLp x_2 * (y.ofLp x_1 * y.ofLp x_2) +
+                  ∑ x_1, ∑ x_2, ∑ x_3, x.ofLp x_1 * x.ofLp x_3 * (y.ofLp x_1 * y.ofLp x_3) +
+                ∑ x_1, ∑ x_2, x.ofLp x_1 * x.ofLp x_2 * (y.ofLp x_1 * y.ofLp x_2))) +
+          ((∑ x_1, ∑ x_2, ∑ x_3, x.ofLp x_1 * x.ofLp x_2 * (y.ofLp x_1 * y.ofLp x_2) +
+                      ∑ x_1,
+                        ∑ x_2,
+                          ∑ x_3,
+                            ∑ x_4,
+                              if x_3 = x_2 then
+                                if x_3 = x_4 then x.ofLp x_1 * x.ofLp x_2 * (y.ofLp x_1 * y.ofLp x_4) else 0
+                              else 0) +
+                    ∑ x_1, ∑ x_2, x.ofLp x_1 * x.ofLp x_2 * (y.ofLp x_1 * y.ofLp x_2) +
+                  ((∑ x_1, ∑ x_2, x.ofLp x_1 * x.ofLp x_2 * (y.ofLp x_1 * y.ofLp x_2) +
+                      ∑ x_1,
+                        ∑ x_2,
+                          ∑ x_3,
+                            ∑ x_4,
+                              if x_3 = x_2 then
+                                if x_2 = x_4 then x.ofLp x_1 * x.ofLp x_3 * (y.ofLp x_1 * y.ofLp x_4) else 0
+                              else 0) +
+                    ∑ x_1, ∑ x_2, ∑ x_3, x.ofLp x_1 * x.ofLp x_3 * (y.ofLp x_1 * y.ofLp x_3)) +
+                ((∑ x_1, ∑ x_2, x.ofLp x_1 * x.ofLp x_2 * (y.ofLp x_1 * y.ofLp x_2) +
+                    ∑ x_1,
+                      ∑ x_2,
+                        ∑ x_3,
+                          ∑ x_4,
+                            if x_3 = x_2 then
+                              if x_2 = x_4 then x.ofLp x_1 * x.ofLp x_3 * (y.ofLp x_1 * y.ofLp x_4) else 0
+                            else 0) +
+                  ∑ x_1, ∑ x_2, ∑ x_3, x.ofLp x_1 * x.ofLp x_3 * (y.ofLp x_1 * y.ofLp x_3)) +
+              (((∑ x_1,
+                    ∑ x_2,
+                      ∑ x_3,
+                        ∑ x_4,
+                          if x_3 = x_2 then if x_2 = x_3 then x.ofLp x_1 * x.ofLp x_4 * (y.ofLp x_1 * y.ofLp x_4) else 0
+                          else 0) +
+                  ∑ x_1,
+                    ∑ x_2,
+                      ∑ x_3,
+                        ∑ x_4,
+                          if x_3 = x_2 then if x_2 = x_3 then x.ofLp x_1 * x.ofLp x_4 * (y.ofLp x_1 * y.ofLp x_4) else 0
+                          else 0) +
+                ∑ x_1, ∑ x_2, ∑ x_3, ∑ x_4, x.ofLp x_1 * x.ofLp x_4 * (y.ofLp x_1 * y.ofLp x_4)) +
+            (∑ x_1, ∑ x_2, x.ofLp x_1 * x.ofLp x_2 * (y.ofLp x_1 * y.ofLp x_2) +
+                ∑ x_1, ∑ x_2, x.ofLp x_1 * x.ofLp x_2 * (y.ofLp x_1 * y.ofLp x_2) +
+              ∑ x_1, ∑ x_2, ∑ x_3, x.ofLp x_1 * x.ofLp x_2 * (y.ofLp x_1 * y.ofLp x_2)))) +
+      ((((∑ x_1,
+                        ∑ x_2,
+                          ∑ x_3,
+                            ∑ x_4,
+                              if x_2 = x_3 then
+                                if x_3 = x_4 then x.ofLp x_1 * x.ofLp x_2 * (y.ofLp x_1 * y.ofLp x_4) else 0
+                              else 0) +
+                      ∑ x_1,
+                        ∑ x_2,
+                          ∑ x_3,
+                            ∑ x_4,
+                              if x_2 = x_3 then
+                                if x_3 = x_4 then x.ofLp x_1 * x.ofLp x_2 * (y.ofLp x_1 * y.ofLp x_4) else 0
+                              else 0) +
+                    ∑ x_1,
+                      ∑ x_2,
+                        ∑ x_3, ∑ x_4, if x_2 = x_3 then x.ofLp x_1 * x.ofLp x_2 * (y.ofLp x_1 * y.ofLp x_3) else 0) +
+                  (((∑ x_1,
+                        ∑ x_2,
+                          ∑ x_3,
+                            ∑ x_4,
+                              if x_2 = x_3 then
+                                if x_2 = x_4 then x.ofLp x_1 * x.ofLp x_3 * (y.ofLp x_1 * y.ofLp x_4) else 0
+                              else 0) +
+                      ∑ x_1,
+                        ∑ x_2,
+                          ∑ x_3,
+                            ∑ x_4,
+                              if x_2 = x_3 then
+                                if x_2 = x_4 then x.ofLp x_1 * x.ofLp x_3 * (y.ofLp x_1 * y.ofLp x_4) else 0
+                              else 0) +
+                    ∑ x_1,
+                      ∑ x_2,
+                        ∑ x_3, ∑ x_4, if x_2 = x_3 then x.ofLp x_1 * x.ofLp x_3 * (y.ofLp x_1 * y.ofLp x_2) else 0) +
+                (((∑ x_1,
+                      ∑ x_2,
+                        ∑ x_3,
+                          ∑ x_4,
+                            if x_2 = x_3 then
+                              if x_2 = x_3 then x.ofLp x_1 * x.ofLp x_4 * (y.ofLp x_1 * y.ofLp x_4) else 0
+                            else 0) +
+                    ∑ x_1,
+                      ∑ x_2,
+                        ∑ x_3,
+                          ∑ x_4,
+                            if x_2 = x_3 then
+                              if x_2 = x_4 then x.ofLp x_1 * x.ofLp x_4 * (y.ofLp x_1 * y.ofLp x_3) else 0
+                            else 0) +
+                  ∑ x_1,
+                    ∑ x_2,
+                      ∑ x_3,
+                        ∑ x_4,
+                          if x_2 = x_3 then if x_3 = x_4 then x.ofLp x_1 * x.ofLp x_4 * (y.ofLp x_1 * y.ofLp x_2) else 0
+                          else 0) +
+              (((∑ x_1,
+                    ∑ x_2,
+                      ∑ x_3,
+                        ∑ x_4,
+                          if x_2 = x_3 then if x_2 = x_3 then x.ofLp x_1 * x.ofLp x_4 * (y.ofLp x_1 * y.ofLp x_4) else 0
+                          else 0) +
+                  ∑ x_1,
+                    ∑ x_2,
+                      ∑ x_3,
+                        ∑ x_4,
+                          if x_2 = x_3 then if x_2 = x_4 then x.ofLp x_1 * x.ofLp x_4 * (y.ofLp x_1 * y.ofLp x_3) else 0
+                          else 0) +
+                ∑ x_1,
+                  ∑ x_2,
+                    ∑ x_3,
+                      ∑ x_4,
+                        if x_2 = x_3 then if x_3 = x_4 then x.ofLp x_1 * x.ofLp x_4 * (y.ofLp x_1 * y.ofLp x_2) else 0
+                        else 0) +
+            (((∑ x_1,
+                  ∑ x_2,
+                    ∑ x_3,
+                      ∑ x_4,
+                        if x_2 = x_3 then
+                          if x_2 = x_3 then ∑ 

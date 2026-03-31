@@ -1,0 +1,16 @@
+﻿KissingNumber/TestBCSplit.lean:199:37: warning: This simp argument is unused:
+  h_s5
+
+Hint: Omit it from the simp argument list.
+  simp only [h_s1, h_s2, h_s3, h_s4, h_s5̵,̵ ̵h̵_̵s̵6]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+KissingNumber/TestBCSplit.lean:199:43: warning: This simp argument is unused:
+  h_s6
+
+Hint: Omit it from the simp argument list.
+  simp only [h_s1, h_s2, h_s3, h_s4, h_s5,̵ ̵h̵_̵s̵6̵]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+KissingNumber/TestBCSplit.lean:204:6: warning: declaration uses `sorry`
+KissingNumber/TestBCSplit.lean:229:6: warning: declaration uses `sorry`

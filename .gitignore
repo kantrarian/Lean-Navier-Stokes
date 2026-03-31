@@ -10,6 +10,10 @@ Thumbs.db
 # Cursor/agent artifacts
 .claude/
 
+# Python
+__pycache__/
+*.pyc
+
 # TeX artifacts
 *.log
 *.aux

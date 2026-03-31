@@ -1,0 +1,2 @@
+﻿KissingNumber/TestAC.lean:91:20: error(lean.unknownIdentifier): Unknown identifier `factor4_acbd`
+KissingNumber/TestAC.lean:91:20: error: `simp` made no progress

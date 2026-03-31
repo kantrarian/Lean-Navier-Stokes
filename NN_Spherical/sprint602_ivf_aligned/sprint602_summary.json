@@ -1,0 +1,171 @@
+{
+  "summary": {
+    "config": {
+      "n_samples": 30000,
+      "dim": 128,
+      "n_clusters": 100,
+      "cluster_std": 0.3,
+      "seeds": [
+        601
+      ],
+      "n_centroids_list": [
+        64
+      ]
+    },
+    "timestamp": "2026-01-30 00:53:47",
+    "by_n_centroids": {
+      "64": {
+        "n_trials": 1,
+        "methods": {
+          "random": {
+            "iterations_mean": 20.0,
+            "iterations_std": 0.0,
+            "mse_mean": 1.462705220453415,
+            "mse_std": 0.0,
+            "init_gap_mean": 1.1662400960922241,
+            "init_gap_std": 0.0,
+            "recall_10_mean": 0.4775,
+            "recall_10_std": 0.0,
+            "init_time_mean": 0.0010051727294921875
+          },
+          "kmeans_pp": {
+            "iterations_mean": 100.0,
+            "iterations_std": 0.0,
+            "mse_mean": 1.4630725680939838,
+            "mse_std": 0.0,
+            "init_gap_mean": 1.1450212001800537,
+            "init_gap_std": 0.0,
+            "recall_10_mean": 0.4747,
+            "recall_10_std": 0.0,
+            "init_time_mean": 0.03267788887023926
+          },
+          "spherical_unrotated": {
+            "iterations_mean": 97.0,
+            "iterations_std": 0.0,
+            "mse_mean": 1.4637686755669934,
+            "mse_std": 0.0,
+            "init_gap_mean": 1.42434823513031,
+            "init_gap_std": 0.0,
+            "recall_10_mean": 0.4781,
+            "recall_10_std": 0.0,
+            "init_time_mean": 23.9897882938385
+          },
+          "spherical_pca": {
+            "iterations_mean": 100.0,
+            "iterations_std": 0.0,
+            "mse_mean": 1.4649529517912896,
+            "mse_std": 0.0,
+            "init_gap_mean": 1.42434823513031,
+            "init_gap_std": 0.0,
+            "recall_10_mean": 0.4714,
+            "recall_10_std": 0.0,
+            "init_time_mean": 104.92970442771912,
+            "gap_preserved_mean": 100.0
+          },
+          "spherical_procrustes": {
+            "iterations_mean": 100.0,
+            "iterations_std": 0.0,
+            "mse_mean": 1.4629083944769505,
+            "mse_std": 0.0,
+            "init_gap_mean": 1.42434823513031,
+            "init_gap_std": 0.0,
+            "recall_10_mean": 0.47359999999999997,
+            "recall_10_std": 0.0,
+            "init_time_mean": 26.16367220878601,
+            "gap_preserved_mean": 100.0
+          },
+          "spherical_cluster": {
+            "iterations_mean": 100.0,
+            "iterations_std": 0.0,
+            "mse_mean": 1.4632681266966634,
+            "mse_std": 0.0,
+            "init_gap_mean": 1.42434823513031,
+            "init_gap_std": 0.0,
+            "recall_10_mean": 0.48,
+            "recall_10_std": 0.0,
+            "init_time_mean": 25.977393865585327,
+            "gap_preserved_mean": 100.0
+          }
+        },
+        "comparisons": {
+          "spherical_pca": {
+            "iter_reduction_vs_unrotated_pct": -3.0927835051546393,
+            "iter_reduction_vs_random_pct": -400.0,
+            "mse_diff_vs_kpp_pct": 0.12852292759172415,
+            "gap_preserved_pct": 100.0
+          },
+          "spherical_procrustes": {
+            "iter_reduction_vs_unrotated_pct": -3.0927835051546393,
+            "iter_reduction_vs_random_pct": -400.0,
+            "mse_diff_vs_kpp_pct": -0.011221153387294009,
+            "gap_preserved_pct": 100.0
+          },
+          "spherical_cluster": {
+            "iter_reduction_vs_unrotated_pct": -3.0927835051546393,
+            "iter_reduction_vs_random_pct": -400.0,
+            "mse_diff_vs_kpp_pct": 0.013366295489660965,
+            "gap_preserved_pct": 100.0
+          }
+        }
+      }
+    }
+  },
+  "criteria": {
+    "64": {
+      "spherical_pca": {
+        "criterion_1_convergence": {
+          "target": ">=20% fewer iterations vs unrotated",
+          "actual": "-3.1%",
+          "pass": false
+        },
+        "criterion_2_gap": {
+          "target": "Gap preserved >= 95%",
+          "actual": "100.0%",
+          "pass": true
+        },
+        "criterion_3_mse": {
+          "target": "MSE within 5% of k-means++",
+          "actual": "+0.1%",
+          "pass": true
+        },
+        "all_pass": false
+      },
+      "spherical_procrustes": {
+        "criterion_1_convergence": {
+          "target": ">=20% fewer iterations vs unrotated",
+          "actual": "-3.1%",
+          "pass": false
+        },
+        "criterion_2_gap": {
+          "target": "Gap preserved >= 95%",
+          "actual": "100.0%",
+          "pass": true
+        },
+        "criterion_3_mse": {
+          "target": "MSE within 5% of k-means++",
+          "actual": "-0.0%",
+          "pass": true
+        },
+        "all_pass": false
+      },
+      "spherical_cluster": {
+        "criterion_1_convergence": {
+          "target": ">=20% fewer iterations vs unrotated",
+          "actual": "-3.1%",
+          "pass": false
+        },
+        "criterion_2_gap": {
+          "target": "Gap preserved >= 95%",
+          "actual": "100.0%",
+          "pass": true
+        },
+        "criterion_3_mse": {
+          "target": "MSE within 5% of k-means++",
+          "actual": "+0.0%",
+          "pass": true
+        },
+        "all_pass": false
+      }
+    }
+  }
+}

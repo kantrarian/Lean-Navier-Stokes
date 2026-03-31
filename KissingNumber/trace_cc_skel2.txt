@@ -1,0 +1,16 @@
+KissingNumber/TestCCSplit.lean:70:6: warning: declaration uses `sorry`
+KissingNumber/TestCCSplit.lean:87:6: warning: declaration uses `sorry`
+KissingNumber/TestCCSplit.lean:93:6: warning: declaration uses `sorry`
+KissingNumber/TestCCSplit.lean:118:6: warning: declaration uses `sorry`
+KissingNumber/TestCCSplit.lean:123:6: warning: declaration uses `sorry`
+KissingNumber/TestCCSplit.lean:128:6: warning: declaration uses `sorry`
+KissingNumber/TestCCSplit.lean:133:6: warning: declaration uses `sorry`
+KissingNumber/TestCCSplit.lean:138:6: warning: declaration uses `sorry`
+KissingNumber/TestCCSplit.lean:143:6: warning: declaration uses `sorry`
+KissingNumber/TestCCSplit.lean:173:6: warning: declaration uses `sorry`
+KissingNumber/TestCCSplit.lean:178:6: warning: declaration uses `sorry`
+KissingNumber/TestCCSplit.lean:183:6: warning: declaration uses `sorry`
+KissingNumber/TestCCSplit.lean:188:6: warning: declaration uses `sorry`
+KissingNumber/TestCCSplit.lean:193:6: warning: declaration uses `sorry`
+KissingNumber/TestCCSplit.lean:198:6: warning: declaration uses `sorry`
+EXIT:0

@@ -1,0 +1,49 @@
+﻿Try this:
+  [apply] ring_nf
+  
+  The `ring` tactic failed to close the goal. Use `ring_nf` to obtain a normal form.
+    
+  Note that `ring` works primarily in *commutative* rings. If you have a noncommutative ring, abelian group or module, consider using `noncomm_ring`, `abel` or `module` instead.
+KissingNumber/TestCCSplit.lean:72:36: error: unsolved goals
+x y : EuclideanSpace ℝ (Fin 8)
+hx : ‖x‖ = 1
+hy : ‖y‖ = 1
+s : ℝ := ⟪x, y⟫
+hs : s = ∑ a, x.ofLp a * y.ofLp a
+hxn : ∑ a, x.ofLp a * x.ofLp a = 1
+hyn : ∑ a, y.ofLp a * y.ofLp a = 1
+rr : ∀ (a b : Fin 8), x.ofLp a * x.ofLp b * (y.ofLp a * y.ofLp b) = x.ofLp a * y.ofLp a * (x.ofLp b * y.ofLp b)
+⊢ (∑ x_1, ∑ x_2, x.ofLp x_1 * y.ofLp x_1 * x.ofLp x_2 * y.ofLp x_2 * 64) * 3 +
+            (∑ x_1, ∑ x_2, x.ofLp x_1 * y.ofLp x_1 * x.ofLp x_2 * y.ofLp x_2 * 8) * 12 +
+          s ^ 2 * 12 +
+        (∑ x_1, (∑ x_2, x.ofLp x_1 * y.ofLp x_1 * x.ofLp x_2 * y.ofLp x_2 * 8) * 8) * 3 +
+      (∑ x_1, s * x.ofLp x_1 * y.ofLp x_1 * 8) * 6 =
+    s ^ 2 * 540
+KissingNumber/TestCCSplit.lean:89:31: warning: This simp argument is unused:
+  smul_eq_mul
+
+Hint: Omit it from the simp argument list.
+  simp only [Finset.sum_const, s̵m̵u̵l̵_̵e̵q̵_̵m̵u̵l̵,̵ ̵Finset.card_univ, Fintype.card_fin, Nat.cast_ofNat]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+KissingNumber/TestCCSplit.lean:89:80: warning: This simp argument is unused:
+  Nat.cast_ofNat
+
+Hint: Omit it from the simp argument list.
+  simp only [Finset.sum_const, smul_eq_mul, Finset.card_univ, Fintype.card_fin,̵ ̵N̵a̵t̵.̵c̵a̵s̵t̵_̵o̵f̵N̵a̵t̵]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+KissingNumber/TestCCSplit.lean:95:6: warning: declaration uses `sorry`
+KissingNumber/TestCCSplit.lean:101:6: warning: declaration uses `sorry`
+KissingNumber/TestCCSplit.lean:126:6: warning: declaration uses `sorry`
+KissingNumber/TestCCSplit.lean:131:6: warning: declaration uses `sorry`
+KissingNumber/TestCCSplit.lean:136:6: warning: declaration uses `sorry`
+KissingNumber/TestCCSplit.lean:141:6: warning: declaration uses `sorry`
+KissingNumber/TestCCSplit.lean:146:6: warning: declaration uses `sorry`
+KissingNumber/TestCCSplit.lean:151:6: warning: declaration uses `sorry`
+KissingNumber/TestCCSplit.lean:181:6: warning: declaration uses `sorry`
+KissingNumber/TestCCSplit.lean:186:6: warning: declaration uses `sorry`
+KissingNumber/TestCCSplit.lean:191:6: warning: declaration uses `sorry`
+KissingNumber/TestCCSplit.lean:196:6: warning: declaration uses `sorry`
+KissingNumber/TestCCSplit.lean:201:6: warning: declaration uses `sorry`
+KissingNumber/TestCCSplit.lean:206:6: warning: declaration uses `sorry`

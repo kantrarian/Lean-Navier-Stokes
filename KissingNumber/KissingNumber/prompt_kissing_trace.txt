@@ -1,0 +1,59 @@
+Restart Prompt
+
+  This session continues work on proving PSD6 cross-term lemmas for the K(8)=240 kissing number formalization.
+
+  PROJECT: C:\v2_files\lean_proofs\KissingNumber\KissingNumber
+
+  KEY FILES:
+  - TestBCSplit.lean — BC sub-product proofs (sum_B6a_C6a PROVED, sum_B6a_C6b IN PROGRESS)
+  - TestBBSplit.lean — Reference implementation (BB sub-products, fully proved, pattern to follow)
+  - PSD6Defs.lean — Core definitions (T6, B6, C6, factor3, ofLp_norm_sq, inner_ofLp, sum_ite_prop_zero)
+  - PSD6CrossTerms.lean — Target file with sorry's at sum_BC (line 316) and sum_CC (line 357)
+
+  CURRENT STATE OF TestBCSplit.lean:
+  - sum_B6a_C6a = 60s²+15: PROVED (lines 54-110)
+  - sum_B6a_C6b = 360s²: Simp chain works (lines 120-129). After ring_nf (line 130), has `trace_state; sorry`. A
+  previous attempt at 15 rr lemmas failed because the LHS patterns didn't match the ring_nf output (they were derived
+  from a trace file with encoding corruption).
+
+  IMMEDIATE TASK — Fix sum_B6a_C6b:
+  1. Check if `C:\v2_files\lean_proofs\KissingNumber\trace_bc_utf8.txt` exists with the trace_state output. If not,
+  compile: `powershell -Command "[Console]::OutputEncoding = [Text.Encoding]::UTF8; cd
+  'C:\v2_files\lean_proofs\KissingNumber'; lake env lean 'KissingNumber\TestBCSplit.lean' 2>&1 | Out-File -Encoding utf8
+   'C:\v2_files\lean_proofs\KissingNumber\trace_bc_utf8.txt'"`
+  2. Read trace_bc_utf8.txt. The ring_nf goal has 18 distinct sum terms (15 three-variable + 3 four-variable).
+  3. For each distinct product pattern, write an rr lemma: `have rrN : ∀ a b c : Fin 8, [exact LHS from trace] =
+  [factored form] := by intros; ring`
+     - The factored form groups into 3 pairs for factor3: one pair is (x_i * x_i) for the squared variable, the other
+  two are (x_j * y_j) for variables paired with y's
+  4. Replace `trace_state; sorry` with: rr lemmas + `simp_rw [rr's, factor3, hxn, ← hs]; simp [Finset.sum_const,
+  Fintype.card_fin]; ring`
+  5. Compile and verify
+
+  MATH VERIFICATION:
+  - 3-var terms (15 of them): each sum = s². Coefficients: 1,4,10,2,8,2,20,7,7,11,3,30,8,3,4 → sum=120
+  - 4-var terms (3 of them, vacuous x_1): each sum = 8s². Coefficients: 5,10,15 → 30×8=240
+  - Total: 120s² + 240s² = 360s² ✓
+
+  PROOF TECHNIQUE (established pattern from TestBBSplit.lean and sum_B6a_C6a):
+  - Simp chain: unfold B6a/C6b → Fintype.sum_prod_type → distribute (add_mul, mul_add, sum_add_distrib) → collapse ite's
+   (mul_ite, ite_mul, Finset.sum_ite_eq, sum_ite_prop_zero) → mul_one
+  - ring_nf canonicalizes products (^2 notation, combines like terms with multiplicity coefficients)
+  - rr lemmas (by intros; ring) rewrite each canonical product into factor3-compatible grouping
+  - simp_rw [rr's, factor3, hxn, ← hs] factors all sums and substitutes known values (hxn: ∑x²=1, hs: ∑xy=s)
+  - simp [Finset.sum_const, Fintype.card_fin] collapses vacuous sums in 4-var terms (∑_{x_1} c = 8*c)
+  - ring closes the arithmetic
+
+  THEN CONTINUE WITH:
+  - sum_B6b_C6a = 360s² (same technique with B6b × C6a)
+  - sum_B6b_C6b = 480s² + 30 (same technique with B6b × C6b)
+  - Assemble sum_BC = 1260s² + 45 in PSD6CrossTerms.lean
+  - sum_CC = 7560s² + 1080 in PSD6CrossTerms.lean
+  - End-to-end lake build
+
+  IMPORTANT NOTES:
+  - Lean-LSP MCP tools may have encoding issues on Windows. Use PowerShell compilation with UTF-8 encoding.
+  - Build takes several minutes per lemma due to huge heartbeat limits (4000000000).
+  - When capturing trace output, ALWAYS use: [Console]::OutputEncoding = [Text.Encoding]::UTF8 and Out-File -Encoding
+  utf8
+  - The x and y in the goal refer to EuclideanSpace ℝ (Fin 8) vectors. x.ofLp and y.ofLp access coordinates.

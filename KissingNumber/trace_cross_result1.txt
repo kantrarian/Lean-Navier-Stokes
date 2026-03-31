@@ -1,0 +1,1 @@
+﻿KissingNumber/PSD6CrossTerms.lean:1:0: error: object file 'C:\v2_files\lean_proofs\KissingNumber\.lake\build\lib\lean\KissingNumber\TestBCSplit.olean' of module KissingNumber.TestBCSplit does not exist

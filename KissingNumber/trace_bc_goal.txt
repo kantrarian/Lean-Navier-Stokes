@@ -1,0 +1,46 @@
+﻿x y : EuclideanSpace ℝ (Fin 8)
+hx : ‖x‖ = 1
+hy : ‖y‖ = 1
+s : ℝ := ⟪x, y⟫
+hs : s = ∑ a, x.ofLp a * y.ofLp a
+hxn : ∑ a, x.ofLp a * x.ofLp a = 1
+hyn : ∑ a, y.ofLp a * y.ofLp a = 1
+⊢ ∑ x_1, ∑ x_2, ∑ x_3, x.ofLp x_2 * x.ofLp x_1 * x.ofLp x_3 ^ 2 * y.ofLp x_1 * y.ofLp x_2 +
+                                      (∑ x_1,
+                                          ∑ x_2,
+                                            ∑ x_3, x.ofLp x_2 * x.ofLp x_1 * x.ofLp x_3 ^ 2 * y.ofLp x_2 * y.ofLp x_1) *
+                                        4 +
+                                    (∑ x_1,
+                                        ∑ x_2,
+                                          ∑ x_3,
+                                            ∑ x_4, x.ofLp x_2 * x.ofLp x_3 * x.ofLp x_4 ^ 2 * y.ofLp x_2 * y.ofLp x_3) *
+                                      5 +
+                                  (∑ x_1,
+                                      ∑ x_2,
+                                        ∑ x_3, x.ofLp x_2 * x.ofLp x_3 * x.ofLp x_1 ^ 2 * y.ofLp x_2 * y.ofLp x_3) *
+                                    10 +
+                                (∑ x_1,
+                                    ∑ x_2, ∑ x_3, x.ofLp x_2 * x.ofLp x_3 ^ 2 * x.ofLp x_1 * y.ofLp x_1 * y.ofLp x_2) *
+                                  2 +
+                              (∑ x_1,
+                                  ∑ x_2, ∑ x_3, x.ofLp x_2 * x.ofLp x_3 ^ 2 * x.ofLp x_1 * y.ofLp x_2 * y.ofLp x_1) *
+                                8 +
+                            (∑ x_1, ∑ x_2, ∑ x_3, x.ofLp x_1 * x.ofLp x_2 * x.ofLp x_3 ^ 2 * y.ofLp x_1 * y.ofLp x_2) *
+                              2 +
+                          (∑ x_1, ∑ x_2, ∑ x_3, x.ofLp x_2 * x.ofLp x_1 ^ 2 * x.ofLp x_3 * y.ofLp x_2 * y.ofLp x_3) *
+                            20 +
+                        (∑ x_1, ∑ x_2, ∑ x_3, x.ofLp x_2 ^ 2 * x.ofLp x_3 * x.ofLp x_1 * y.ofLp x_1 * y.ofLp x_3) * 7 +
+                      (∑ x_1, ∑ x_2, ∑ x_3, ∑ x_4, x.ofLp x_2 * x.ofLp x_3 ^ 2 * x.ofLp x_4 * y.ofLp x_2 * y.ofLp x_4) *
+                        10 +
+                    (∑ x_1, ∑ x_2, ∑ x_3, x.ofLp x_1 * x.ofLp x_2 ^ 2 * x.ofLp x_3 * y.ofLp x_1 * y.ofLp x_3) * 7 +
+                  (∑ x_1, ∑ x_2, ∑ x_3, x.ofLp x_2 ^ 2 * x.ofLp x_1 * x.ofLp x_3 * y.ofLp x_1 * y.ofLp x_3) * 11 +
+                (∑ x_1, ∑ x_2, ∑ x_3, x.ofLp x_1 * x.ofLp x_2 * x.ofLp x_3 ^ 2 * y.ofLp x_2 * y.ofLp x_1) * 3 +
+              (∑ x_1, ∑ x_2, ∑ x_3, x.ofLp x_1 ^ 2 * x.ofLp x_2 * x.ofLp x_3 * y.ofLp x_2 * y.ofLp x_3) * 30 +
+            (∑ x_1, ∑ x_2, ∑ x_3, x.ofLp x_2 ^ 2 * x.ofLp x_3 * x.ofLp x_1 * y.ofLp x_3 * y.ofLp x_1) * 8 +
+          (∑ x_1, ∑ x_2, ∑ x_3, ∑ x_4, x.ofLp x_2 ^ 2 * x.ofLp x_3 * x.ofLp x_4 * y.ofLp x_3 * y.ofLp x_4) * 15 +
+        (∑ x_1, ∑ x_2, ∑ x_3, x.ofLp x_1 * x.ofLp x_2 ^ 2 * x.ofLp x_3 * y.ofLp x_3 * y.ofLp x_1) * 3 +
+      (∑ x_1, ∑ x_2, ∑ x_3, x.ofLp x_2 ^ 2 * x.ofLp x_1 * x.ofLp x_3 * y.ofLp x_3 * y.ofLp x_1) * 4 =
+    s ^ 2 * 360
+KissingNumber\TestBCSplit.lean:113:6: warning: declaration uses `sorry`
+KissingNumber\TestBCSplit.lean:135:6: warning: declaration uses `sorry`
+KissingNumber\TestBCSplit.lean:156:6: warning: declaration uses `sorry`

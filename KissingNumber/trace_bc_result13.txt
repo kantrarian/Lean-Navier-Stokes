@@ -1,0 +1,158 @@
+﻿Try this:
+  [apply] ring_nf
+  
+  The `ring` tactic failed to close the goal. Use `ring_nf` to obtain a normal form.
+    
+  Note that `ring` works primarily in *commutative* rings. If you have a noncommutative ring, abelian group or module, consider using `noncomm_ring`, `abel` or `module` instead.
+KissingNumber/TestBCSplit.lean:115:36: error: unsolved goals
+x y : EuclideanSpace ℝ (Fin 8)
+hx : ‖x‖ = 1
+hy : ‖y‖ = 1
+s : ℝ := ⟪x, y⟫
+hs : s = ∑ a, x.ofLp a * y.ofLp a
+hxn : ∑ a, x.ofLp a * x.ofLp a = 1
+hyn : ∑ a, y.ofLp a * y.ofLp a = 1
+rr1 :
+  ∀ (a b d : Fin 8),
+    x.ofLp a * x.ofLp b * x.ofLp d * x.ofLp d * (y.ofLp a * y.ofLp b) =
+      x.ofLp a * y.ofLp a * (x.ofLp b * y.ofLp b) * (x.ofLp d * x.ofLp d)
+rr2 :
+  ∀ (a b d : Fin 8),
+    x.ofLp a * x.ofLp b * x.ofLp d * x.ofLp d * (y.ofLp b * y.ofLp a) =
+      x.ofLp a * y.ofLp a * (x.ofLp b * y.ofLp b) * (x.ofLp d * x.ofLp d)
+rr3 :
+  ∀ (a b d : Fin 8),
+    x.ofLp a * x.ofLp d * x.ofLp b * x.ofLp d * (y.ofLp a * y.ofLp b) =
+      x.ofLp a * y.ofLp a * (x.ofLp b * y.ofLp b) * (x.ofLp d * x.ofLp d)
+rr4 :
+  ∀ (a b d : Fin 8),
+    x.ofLp a * x.ofLp d * x.ofLp b * x.ofLp d * (y.ofLp b * y.ofLp a) =
+      x.ofLp a * y.ofLp a * (x.ofLp b * y.ofLp b) * (x.ofLp d * x.ofLp d)
+rr5 :
+  ∀ (a b d : Fin 8),
+    x.ofLp a * x.ofLp d * x.ofLp d * x.ofLp b * (y.ofLp a * y.ofLp b) =
+      x.ofLp a * y.ofLp a * (x.ofLp b * y.ofLp b) * (x.ofLp d * x.ofLp d)
+rr6 :
+  ∀ (a b d : Fin 8),
+    x.ofLp a * x.ofLp d * x.ofLp d * x.ofLp b * (y.ofLp b * y.ofLp a) =
+      x.ofLp a * y.ofLp a * (x.ofLp b * y.ofLp b) * (x.ofLp d * x.ofLp d)
+rr7 :
+  ∀ (a b d : Fin 8),
+    x.ofLp d * x.ofLp a * x.ofLp b * x.ofLp d * (y.ofLp a * y.ofLp b) =
+      x.ofLp a * y.ofLp a * (x.ofLp b * y.ofLp b) * (x.ofLp d * x.ofLp d)
+rr8 :
+  ∀ (a b d : Fin 8),
+    x.ofLp d * x.ofLp a * x.ofLp b * x.ofLp d * (y.ofLp b * y.ofLp a) =
+      x.ofLp a * y.ofLp a * (x.ofLp b * y.ofLp b) * (x.ofLp d * x.ofLp d)
+rr9 :
+  ∀ (a b d : Fin 8),
+    x.ofLp d * x.ofLp a * x.ofLp d * x.ofLp b * (y.ofLp a * y.ofLp b) =
+      x.ofLp a * y.ofLp a * (x.ofLp b * y.ofLp b) * (x.ofLp d * x.ofLp d)
+rr10 :
+  ∀ (a b d : Fin 8),
+    x.ofLp d * x.ofLp a * x.ofLp d * x.ofLp b * (y.ofLp b * y.ofLp a) =
+      x.ofLp a * y.ofLp a * (x.ofLp b * y.ofLp b) * (x.ofLp d * x.ofLp d)
+rr11 :
+  ∀ (a b d : Fin 8),
+    x.ofLp d * x.ofLp d * x.ofLp a * x.ofLp b * (y.ofLp a * y.ofLp b) =
+      x.ofLp a * y.ofLp a * (x.ofLp b * y.ofLp b) * (x.ofLp d * x.ofLp d)
+rr12 :
+  ∀ (a b d : Fin 8),
+    x.ofLp d * x.ofLp d * x.ofLp a * x.ofLp b * (y.ofLp b * y.ofLp a) =
+      x.ofLp a * y.ofLp a * (x.ofLp b * y.ofLp b) * (x.ofLp d * x.ofLp d)
+⊢ (∑ x_1, ∑ x_2, ∑ x_3, x.ofLp x_2 * y.ofLp x_2 * x.ofLp x_1 * y.ofLp x_1 * x.ofLp x_3 ^ 2) * 15 + s ^ 2 * 5 +
+                (∑ x, s ^ 2) * 5 +
+              (∑ x_1, ∑ x_2, ∑ x_3, x.ofLp x_2 * y.ofLp x_2 * x.ofLp x_3 * y.ofLp x_3 * x.ofLp x_1 ^ 2) * 60 +
+            (∑ x_1, ∑ x_2, ∑ x_3, x.ofLp x_3 * y.ofLp x_3 * x.ofLp x_1 * y.ofLp x_1 * x.ofLp x_2 ^ 2) * 15 +
+          (∑ x_1, ∑ x_2, ∑ x_3, ∑ x_4, x.ofLp x_2 * y.ofLp x_2 * x.ofLp x_4 * y.ofLp x_4 * x.ofLp x_3 ^ 2) * 10 +
+        (∑ x_1, ∑ x_2, ∑ x_3, x.ofLp x_1 * y.ofLp x_1 * x.ofLp x_3 * y.ofLp x_3 * x.ofLp x_2 ^ 2) * 25 +
+      (∑ x_1, ∑ x_2, ∑ x_3, ∑ x_4, x.ofLp x_3 * y.ofLp x_3 * x.ofLp x_4 * y.ofLp x_4 * x.ofLp x_2 ^ 2) * 15 =
+    s ^ 2 * 360
+Try this:
+  [apply] ring_nf
+  
+  The `ring` tactic failed to close the goal. Use `ring_nf` to obtain a normal form.
+    
+  Note that `ring` works primarily in *commutative* rings. If you have a noncommutative ring, abelian group or module, consider using `noncomm_ring`, `abel` or `module` instead.
+KissingNumber/TestBCSplit.lean:171:36: error: unsolved goals
+x y : EuclideanSpace ℝ (Fin 8)
+hx : ‖x‖ = 1
+hy : ‖y‖ = 1
+s : ℝ := ⟪x, y⟫
+hs : s = ∑ a, x.ofLp a * y.ofLp a
+hxn : ∑ a, x.ofLp a * x.ofLp a = 1
+hyn : ∑ a, y.ofLp a * y.ofLp a = 1
+⊢ (∑ x_1, ∑ x_2, ∑ x_3, x.ofLp x_1 * x.ofLp x_2 * x.ofLp x_3 ^ 2 * y.ofLp x_1 * y.ofLp x_2) * 23 +
+                                    (∑ x_1,
+                                        ∑ x_2,
+                                          ∑ x_3, x.ofLp x_1 * x.ofLp x_3 ^ 2 * x.ofLp x_2 * y.ofLp x_1 * y.ofLp x_2) *
+                                      16 +
+                                  (∑ x_1,
+                                      ∑ x_2,
+                                        ∑ x_3,
+                                          ∑ x_4, x.ofLp x_1 * x.ofLp x_2 * x.ofLp x_4 ^ 2 * y.ofLp x_1 * y.ofLp x_2) *
+                                    3 +
+                                (∑ x_1,
+                                    ∑ x_2,
+                                      ∑ x_3,
+                                        ∑ x_4, x.ofLp x_1 * x.ofLp x_2 * x.ofLp x_3 ^ 2 * y.ofLp x_1 * y.ofLp x_2) *
+                                  3 +
+                              (∑ x_1,
+                                  ∑ x_2,
+                                    ∑ x_3,
+                                      ∑ x_4,
+                                        if x_4 = x_3 then
+                                          x.ofLp x_1 * x.ofLp x_2 * x.ofLp x_3 * x.ofLp x_4 * y.ofLp x_1 * y.ofLp x_2
+                                        else 0) *
+                                3 +
+                            (∑ x_1,
+                                ∑ x_2,
+                                  ∑ x_3, ∑ x_4, x.ofLp x_1 * x.ofLp x_3 * x.ofLp x_4 ^ 2 * y.ofLp x_1 * y.ofLp x_3) *
+                              4 +
+                          (∑ x_1, ∑ x_2, ∑ x_3, x.ofLp x_1 * x.ofLp x_3 * x.ofLp x_2 ^ 2 * y.ofLp x_1 * y.ofLp x_3) *
+                            8 +
+                        (∑ x_1,
+                            ∑ x_2,
+                              ∑ x_3,
+                                if x_3 = x_2 then
+                                  ∑ x_4, x.ofLp x_1 * x.ofLp x_2 * x.ofLp x_4 ^ 2 * y.ofLp x_1 * y.ofLp x_3
+                                else 0) *
+                          3 +
+                      (∑ x_1, ∑ x_2, ∑ x_3, x.ofLp x_1 * x.ofLp x_2 ^ 2 * x.ofLp x_3 * y.ofLp x_1 * y.ofLp x_3) * 48 +
+                    (∑ x_1, ∑ x_2, ∑ x_3, ∑ x_4, x.ofLp x_1 * x.ofLp x_2 ^ 2 * x.ofLp x_3 * y.ofLp x_1 * y.ofLp x_3) *
+                      4 +
+                  (∑ x_1,
+                      ∑ x_2,
+                        ∑ x_3,
+                          ∑ x_4,
+                            if x_4 = x_2 then
+                              x.ofLp x_1 * x.ofLp x_2 * x.ofLp x_3 * x.ofLp x_4 * y.ofLp x_1 * y.ofLp x_3
+                            else 0) *
+                    3 +
+                (∑ x_1, ∑ x_2, ∑ x_3, ∑ x_4, x.ofLp x_1 * x.ofLp x_3 ^ 2 * x.ofLp x_4 * y.ofLp x_1 * y.ofLp x_4) * 8 +
+              (∑ x_1,
+                  ∑ x_2,
+                    ∑ x_3,
+                      if x_3 = x_2 then
+                        ∑ x_4, x.ofLp x_1 * x.ofLp x_2 * x.ofLp x_4 * x.ofLp x_3 * y.ofLp x_1 * y.ofLp x_4
+                      else 0) *
+                3 +
+            (∑ x_1, ∑ x_2, ∑ x_3, ∑ x_4, x.ofLp x_1 * x.ofLp x_2 ^ 2 * x.ofLp x_4 * y.ofLp x_1 * y.ofLp x_4) * 8 +
+          (∑ x_1,
+              ∑ x_2,
+                ∑ x_3,
+                  ∑ x_4, if x_4 = x_2 then x.ofLp x_1 * x.ofLp x_2 * x.ofLp x_3 ^ 2 * y.ofLp x_1 * y.ofLp x_4 else 0) *
+            3 +
+        (∑ x_1,
+            ∑ x_2,
+              ∑ x_3,
+                ∑ x_4, if x_4 = x_3 then x.ofLp x_1 * x.ofLp x_2 ^ 2 * x.ofLp x_3 * y.ofLp x_1 * y.ofLp x_4 else 0) *
+          4 +
+      (∑ x_1,
+          ∑ x_2,
+            ∑ x_3,
+              if x_3 = x_2 then ∑ x_4, x.ofLp x_1 * x.ofLp x_2 * x.ofLp x_3 * x.ofLp x_4 * y.ofLp x_1 * y.ofLp x_4
+              else 0) *
+        6 =
+    s ^ 2 * 360
+KissingNumber/TestBCSplit.lean:189:6: warning: declaration uses `sorry`

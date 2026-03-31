@@ -1,0 +1,1 @@
+KissingNumber/TestBD.lean:37:45: error: `simp` made no progress

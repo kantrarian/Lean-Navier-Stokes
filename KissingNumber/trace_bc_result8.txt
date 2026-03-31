@@ -1,0 +1,661 @@
+﻿KissingNumber/TestBCSplit.lean:190:6: error: Tactic `rewrite` failed: Did not find an occurrence of the pattern
+  ∑ a, ∑ b, ∑ c, x.ofLp c ^ 2 * x.ofLp a * y.ofLp a * x.ofLp b * y.ofLp b
+in the target expression
+  ∑ x_1, ∑ x_2, ∑ x_3, x.ofLp x_3 * x.ofLp x_3 * (x.ofLp x_1 * y.ofLp x_1) * (x.ofLp x_2 * y.ofLp x_2) +
+                                  ∑ x_1,
+                                    ∑ x_2,
+                                      ∑ x_3,
+                                        x.ofLp x_3 * x.ofLp x_3 * (x.ofLp x_1 * y.ofLp x_1) *
+                                          (x.ofLp x_2 * y.ofLp x_2) +
+                                8 *
+                                  ∑ x_1,
+                                    ∑ x_2,
+                                      ∑ x_3,
+                                        x.ofLp x_3 * x.ofLp x_3 * (x.ofLp x_1 * y.ofLp x_1) *
+                                          (x.ofLp x_2 * y.ofLp x_2) +
+                              s * s +
+                            s * s +
+                          (∑ x_1,
+                                    ∑ x_2,
+                                      ∑ x_3,
+                                        x.ofLp x_3 * x.ofLp x_3 * (x.ofLp x_1 * y.ofLp x_1) *
+                                          (x.ofLp x_2 * y.ofLp x_2) +
+                                  ∑ x_1,
+                                    ∑ x_2,
+                                      ∑ x_3,
+                                        x.ofLp x_3 * x.ofLp x_3 * (x.ofLp x_1 * y.ofLp x_1) *
+                                          (x.ofLp x_2 * y.ofLp x_2) +
+                                s * s +
+                              8 *
+                                ∑ x_1,
+                                  ∑ x_2,
+                                    ∑ x_3,
+                                      x.ofLp x_3 * x.ofLp x_3 * (x.ofLp x_1 * y.ofLp x_1) * (x.ofLp x_2 * y.ofLp x_2) +
+                            s * s) +
+                        (∑ x_1,
+                                  ∑ x_2,
+                                    ∑ x_3,
+                                      x.ofLp x_3 * x.ofLp x_3 * (x.ofLp x_1 * y.ofLp x_1) * (x.ofLp x_2 * y.ofLp x_2) +
+                                ∑ x_1,
+                                  ∑ x_2,
+                                    ∑ x_3,
+                                      x.ofLp x_3 * x.ofLp x_3 * (x.ofLp x_1 * y.ofLp x_1) * (x.ofLp x_2 * y.ofLp x_2) +
+                              s * s +
+                            s * s +
+                          8 *
+                            ∑ x_1,
+                              ∑ x_2,
+                                ∑ x_3,
+                                  x.ofLp x_3 * x.ofLp x_3 * (x.ofLp x_1 * y.ofLp x_1) * (x.ofLp x_2 * y.ofLp x_2)) +
+                      (∑ x_1,
+                                    ∑ x_2,
+                                      ∑ x_3,
+                                        x.ofLp x_3 * x.ofLp x_3 * (x.ofLp x_1 * y.ofLp x_1) *
+                                          (x.ofLp x_2 * y.ofLp x_2) +
+                                  8 *
+                                    ∑ x_1,
+                                      ∑ x_2,
+                                        ∑ x_3,
+                                          x.ofLp x_3 * x.ofLp x_3 * (x.ofLp x_1 * y.ofLp x_1) *
+                                            (x.ofLp x_2 * y.ofLp x_2) +
+                                ∑ x_1,
+                                  ∑ x_2,
+                                    ∑ x_3,
+                                      x.ofLp x_3 * x.ofLp x_3 * (x.ofLp x_1 * y.ofLp x_1) * (x.ofLp x_2 * y.ofLp x_2) +
+                              s * s +
+                            s * s +
+                          (∑ x_1,
+                                    ∑ x_2,
+                                      ∑ x_3,
+                                        x.ofLp x_2 * x.ofLp x_2 * (x.ofLp x_1 * y.ofLp x_1) *
+                                          (x.ofLp x_3 * y.ofLp x_3) +
+                                  s * s +
+                                ∑ x_1,
+                                  ∑ x_2,
+                                    ∑ x_3,
+                                      x.ofLp x_3 * x.ofLp x_3 * (x.ofLp x_1 * y.ofLp x_1) * (x.ofLp x_2 * y.ofLp x_2) +
+                              8 *
+                                ∑ x_1,
+                                  ∑ x_2,
+                                    ∑ x_3,
+                                      x.ofLp x_2 * x.ofLp x_2 * (x.ofLp x_1 * y.ofLp x_1) * (x.ofLp x_3 * y.ofLp x_3) +
+                            s * s) +
+                        (∑ x_1,
+                                  ∑ x_2,
+                                    ∑ x_3,
+                                      x.ofLp x_2 * x.ofLp x_2 * (x.ofLp x_1 * y.ofLp x_1) * (x.ofLp x_3 * y.ofLp x_3) +
+                                s * s +
+                              ∑ x_1,
+                                ∑ x_2,
+                                  ∑ x_3,
+                                    x.ofLp x_3 * x.ofLp x_3 * (x.ofLp x_1 * y.ofLp x_1) * (x.ofLp x_2 * y.ofLp x_2) +
+                            s * s +
+                          8 *
+                            ∑ x_1,
+                              ∑ x_2,
+                                ∑ x_3,
+                                  x.ofLp x_2 * x.ofLp x_2 * (x.ofLp x_1 * y.ofLp x_1) * (x.ofLp x_3 * y.ofLp x_3))) +
+                    (∑ x_1,
+                                  ∑ x_2,
+                                    ∑ x_3,
+                                      x.ofLp x_2 * x.ofLp x_2 * (x.ofLp x_1 * y.ofLp x_1) * (x.ofLp x_3 * y.ofLp x_3) +
+                                8 *
+                                  ∑ x_1,
+                                    ∑ x_2,
+                                      ∑ x_3,
+                                        x.ofLp x_2 * x.ofLp x_2 * (x.ofLp x_1 * y.ofLp x_1) *
+                                          (x.ofLp x_3 * y.ofLp x_3) +
+                              s * s +
+                            ∑ x_1,
+                              ∑ x_2,
+                                ∑ x_3, x.ofLp x_3 * x.ofLp x_3 * (x.ofLp x_1 * y.ofLp x_1) * (x.ofLp x_2 * y.ofLp x_2) +
+                          s * s +
+                        (∑ x_1,
+                                  ∑ x_2,
+                                    ∑ x_3,
+                                      x.ofLp x_2 * x.ofLp x_2 * (x.ofLp x_1 * y.ofLp x_1) * (x.ofLp x_3 * y.ofLp x_3) +
+                                s * s +
+                              8 *
+                                ∑ x_1,
+                                  ∑ x_2,
+                                    ∑ x_3,
+                                      x.ofLp x_2 * x.ofLp x_2 * (x.ofLp x_1 * y.ofLp x_1) * (x.ofLp x_3 * y.ofLp x_3) +
+                            ∑ x_1,
+                              ∑ x_2,
+                                ∑ x_3, x.ofLp x_3 * x.ofLp x_3 * (x.ofLp x_1 * y.ofLp x_1) * (x.ofLp x_2 * y.ofLp x_2) +
+                          s * s) +
+                      (∑ x_1,
+                                ∑ x_2,
+                                  ∑ x_3,
+                                    x.ofLp x_2 * x.ofLp x_2 * (x.ofLp x_1 * y.ofLp x_1) * (x.ofLp x_3 * y.ofLp x_3) +
+                              s * s +
+                            s * s +
+                          ∑ x_1,
+                            ∑ x_2,
+                              ∑ x_3, x.ofLp x_3 * x.ofLp x_3 * (x.ofLp x_1 * y.ofLp x_1) * (x.ofLp x_2 * y.ofLp x_2) +
+                        8 *
+                          ∑ x_1,
+                            ∑ x_2,
+                              ∑ x_3, x.ofLp x_2 * x.ofLp x_2 * (x.ofLp x_1 * y.ofLp x_1) * (x.ofLp x_3 * y.ofLp x_3))) +
+                  (∑ x_1,
+                                ∑ x_2,
+                                  ∑ x_3,
+                                    x.ofLp x_2 * x.ofLp x_2 * (x.ofLp x_1 * y.ofLp x_1) * (x.ofLp x_3 * y.ofLp x_3) +
+                              8 *
+                                ∑ x_1,
+                                  ∑ x_2,
+                                    ∑ x_3,
+                                      x.ofLp x_2 * x.ofLp x_2 * (x.ofLp x_1 * y.ofLp x_1) * (x.ofLp x_3 * y.ofLp x_3) +
+                            s * s +
+                          s * s +
+                        ∑ x_1,
+                          ∑ x_2,
+                            ∑ x_3, x.ofLp x_3 * x.ofLp x_3 * (x.ofLp x_1 * y.ofLp x_1) * (x.ofLp x_2 * y.ofLp x_2) +
+                      (∑ x_1,
+                                ∑ x_2,
+                                  ∑ x_3,
+                                    x.ofLp x_2 * x.ofLp x_2 * (x.ofLp x_1 * y.ofLp x_1) * (x.ofLp x_3 * y.ofLp x_3) +
+                              s * s +
+                            8 *
+                              ∑ x_1,
+                                ∑ x_2,
+                                  ∑ x_3,
+                                    x.ofLp x_2 * x.ofLp x_2 * (x.ofLp x_1 * y.ofLp x_1) * (x.ofLp x_3 * y.ofLp x_3) +
+                          s * s +
+                        ∑ x_1,
+                          ∑ x_2,
+                            ∑ x_3, x.ofLp x_3 * x.ofLp x_3 * (x.ofLp x_1 * y.ofLp x_1) * (x.ofLp x_2 * y.ofLp x_2)) +
+                    (∑ x_1,
+                              ∑ x_2,
+                                ∑ x_3, x.ofLp x_2 * x.ofLp x_2 * (x.ofLp x_1 * y.ofLp x_1) * (x.ofLp x_3 * y.ofLp x_3) +
+                            s * s +
+                          s * s +
+                        8 *
+                          ∑ x_1,
+                            ∑ x_2,
+                              ∑ x_3, x.ofLp x_2 * x.ofLp x_2 * (x.ofLp x_1 * y.ofLp x_1) * (x.ofLp x_3 * y.ofLp x_3) +
+                      ∑ x_1,
+                        ∑ x_2,
+                          ∑ x_3, x.ofLp x_3 * x.ofLp x_3 * (x.ofLp x_1 * y.ofLp x_1) * (x.ofLp x_2 * y.ofLp x_2))) +
+                (8 *
+                              ∑ x_1,
+                                ∑ x_2,
+                                  ∑ x_3,
+                                    x.ofLp x_3 * x.ofLp x_3 * (x.ofLp x_1 * y.ofLp x_1) * (x.ofLp x_2 * y.ofLp x_2) +
+                            ∑ x_1,
+                              ∑ x_2,
+                                ∑ x_3, x.ofLp x_3 * x.ofLp x_3 * (x.ofLp x_1 * y.ofLp x_1) * (x.ofLp x_2 * y.ofLp x_2) +
+                          ∑ x_1,
+                            ∑ x_2,
+                              ∑ x_3, x.ofLp x_3 * x.ofLp x_3 * (x.ofLp x_1 * y.ofLp x_1) * (x.ofLp x_2 * y.ofLp x_2) +
+                        s * s +
+                      s * s +
+                    (s * s +
+                            ∑ x_1,
+                              ∑ x_2,
+                                ∑ x_3, x.ofLp x_2 * x.ofLp x_2 * (x.ofLp x_1 * y.ofLp x_1) * (x.ofLp x_3 * y.ofLp x_3) +
+                          ∑ x_1,
+                            ∑ x_2,
+                              ∑ x_3, x.ofLp x_2 * x.ofLp x_2 * (x.ofLp x_1 * y.ofLp x_1) * (x.ofLp x_3 * y.ofLp x_3) +
+                        8 * (s * s) +
+                      s * s) +
+                  (s * s +
+                          ∑ x_1,
+                            ∑ x_2,
+                              ∑ x_3, x.ofLp x_2 * x.ofLp x_2 * (x.ofLp x_1 * y.ofLp x_1) * (x.ofLp x_3 * y.ofLp x_3) +
+                        ∑ x_1,
+                          ∑ x_2,
+                            ∑ x_3, x.ofLp x_2 * x.ofLp x_2 * (x.ofLp x_1 * y.ofLp x_1) * (x.ofLp x_3 * y.ofLp x_3) +
+                      s * s +
+                    8 * (s * s))) +
+              (8 *
+                            ∑ x_1,
+                              ∑ x_2,
+                                ∑ x_3, x.ofLp x_2 * x.ofLp x_2 * (x.ofLp x_1 * y.ofLp x_1) * (x.ofLp x_3 * y.ofLp x_3) +
+                          ∑ x_1,
+                            ∑ x_2,
+                              ∑ x_3, x.ofLp x_2 * x.ofLp x_2 * (x.ofLp x_1 * y.ofLp x_1) * (x.ofLp x_3 * y.ofLp x_3) +
+                        s * s +
+                      ∑ x_1,
+                        ∑ x_2, ∑ x_3, x.ofLp x_3 * x.ofLp x_3 * (x.ofLp x_1 * y.ofLp x_1) * (x.ofLp x_2 * y.ofLp x_2) +
+                    s * s +
+                  (s * s +
+                          ∑ x_1,
+                            ∑ x_2,
+                              ∑ x_3, x.ofLp x_2 * x.ofLp x_2 * (x.ofLp x_1 * y.ofLp x_1) * (x.ofLp x_3 * y.ofLp x_3) +
+                        8 * (s * s) +
+                      ∑ x_1,
+                        ∑ x_2, ∑ x_3, x.ofLp x_2 * x.ofLp x_2 * (x.ofLp x_1 * y.ofLp x_1) * (x.ofLp x_3 * y.ofLp x_3) +
+                    s * s) +
+                (s * s +
+                        ∑ x_1,
+                          ∑ x_2,
+                            ∑ x_3, x.ofLp x_2 * x.ofLp x_2 * (x.ofLp x_1 * y.ofLp x_1) * (x.ofLp x_3 * y.ofLp x_3) +
+                      s * s +
+                    ∑ x_1,
+                      ∑ x_2, ∑ x_3, x.ofLp x_2 * x.ofLp x_2 * (x.ofLp x_1 * y.ofLp x_1) * (x.ofLp x_3 * y.ofLp x_3) +
+                  8 * (s * s))) +
+            (8 * ∑ x_1, ∑ x_2, ∑ x_3, x.ofLp x_2 * x.ofLp x_2 * (x.ofLp x_1 * y.ofLp x_1) * (x.ofLp x_3 * y.ofLp x_3) +
+                        ∑ x_1,
+                          ∑ x_2,
+                            ∑ x_3, x.ofLp x_2 * x.ofLp x_2 * (x.ofLp x_1 * y.ofLp x_1) * (x.ofLp x_3 * y.ofLp x_3) +
+                      s * s +
+                    s * s +
+                  ∑ x_1, ∑ x_2, ∑ x_3, x.ofLp x_3 * x.ofLp x_3 * (x.ofLp x_1 * y.ofLp x_1) * (x.ofLp x_2 * y.ofLp x_2) +
+                (s * s +
+                        ∑ x_1,
+                          ∑ x_2,
+                            ∑ x_3, x.ofLp x_2 * x.ofLp x_2 * (x.ofLp x_1 * y.ofLp x_1) * (x.ofLp x_3 * y.ofLp x_3) +
+                      8 * (s * s) +
+                    s * s +
+                  ∑ x_1,
+                    ∑ x_2, ∑ x_3, x.ofLp x_2 * x.ofLp x_2 * (x.ofLp x_1 * y.ofLp x_1) * (x.ofLp x_3 * y.ofLp x_3)) +
+              (s * s +
+                      ∑ x_1,
+                        ∑ x_2, ∑ x_3, x.ofLp x_2 * x.ofLp x_2 * (x.ofLp x_1 * y.ofLp x_1) * (x.ofLp x_3 * y.ofLp x_3) +
+                    s * s +
+                  8 * (s * s) +
+                ∑ x_1, ∑ x_2, ∑ x_3, x.ofLp x_2 * x.ofLp x_2 * (x.ofLp x_1 * y.ofLp x_1) * (x.ofLp x_3 * y.ofLp x_3))) +
+          (8 * (s * s) + s * s +
+                    ∑ x_1,
+                      ∑ x_2, ∑ x_3, x.ofLp x_2 * x.ofLp x_2 * (x.ofLp x_1 * y.ofLp x_1) * (x.ofLp x_3 * y.ofLp x_3) +
+                  ∑ x_1, ∑ x_2, ∑ x_3, x.ofLp x_2 * x.ofLp x_2 * (x.ofLp x_1 * y.ofLp x_1) * (x.ofLp x_3 * y.ofLp x_3) +
+                s * s +
+              (s * s + 8 * (s * s) +
+                    ∑ x_1,
+                      ∑ x_2, ∑ x_3, x.ofLp x_2 * x.ofLp x_2 * (x.ofLp x_1 * y.ofLp x_1) * (x.ofLp x_3 * y.ofLp x_3) +
+                  ∑ x_1, ∑ x_2, ∑ x_3, x.ofLp x_2 * x.ofLp x_2 * (x.ofLp x_1 * y.ofLp x_1) * (x.ofLp x_3 * y.ofLp x_3) +
+                s * s) +
+            (s * s + s * s +
+                  ∑ x_1, ∑ x_2, ∑ x_3, x.ofLp x_2 * x.ofLp x_2 * (x.ofLp x_1 * y.ofLp x_1) * (x.ofLp x_3 * y.ofLp x_3) +
+                ∑ x_1, ∑ x_2, ∑ x_3, x.ofLp x_2 * x.ofLp x_2 * (x.ofLp x_1 * y.ofLp x_1) * (x.ofLp x_3 * y.ofLp x_3) +
+              8 * (s * s))) +
+        (8 * (s * s) + s * s +
+                  ∑ x_1, ∑ x_2, ∑ x_3, x.ofLp x_2 * x.ofLp x_2 * (x.ofLp x_1 * y.ofLp x_1) * (x.ofLp x_3 * y.ofLp x_3) +
+                s * s +
+              ∑ x_1, ∑ x_2, ∑ x_3, x.ofLp x_2 * x.ofLp x_2 * (x.ofLp x_1 * y.ofLp x_1) * (x.ofLp x_3 * y.ofLp x_3) +
+            (s * s + 8 * (s * s) +
+                  ∑ x_1, ∑ x_2, ∑ x_3, x.ofLp x_2 * x.ofLp x_2 * (x.ofLp x_1 * y.ofLp x_1) * (x.ofLp x_3 * y.ofLp x_3) +
+                s * s +
+              ∑ x_1, ∑ x_2, ∑ x_3, x.ofLp x_2 * x.ofLp x_2 * (x.ofLp x_1 * y.ofLp x_1) * (x.ofLp x_3 * y.ofLp x_3)) +
+          (s * s + s * s +
+                ∑ x_1, ∑ x_2, ∑ x_3, x.ofLp x_2 * x.ofLp x_2 * (x.ofLp x_1 * y.ofLp x_1) * (x.ofLp x_3 * y.ofLp x_3) +
+              8 * (s * s) +
+            ∑ x_1, ∑ x_2, ∑ x_3, x.ofLp x_2 * x.ofLp x_2 * (x.ofLp x_1 * y.ofLp x_1) * (x.ofLp x_3 * y.ofLp x_3))) +
+      (8 * (s * s) + s * s + s * s +
+              ∑ x_1, ∑ x_2, ∑ x_3, x.ofLp x_2 * x.ofLp x_2 * (x.ofLp x_1 * y.ofLp x_1) * (x.ofLp x_3 * y.ofLp x_3) +
+            ∑ x_1, ∑ x_2, ∑ x_3, x.ofLp x_2 * x.ofLp x_2 * (x.ofLp x_1 * y.ofLp x_1) * (x.ofLp x_3 * y.ofLp x_3) +
+          (s * s + 8 * (s * s) + s * s +
+              ∑ x_1, ∑ x_2, ∑ x_3, x.ofLp x_2 * x.ofLp x_2 * (x.ofLp x_1 * y.ofLp x_1) * (x.ofLp x_3 * y.ofLp x_3) +
+            ∑ x_1, ∑ x_2, ∑ x_3, x.ofLp x_2 * x.ofLp x_2 * (x.ofLp x_1 * y.ofLp x_1) * (x.ofLp x_3 * y.ofLp x_3)) +
+        (s * s + s * s + 8 * (s * s) +
+            ∑ x_1, ∑ x_2, ∑ x_3, x.ofLp x_2 * x.ofLp x_2 * (x.ofLp x_1 * y.ofLp x_1) * (x.ofLp x_3 * y.ofLp x_3) +
+          ∑ x_1, ∑ x_2, ∑ x_3, x.ofLp x_2 * x.ofLp x_2 * (x.ofLp x_1 * y.ofLp x_1) * (x.ofLp x_3 * y.ofLp x_3))) =
+    360 * s ^ 2
+
+x y : EuclideanSpace ℝ (Fin 8)
+hx : ‖x‖ = 1
+hy : ‖y‖ = 1
+s : ℝ := ⟪x, y⟫
+hs : s = ∑ a, x.ofLp a * y.ofLp a
+hxn : ∑ a, x.ofLp a * x.ofLp a = 1
+hyn : ∑ a, y.ofLp a * y.ofLp a = 1
+rr1 :
+  ∀ (a b d : Fin 8),
+    x.ofLp a * x.ofLp b * x.ofLp d * x.ofLp d * (y.ofLp a * y.ofLp b) =
+      x.ofLp a * y.ofLp a * (x.ofLp b * y.ofLp b) * (x.ofLp d * x.ofLp d)
+rr2 :
+  ∀ (a b d : Fin 8),
+    x.ofLp a * x.ofLp b * x.ofLp d * x.ofLp d * (y.ofLp b * y.ofLp a) =
+      x.ofLp a * y.ofLp a * (x.ofLp b * y.ofLp b) * (x.ofLp d * x.ofLp d)
+rr3 :
+  ∀ (a b d : Fin 8),
+    x.ofLp a * x.ofLp d * x.ofLp b * x.ofLp d * (y.ofLp a * y.ofLp b) =
+      x.ofLp a * y.ofLp a * (x.ofLp b * y.ofLp b) * (x.ofLp d * x.ofLp d)
+rr4 :
+  ∀ (a b d : Fin 8),
+    x.ofLp a * x.ofLp d * x.ofLp b * x.ofLp d * (y.ofLp b * y.ofLp a) =
+      x.ofLp a * y.ofLp a * (x.ofLp b * y.ofLp b) * (x.ofLp d * x.ofLp d)
+rr5 :
+  ∀ (a b d : Fin 8),
+    x.ofLp a * x.ofLp d * x.ofLp d * x.ofLp b * (y.ofLp a * y.ofLp b) =
+      x.ofLp a * y.ofLp a * (x.ofLp b * y.ofLp b) * (x.ofLp d * x.ofLp d)
+rr6 :
+  ∀ (a b d : Fin 8),
+    x.ofLp a * x.ofLp d * x.ofLp d * x.ofLp b * (y.ofLp b * y.ofLp a) =
+      x.ofLp a * y.ofLp a * (x.ofLp b * y.ofLp b) * (x.ofLp d * x.ofLp d)
+rr7 :
+  ∀ (a b d : Fin 8),
+    x.ofLp d * x.ofLp a * x.ofLp b * x.ofLp d * (y.ofLp a * y.ofLp b) =
+      x.ofLp a * y.ofLp a * (x.ofLp b * y.ofLp b) * (x.ofLp d * x.ofLp d)
+rr8 :
+  ∀ (a b d : Fin 8),
+    x.ofLp d * x.ofLp a * x.ofLp b * x.ofLp d * (y.ofLp b * y.ofLp a) =
+      x.ofLp a * y.ofLp a * (x.ofLp b * y.ofLp b) * (x.ofLp d * x.ofLp d)
+rr9 :
+  ∀ (a b d : Fin 8),
+    x.ofLp d * x.ofLp a * x.ofLp d * x.ofLp b * (y.ofLp a * y.ofLp b) =
+      x.ofLp a * y.ofLp a * (x.ofLp b * y.ofLp b) * (x.ofLp d * x.ofLp d)
+rr10 :
+  ∀ (a b d : Fin 8),
+    x.ofLp d * x.ofLp a * x.ofLp d * x.ofLp b * (y.ofLp b * y.ofLp a) =
+      x.ofLp a * y.ofLp a * (x.ofLp b * y.ofLp b) * (x.ofLp d * x.ofLp d)
+rr11 :
+  ∀ (a b d : Fin 8),
+    x.ofLp d * x.ofLp d * x.ofLp a * x.ofLp b * (y.ofLp a * y.ofLp b) =
+      x.ofLp a * y.ofLp a * (x.ofLp b * y.ofLp b) * (x.ofLp d * x.ofLp d)
+rr12 :
+  ∀ (a b d : Fin 8),
+    x.ofLp d * x.ofLp d * x.ofLp a * x.ofLp b * (y.ofLp b * y.ofLp a) =
+      x.ofLp a * y.ofLp a * (x.ofLp b * y.ofLp b) * (x.ofLp d * x.ofLp d)
+rr_p1 :
+  ∀ (a b c : Fin 8),
+    x.ofLp b * y.ofLp b * (x.ofLp a * y.ofLp a) * (x.ofLp c * x.ofLp c) =
+      x.ofLp a * y.ofLp a * (x.ofLp b * y.ofLp b) * (x.ofLp c * x.ofLp c)
+rr_p2 :
+  ∀ (a b c : Fin 8),
+    x.ofLp b * y.ofLp b * (x.ofLp c * y.ofLp c) * (x.ofLp a * x.ofLp a) =
+      x.ofLp a * x.ofLp a * (x.ofLp b * y.ofLp b) * (x.ofLp c * y.ofLp c)
+rr_f1 :
+  ∀ (a b c : Fin 8),
+    x.ofLp c ^ 2 * x.ofLp a * y.ofLp a * x.ofLp b * y.ofLp b =
+      x.ofLp a * y.ofLp a * (x.ofLp b * y.ofLp b) * (x.ofLp c * x.ofLp c)
+rr_f2 :
+  ∀ (a b c : Fin 8),
+    x.ofLp b ^ 2 * x.ofLp a * y.ofLp a * x.ofLp c * y.ofLp c =
+      x.ofLp a * y.ofLp a * (x.ofLp b * x.ofLp b) * (x.ofLp c * y.ofLp c)
+h1 : ∑ a, ∑ b, ∑ c, x.ofLp c ^ 2 * x.ofLp a * y.ofLp a * x.ofLp b * y.ofLp b = s ^ 2
+h2 : ∑ a, ∑ b, ∑ c, x.ofLp b ^ 2 * x.ofLp a * y.ofLp a * x.ofLp c * y.ofLp c = s ^ 2
+⊢ ∑ x_1, ∑ x_2, ∑ x_3, x.ofLp x_3 * x.ofLp x_3 * (x.ofLp x_1 * y.ofLp x_1) * (x.ofLp x_2 * y.ofLp x_2) +
+                                  ∑ x_1,
+                                    ∑ x_2,
+                                      ∑ x_3,
+                                        x.ofLp x_3 * x.ofLp x_3 * (x.ofLp x_1 * y.ofLp x_1) *
+                                          (x.ofLp x_2 * y.ofLp x_2) +
+                                8 *
+                                  ∑ x_1,
+                                    ∑ x_2,
+                                      ∑ x_3,
+                                        x.ofLp x_3 * x.ofLp x_3 * (x.ofLp x_1 * y.ofLp x_1) *
+                                          (x.ofLp x_2 * y.ofLp x_2) +
+                              s * s +
+                            s * s +
+                          (∑ x_1,
+                                    ∑ x_2,
+                                      ∑ x_3,
+                                        x.ofLp x_3 * x.ofLp x_3 * (x.ofLp x_1 * y.ofLp x_1) *
+                                          (x.ofLp x_2 * y.ofLp x_2) +
+                                  ∑ x_1,
+                                    ∑ x_2,
+                                      ∑ x_3,
+                                        x.ofLp x_3 * x.ofLp x_3 * (x.ofLp x_1 * y.ofLp x_1) *
+                                          (x.ofLp x_2 * y.ofLp x_2) +
+                                s * s +
+                              8 *
+                                ∑ x_1,
+                                  ∑ x_2,
+                                    ∑ x_3,
+                                      x.ofLp x_3 * x.ofLp x_3 * (x.ofLp x_1 * y.ofLp x_1) * (x.ofLp x_2 * y.ofLp x_2) +
+                            s * s) +
+                        (∑ x_1,
+                                  ∑ x_2,
+                                    ∑ x_3,
+                                      x.ofLp x_3 * x.ofLp x_3 * (x.ofLp x_1 * y.ofLp x_1) * (x.ofLp x_2 * y.ofLp x_2) +
+                                ∑ x_1,
+                                  ∑ x_2,
+                                    ∑ x_3,
+                                      x.ofLp x_3 * x.ofLp x_3 * (x.ofLp x_1 * y.ofLp x_1) * (x.ofLp x_2 * y.ofLp x_2) +
+                              s * s +
+                            s * s +
+                          8 *
+                            ∑ x_1,
+                              ∑ x_2,
+                                ∑ x_3,
+                                  x.ofLp x_3 * x.ofLp x_3 * (x.ofLp x_1 * y.ofLp x_1) * (x.ofLp x_2 * y.ofLp x_2)) +
+                      (∑ x_1,
+                                    ∑ x_2,
+                                      ∑ x_3,
+                                        x.ofLp x_3 * x.ofLp x_3 * (x.ofLp x_1 * y.ofLp x_1) *
+                                          (x.ofLp x_2 * y.ofLp x_2) +
+                                  8 *
+                                    ∑ x_1,
+                                      ∑ x_2,
+                                        ∑ x_3,
+                                          x.ofLp x_3 * x.ofLp x_3 * (x.ofLp x_1 * y.ofLp x_1) *
+                                            (x.ofLp x_2 * y.ofLp x_2) +
+                                ∑ x_1,
+                                  ∑ x_2,
+                                    ∑ x_3,
+                                      x.ofLp x_3 * x.ofLp x_3 * (x.ofLp x_1 * y.ofLp x_1) * (x.ofLp x_2 * y.ofLp x_2) +
+                              s * s +
+                            s * s +
+                          (∑ x_1,
+                                    ∑ x_2,
+                                      ∑ x_3,
+                                        x.ofLp x_2 * x.ofLp x_2 * (x.ofLp x_1 * y.ofLp x_1) *
+                                          (x.ofLp x_3 * y.ofLp x_3) +
+                                  s * s +
+                                ∑ x_1,
+                                  ∑ x_2,
+                                    ∑ x_3,
+                                      x.ofLp x_3 * x.ofLp x_3 * (x.ofLp x_1 * y.ofLp x_1) * (x.ofLp x_2 * y.ofLp x_2) +
+                              8 *
+                                ∑ x_1,
+                                  ∑ x_2,
+                                    ∑ x_3,
+                                      x.ofLp x_2 * x.ofLp x_2 * (x.ofLp x_1 * y.ofLp x_1) * (x.ofLp x_3 * y.ofLp x_3) +
+                            s * s) +
+                        (∑ x_1,
+                                  ∑ x_2,
+                                    ∑ x_3,
+                                      x.ofLp x_2 * x.ofLp x_2 * (x.ofLp x_1 * y.ofLp x_1) * (x.ofLp x_3 * y.ofLp x_3) +
+                                s * s +
+                              ∑ x_1,
+                                ∑ x_2,
+                                  ∑ x_3,
+                                    x.ofLp x_3 * x.ofLp x_3 * (x.ofLp x_1 * y.ofLp x_1) * (x.ofLp x_2 * y.ofLp x_2) +
+                            s * s +
+                          8 *
+                            ∑ x_1,
+                              ∑ x_2,
+                                ∑ x_3,
+                                  x.ofLp x_2 * x.ofLp x_2 * (x.ofLp x_1 * y.ofLp x_1) * (x.ofLp x_3 * y.ofLp x_3))) +
+                    (∑ x_1,
+                                  ∑ x_2,
+                                    ∑ x_3,
+                                      x.ofLp x_2 * x.ofLp x_2 * (x.ofLp x_1 * y.ofLp x_1) * (x.ofLp x_3 * y.ofLp x_3) +
+                                8 *
+                                  ∑ x_1,
+                                    ∑ x_2,
+                                      ∑ x_3,
+                                        x.ofLp x_2 * x.ofLp x_2 * (x.ofLp x_1 * y.ofLp x_1) *
+                                          (x.ofLp x_3 * y.ofLp x_3) +
+                              s * s +
+                            ∑ x_1,
+                              ∑ x_2,
+                                ∑ x_3, x.ofLp x_3 * x.ofLp x_3 * (x.ofLp x_1 * y.ofLp x_1) * (x.ofLp x_2 * y.ofLp x_2) +
+                          s * s +
+                        (∑ x_1,
+                                  ∑ x_2,
+                                    ∑ x_3,
+                                      x.ofLp x_2 * x.ofLp x_2 * (x.ofLp x_1 * y.ofLp x_1) * (x.ofLp x_3 * y.ofLp x_3) +
+                                s * s +
+                              8 *
+                                ∑ x_1,
+                                  ∑ x_2,
+                                    ∑ x_3,
+                                      x.ofLp x_2 * x.ofLp x_2 * (x.ofLp x_1 * y.ofLp x_1) * (x.ofLp x_3 * y.ofLp x_3) +
+                            ∑ x_1,
+                              ∑ x_2,
+                                ∑ x_3, x.ofLp x_3 * x.ofLp x_3 * (x.ofLp x_1 * y.ofLp x_1) * (x.ofLp x_2 * y.ofLp x_2) +
+                          s * s) +
+                      (∑ x_1,
+                                ∑ x_2,
+                                  ∑ x_3,
+                                    x.ofLp x_2 * x.ofLp x_2 * (x.ofLp x_1 * y.ofLp x_1) * (x.ofLp x_3 * y.ofLp x_3) +
+                              s * s +
+                            s * s +
+                          ∑ x_1,
+                            ∑ x_2,
+                              ∑ x_3, x.ofLp x_3 * x.ofLp x_3 * (x.ofLp x_1 * y.ofLp x_1) * (x.ofLp x_2 * y.ofLp x_2) +
+                        8 *
+                          ∑ x_1,
+                            ∑ x_2,
+                              ∑ x_3, x.ofLp x_2 * x.ofLp x_2 * (x.ofLp x_1 * y.ofLp x_1) * (x.ofLp x_3 * y.ofLp x_3))) +
+                  (∑ x_1,
+                                ∑ x_2,
+                                  ∑ x_3,
+                                    x.ofLp x_2 * x.ofLp x_2 * (x.ofLp x_1 * y.ofLp x_1) * (x.ofLp x_3 * y.ofLp x_3) +
+                              8 *
+                                ∑ x_1,
+                                  ∑ x_2,
+                                    ∑ x_3,
+                                      x.ofLp x_2 * x.ofLp x_2 * (x.ofLp x_1 * y.ofLp x_1) * (x.ofLp x_3 * y.ofLp x_3) +
+                            s * s +
+                          s * s +
+                        ∑ x_1,
+                          ∑ x_2,
+                            ∑ x_3, x.ofLp x_3 * x.ofLp x_3 * (x.ofLp x_1 * y.ofLp x_1) * (x.ofLp x_2 * y.ofLp x_2) +
+                      (∑ x_1,
+                                ∑ x_2,
+                                  ∑ x_3,
+                                    x.ofLp x_2 * x.ofLp x_2 * (x.ofLp x_1 * y.ofLp x_1) * (x.ofLp x_3 * y.ofLp x_3) +
+                              s * s +
+                            8 *
+                              ∑ x_1,
+                                ∑ x_2,
+                                  ∑ x_3,
+                                    x.ofLp x_2 * x.ofLp x_2 * (x.ofLp x_1 * y.ofLp x_1) * (x.ofLp x_3 * y.ofLp x_3) +
+                          s * s +
+                        ∑ x_1,
+                          ∑ x_2,
+                            ∑ x_3, x.ofLp x_3 * x.ofLp x_3 * (x.ofLp x_1 * y.ofLp x_1) * (x.ofLp x_2 * y.ofLp x_2)) +
+                    (∑ x_1,
+                              ∑ x_2,
+                                ∑ x_3, x.ofLp x_2 * x.ofLp x_2 * (x.ofLp x_1 * y.ofLp x_1) * (x.ofLp x_3 * y.ofLp x_3) +
+                            s * s +
+                          s * s +
+                        8 *
+                          ∑ x_1,
+                            ∑ x_2,
+                              ∑ x_3, x.ofLp x_2 * x.ofLp x_2 * (x.ofLp x_1 * y.ofLp x_1) * (x.ofLp x_3 * y.ofLp x_3) +
+                      ∑ x_1,
+                        ∑ x_2,
+                          ∑ x_3, x.ofLp x_3 * x.ofLp x_3 * (x.ofLp x_1 * y.ofLp x_1) * (x.ofLp x_2 * y.ofLp x_2))) +
+                (8 *
+                              ∑ x_1,
+                                ∑ x_2,
+                                  ∑ x_3,
+                                    x.ofLp x_3 * x.ofLp x_3 * (x.ofLp x_1 * y.ofLp x_1) * (x.ofLp x_2 * y.ofLp x_2) +
+                            ∑ x_1,
+                              ∑ x_2,
+                                ∑ x_3, x.ofLp x_3 * x.ofLp x_3 * (x.ofLp x_1 * y.ofLp x_1) * (x.ofLp x_2 * y.ofLp x_2) +
+                          ∑ x_1,
+                            ∑ x_2,
+                              ∑ x_3, x.ofLp x_3 * x.ofLp x_3 * (x.ofLp x_1 * y.ofLp x_1) * (x.ofLp x_2 * y.ofLp x_2) +
+                        s * s +
+                      s * s +
+                    (s * s +
+                            ∑ x_1,
+                              ∑ x_2,
+                                ∑ x_3, x.ofLp x_2 * x.ofLp x_2 * (x.ofLp x_1 * y.ofLp x_1) * (x.ofLp x_3 * y.ofLp x_3) +
+                          ∑ x_1,
+                            ∑ x_2,
+                              ∑ x_3, x.ofLp x_2 * x.ofLp x_2 * (x.ofLp x_1 * y.ofLp x_1) * (x.ofLp x_3 * y.ofLp x_3) +
+                        8 * (s * s) +
+                      s * s) +
+                  (s * s +
+                          ∑ x_1,
+                            ∑ x_2,
+                              ∑ x_3, x.ofLp x_2 * x.ofLp x_2 * (x.ofLp x_1 * y.ofLp x_1) * (x.ofLp x_3 * y.ofLp x_3) +
+                        ∑ x_1,
+                          ∑ x_2,
+                            ∑ x_3, x.ofLp x_2 * x.ofLp x_2 * (x.ofLp x_1 * y.ofLp x_1) * (x.ofLp x_3 * y.ofLp x_3) +
+                      s * s +
+                    8 * (s * s))) +
+              (8 *
+                            ∑ x_1,
+                              ∑ x_2,
+                                ∑ x_3, x.ofLp x_2 * x.ofLp x_2 * (x.ofLp x_1 * y.ofLp x_1) * (x.ofLp x_3 * y.ofLp x_3) +
+                          ∑ x_1,
+                            ∑ x_2,
+                              ∑ x_3, x.ofLp x_2 * x.ofLp x_2 * (x.ofLp x_1 * y.ofLp x_1) * (x.ofLp x_3 * y.ofLp x_3) +
+                        s * s +
+                      ∑ x_1,
+                        ∑ x_2, ∑ x_3, x.ofLp x_3 * x.ofLp x_3 * (x.ofLp x_1 * y.ofLp x_1) * (x.ofLp x_2 * y.ofLp x_2) +
+                    s * s +
+                  (s * s +
+                          ∑ x_1,
+                            ∑ x_2,
+                              ∑ x_3, x.ofLp x_2 * x.ofLp x_2 * (x.ofLp x_1 * y.ofLp x_1) * (x.ofLp x_3 * y.ofLp x_3) +
+                        8 * (s * s) +
+                      ∑ x_1,
+                        ∑ x_2, ∑ x_3, x.ofLp x_2 * x.ofLp x_2 * (x.ofLp x_1 * y.ofLp x_1) * (x.ofLp x_3 * y.ofLp x_3) +
+                    s * s) +
+                (s * s +
+                        ∑ x_1,
+                          ∑ x_2,
+                            ∑ x_3, x.ofLp x_2 * x.ofLp x_2 * (x.ofLp x_1 * y.ofLp x_1) * (x.ofLp x_3 * y.ofLp x_3) +
+                      s * s +
+                    ∑ x_1,
+                      ∑ x_2, ∑ x_3, x.ofLp x_2 * x.ofLp x_2 * (x.ofLp x_1 * y.ofLp x_1) * (x.ofLp x_3 * y.ofLp x_3) +
+                  8 * (s * s))) +
+            (8 * ∑ x_1, ∑ x_2, ∑ x_3, x.ofLp x_2 * x.ofLp x_2 * (x.ofLp x_1 * y.ofLp x_1) * (x.ofLp x_3 * y.ofLp x_3) +
+                        ∑ x_1,
+                          ∑ x_2,
+                            ∑ x_3, x.ofLp x_2 * x.ofLp x_2 * (x.ofLp x_1 * y.ofLp x_1) * (x.ofLp x_3 * y.ofLp x_3) +
+                      s * s +
+                    s * s +
+                  ∑ x_1, ∑ x_2, ∑ x_3, x.ofLp x_3 * x.ofLp x_3 * (x.ofLp x_1 * y.ofLp x_1) * (x.ofLp x_2 * y.ofLp x_2) +
+                (s * s +
+                        ∑ x_1,
+                          ∑ x_2,
+                            ∑ x_3, x.ofLp x_2 * x.ofLp x_2 * (x.ofLp x_1 * y.ofLp x_1) * (x.ofLp x_3 * y.ofLp x_3) +
+                      8 * (s * s) +
+                    s * s +
+                  ∑ x_1,
+                    ∑ x_2, ∑ x_3, x.ofLp x_2 * x.ofLp x_2 * (x.ofLp x_1 * y.ofLp x_1) * (x.ofLp x_3 * y.ofLp x_3)) +
+              (s * s +
+                      ∑ x_1,
+                        ∑ x_2, ∑ x_3, x.ofLp x_2 * x.ofLp x_2 * (x.ofLp x_1 * y.ofLp x_1) * (x.ofLp x_3 * y.ofLp x_3) +
+                    s * s +
+                  8 * (s * s) +
+                ∑ x_1, ∑ x_2, ∑ x_3, x.ofLp x_2 * x.ofLp x_2 * (x.ofLp x_1 * y.ofLp x_1) * (x.ofLp x_3 * y.ofLp x_3))) +
+          (8 * (s * s) + s * s +
+                    ∑ x_1,
+                      ∑ x_2, ∑ x_3, x.ofLp x_2 * x.ofLp x_2 * (x.ofLp x_1 * y.ofLp x_1) * (x.ofLp x_3 * y.ofLp x_3) +
+                  ∑ x_1, ∑ x_2, ∑ x_3, x.ofLp x_2 * x.ofLp x_2 * (x.ofLp x_1 * y.ofLp x_1) * (x.ofLp x_3 * y.ofLp x_3) +
+                s * s +
+              (s * s + 8 * (s * s) +
+                    ∑ x_1,
+                      ∑ x_2, ∑ x_3, x.ofLp x_2 * x.ofLp x_2 * (x.ofLp x_1 * y.ofLp x_1) * (x.ofLp x_3 * y.ofLp x_3) +
+                  ∑ x_1, ∑ x_2, ∑ x_3, x.ofLp x_2 * x.ofLp x_2 * (x.ofLp x_1 * y.ofLp x_1) * (x.ofLp x_3 * y.ofLp x_3) +
+                s * s) +
+            (s * s + s * s +
+                  ∑ x_1, ∑ x_2, ∑ x_3, x.ofLp x_2 * x.ofLp x_2 * (x.ofLp x_1 * y.ofLp x_1) * (x.ofLp x_3 * y.ofLp x_3) +
+                ∑ x_1, ∑ x_2, ∑ x_3, x.ofLp x_2 * x.ofLp x_2 * (x.ofLp x_1 * y.ofLp x_1) * (x.ofLp x_3 * y.ofLp x_3) +
+              8 * (s * s))) +
+        (8 * (s * s) + s * s +
+                  ∑ x_1, ∑ x_2, ∑ x_3, x.ofLp x_2 * x.ofLp x_2 * (x.ofLp x_1 * y.ofLp x_1) * (x.ofLp x_3 * y.ofLp x_3) +
+                s * s +
+              ∑ x_1, ∑ x_2, ∑ x_3, x.ofLp x_2 * x.ofLp x_2 * (x.ofLp x_1 * y.ofLp x_1) * (x.ofLp x_3 * y.ofLp x_3) +
+            (s * s + 8 * (s * s) +
+                  ∑ x_1, ∑ x_2, ∑ x_3, x.ofLp x_2 * x.ofLp x_2 * (x.ofLp x_1 * y.ofLp x_1) * (x.ofLp x_3 * y.ofLp x_3) +
+                s * s +
+              ∑ x_1, ∑ x_2, ∑ x_3, x.ofLp x_2 * x.ofLp x_2 * (x.ofLp x_1 * y.ofLp x_1) * (x.ofLp x_3 * y.ofLp x_3)) +
+          (s * s + s * s +
+                ∑ x_1, ∑ x_2, ∑ x_3, x.ofLp x_2 * x.ofLp x_2 * (x.ofLp x_1 * y.ofLp x_1) * (x.ofLp x_3 * y.ofLp x_3) +
+              8 * (s * s) +
+            ∑ x_1, ∑ x_2, ∑ x_3, x.ofLp x_2 * x.ofLp x_2 * (x.ofLp x_1 * y.ofLp x_1) * (x.ofLp x_3 * y.ofLp x_3))) +
+      (8 * (s * s) + s * s + s * s +
+              ∑ x_1, ∑ x_2, ∑ x_3, x.ofLp x_2 * x.ofLp x_2 * (x.ofLp x_1 * y.ofLp x_1) * (x.ofLp x_3 * y.ofLp x_3) +
+            ∑ x_1, ∑ x_2, ∑ x_3, x.ofLp x_2 * x.ofLp x_2 * (x.ofLp x_1 * y.ofLp x_1) * (x.ofLp x_3 * y.ofLp x_3) +
+          (s * s + 8 * (s * s) + s * s +
+              ∑ x_1, ∑ x_2, ∑ x_3, x.ofLp x_2 * x.ofLp x_2 * (x.ofLp x_1 * y.ofLp x_1) * (x.ofLp x_3 * y.ofLp x_3) +
+            ∑ x_1, ∑ x_2, ∑ x_3, x.ofLp x_2 * x.ofLp x_2 * (x.ofLp x_1 * y.ofLp x_1) * (x.ofLp x_3 * y.ofLp x_3)) +
+        (s * s + s * s + 8 * (s * s) +
+            ∑ x_1, ∑ x_2, ∑ x_3, x.ofLp x_2 * x.ofLp x_2 * (x.ofLp x_1 * y.ofLp x_1) * (x.ofLp x_3 * y.ofLp x_3) +
+          ∑ x_1, ∑ x_2, ∑ x_3, x.ofLp x_2 * x.ofLp x_2 * (x.ofLp x_1 * y.ofLp x_1) * (x.ofLp x_3 * y.ofLp x_3))) =
+    360 * s ^ 2
+KissingNumber/TestBCSplit.lean:193:6: warning: declaration uses `sorry`
+KissingNumber/TestBCSplit.lean:199:6: warning: declaration uses `sorry`

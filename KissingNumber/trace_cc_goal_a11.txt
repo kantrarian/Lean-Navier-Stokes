@@ -1,0 +1,58 @@
+KissingNumber/TestCCSplit.lean:84:2: error: Type mismatch
+  Nat.zero
+has type
+  ℕ
+of sort `Type` but is expected to have type
+  ∑ x_1, ∑ x_2, ∑ x_3, ∑ x_4, x.ofLp x_1 * x.ofLp x_2 * (y.ofLp x_1 * y.ofLp x_2) +
+                ∑ x_1, ∑ x_2, ∑ x_3, x.ofLp x_1 * x.ofLp x_2 * (y.ofLp x_1 * y.ofLp x_2) +
+              ∑ x_1, ∑ x_2, ∑ x_3, x.ofLp x_1 * x.ofLp x_2 * (y.ofLp x_1 * y.ofLp x_2) +
+            (∑ x_1, ∑ x_2, ∑ x_3, x.ofLp x_1 * x.ofLp x_2 * (y.ofLp x_1 * y.ofLp x_2) +
+                ∑ x_1, ∑ x_2, x.ofLp x_1 * x.ofLp x_2 * (y.ofLp x_1 * y.ofLp x_2) +
+              ∑ x_1, ∑ x_2, x.ofLp x_1 * x.ofLp x_2 * (y.ofLp x_1 * y.ofLp x_2)) +
+          (∑ x_1, ∑ x_2, ∑ x_3, x.ofLp x_1 * x.ofLp x_2 * (y.ofLp x_1 * y.ofLp x_2) +
+                ∑ x_1, ∑ x_2, ∑ x_3, ∑ x_4, x.ofLp x_1 * x.ofLp x_2 * (y.ofLp x_1 * y.ofLp x_2) +
+              ∑ x_1, ∑ x_2, ∑ x_3, x.ofLp x_1 * x.ofLp x_2 * (y.ofLp x_1 * y.ofLp x_2) +
+            (∑ x_1, ∑ x_2, x.ofLp x_1 * x.ofLp x_2 * (y.ofLp x_1 * y.ofLp x_2) +
+                ∑ x_1, ∑ x_2, ∑ x_3, x.ofLp x_1 * x.ofLp x_2 * (y.ofLp x_1 * y.ofLp x_2) +
+              ∑ x_1, ∑ x_2, x.ofLp x_1 * x.ofLp x_2 * (y.ofLp x_1 * y.ofLp x_2))) +
+        (∑ x_1, ∑ x_2, ∑ x_3, x.ofLp x_1 * x.ofLp x_2 * (y.ofLp x_1 * y.ofLp x_2) +
+              ∑ x_1, ∑ x_2, ∑ x_3, x.ofLp x_1 * x.ofLp x_2 * (y.ofLp x_1 * y.ofLp x_2) +
+            ∑ x_1, ∑ x_2, ∑ x_3, ∑ x_4, x.ofLp x_1 * x.ofLp x_2 * (y.ofLp x_1 * y.ofLp x_2) +
+          (∑ x_1, ∑ x_2, x.ofLp x_1 * x.ofLp x_2 * (y.ofLp x_1 * y.ofLp x_2) +
+              ∑ x_1, ∑ x_2, x.ofLp x_1 * x.ofLp x_2 * (y.ofLp x_1 * y.ofLp x_2) +
+            ∑ x_1, ∑ x_2, ∑ x_3, ∑ x_4, if x_2 = x_3 then x.ofLp x_1 * x.ofLp x_3 * (y.ofLp x_1 * y.ofLp x_2) else 0)) +
+      (∑ x_1, ∑ x_2, ∑ x_3, x.ofLp x_1 * x.ofLp x_2 * (y.ofLp x_1 * y.ofLp x_2) +
+                ∑ x_1, ∑ x_2, x.ofLp x_1 * x.ofLp x_2 * (y.ofLp x_1 * y.ofLp x_2) +
+              ∑ x_1, ∑ x_2, x.ofLp x_1 * x.ofLp x_2 * (y.ofLp x_1 * y.ofLp x_2) +
+            (∑ x_1, ∑ x_2, ∑ x_3, ∑ x_4, x.ofLp x_1 * x.ofLp x_3 * (y.ofLp x_1 * y.ofLp x_3) +
+                ∑ x_1, ∑ x_2, ∑ x_3, x.ofLp x_1 * x.ofLp x_3 * (y.ofLp x_1 * y.ofLp x_3) +
+              ∑ x_1, ∑ x_2, ∑ x_3, x.ofLp x_1 * x.ofLp x_3 * (y.ofLp x_1 * y.ofLp x_3)) +
+          (∑ x_1, ∑ x_2, x.ofLp x_1 * x.ofLp x_2 * (y.ofLp x_1 * y.ofLp x_2) +
+                ∑ x_1, ∑ x_2, ∑ x_3, x.ofLp x_1 * x.ofLp x_2 * (y.ofLp x_1 * y.ofLp x_2) +
+              ∑ x_1, ∑ x_2, x.ofLp x_1 * x.ofLp x_2 * (y.ofLp x_1 * y.ofLp x_2) +
+            (∑ x_1, ∑ x_2, ∑ x_3, x.ofLp x_1 * x.ofLp x_3 * (y.ofLp x_1 * y.ofLp x_3) +
+                ∑ x_1, ∑ x_2, ∑ x_3, ∑ x_4, x.ofLp x_1 * x.ofLp x_3 * (y.ofLp x_1 * y.ofLp x_3) +
+              ∑ x_1, ∑ x_2, ∑ x_3, x.ofLp x_1 * x.ofLp x_3 * (y.ofLp x_1 * y.ofLp x_3))) +
+        ((∑ x_1, ∑ x_2, x.ofLp x_1 * x.ofLp x_2 * (y.ofLp x_1 * y.ofLp x_2) +
+              ∑ x_1, ∑ x_2, x.ofLp x_1 * x.ofLp x_2 * (y.ofLp x_1 * y.ofLp x_2) +
+            ∑ x_1, ∑ x_2, ∑ x_3, ∑ x_4, if x_3 = x_2 then x.ofLp x_1 * x.ofLp x_2 * (y.ofLp x_1 * y.ofLp x_3) else 0) +
+          (∑ x_1, ∑ x_2, ∑ x_3, x.ofLp x_1 * x.ofLp x_3 * (y.ofLp x_1 * y.ofLp x_3) +
+              ∑ x_1, ∑ x_2, ∑ x_3, x.ofLp x_1 * x.ofLp x_3 * (y.ofLp x_1 * y.ofLp x_3) +
+            ∑ x_1, ∑ x_2, ∑ x_3, ∑ x_4, x.ofLp x_1 * x.ofLp x_3 * (y.ofLp x_1 * y.ofLp x_3)))) =
+    540 * s ^ 2
+of sort `Prop`
+KissingNumber/TestCCSplit.lean:87:6: warning: declaration uses `sorry`
+KissingNumber/TestCCSplit.lean:93:6: warning: declaration uses `sorry`
+KissingNumber/TestCCSplit.lean:118:6: warning: declaration uses `sorry`
+KissingNumber/TestCCSplit.lean:123:6: warning: declaration uses `sorry`
+KissingNumber/TestCCSplit.lean:128:6: warning: declaration uses `sorry`
+KissingNumber/TestCCSplit.lean:133:6: warning: declaration uses `sorry`
+KissingNumber/TestCCSplit.lean:138:6: warning: declaration uses `sorry`
+KissingNumber/TestCCSplit.lean:143:6: warning: declaration uses `sorry`
+KissingNumber/TestCCSplit.lean:173:6: warning: declaration uses `sorry`
+KissingNumber/TestCCSplit.lean:178:6: warning: declaration uses `sorry`
+KissingNumber/TestCCSplit.lean:183:6: warning: declaration uses `sorry`
+KissingNumber/TestCCSplit.lean:188:6: warning: declaration uses `sorry`
+KissingNumber/TestCCSplit.lean:193:6: warning: declaration uses `sorry`
+KissingNumber/TestCCSplit.lean:198:6: warning: declaration uses `sorry`
+EXIT:1

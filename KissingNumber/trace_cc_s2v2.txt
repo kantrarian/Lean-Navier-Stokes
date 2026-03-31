@@ -1,0 +1,28 @@
+﻿KissingNumber/TestCCSplit.lean:144:15: error: `simp` made no progress
+KissingNumber/TestCCSplit.lean:172:6: warning: declaration uses `sorry`
+KissingNumber/TestCCSplit.lean:177:6: warning: declaration uses `sorry`
+KissingNumber/TestCCSplit.lean:182:6: warning: declaration uses `sorry`
+KissingNumber/TestCCSplit.lean:187:6: warning: declaration uses `sorry`
+KissingNumber/TestCCSplit.lean:192:6: warning: declaration uses `sorry`
+KissingNumber/TestCCSplit.lean:197:6: warning: declaration uses `sorry`
+Try this:
+  [apply] ring_nf
+  
+  The `ring` tactic failed to close the goal. Use `ring_nf` to obtain a normal form.
+    
+  Note that `ring` works primarily in *commutative* rings. If you have a noncommutative ring, abelian group or module, consider using `noncomm_ring`, `abel` or `module` instead.
+KissingNumber/TestCCSplit.lean:229:36: error: unsolved goals
+x y : EuclideanSpace ℝ (Fin 8)
+hx : ‖x‖ = 1
+hy : ‖y‖ = 1
+s : ℝ := ⟪x, y⟫
+hs : s = ∑ a, x.ofLp a * y.ofLp a
+hxn : ∑ a, x.ofLp a * x.ofLp a = 1
+hyn : ∑ a, y.ofLp a * y.ofLp a = 1
+rr : ∀ (a b : Fin 8), x.ofLp a * x.ofLp b * (y.ofLp a * y.ofLp b) = x.ofLp a * y.ofLp a * (x.ofLp b * y.ofLp b)
+⊢ s ^ 2 * 816 + (∑ x_1, s * x.ofLp x_1 * y.ofLp x_1) * 84 = s ^ 2 * 900
+KissingNumber/TestCCSplit.lean:254:6: warning: declaration uses `sorry`
+KissingNumber/TestCCSplit.lean:259:6: warning: declaration uses `sorry`
+KissingNumber/TestCCSplit.lean:264:6: warning: declaration uses `sorry`
+KissingNumber/TestCCSplit.lean:269:6: warning: declaration uses `sorry`
+KissingNumber/TestCCSplit.lean:274:6: warning: declaration uses `sorry`

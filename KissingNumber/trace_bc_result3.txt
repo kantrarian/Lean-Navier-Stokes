@@ -1,0 +1,148 @@
+﻿Try this:
+  [apply] ring_nf
+  
+  The `ring` tactic failed to close the goal. Use `ring_nf` to obtain a normal form.
+    
+  Note that `ring` works primarily in *commutative* rings. If you have a noncommutative ring, abelian group or module, consider using `noncomm_ring`, `abel` or `module` instead.
+KissingNumber\TestBCSplit.lean:115:36: error: unsolved goals
+x y : EuclideanSpace ℝ (Fin 8)
+hx : ‖x‖ = 1
+hy : ‖y‖ = 1
+s : ℝ := ⟪x, y⟫
+hs : s = ∑ a, x.ofLp a * y.ofLp a
+hxn : ∑ a, x.ofLp a * x.ofLp a = 1
+hyn : ∑ a, y.ofLp a * y.ofLp a = 1
+v1 : ∑ x_1, ∑ x_2, ∑ x_3, ∑ x_4, x.ofLp x_2 * x.ofLp x_3 * x.ofLp x_4 ^ 2 * y.ofLp x_2 * y.ofLp x_3 = 8 * s ^ 2
+v2 : ∑ x_1, ∑ x_2, ∑ x_3, ∑ x_4, x.ofLp x_2 * x.ofLp x_3 ^ 2 * x.ofLp x_4 * y.ofLp x_2 * y.ofLp x_4 = 8 * s ^ 2
+v3 : ∑ x_1, ∑ x_2, ∑ x_3, ∑ x_4, x.ofLp x_2 ^ 2 * x.ofLp x_3 * x.ofLp x_4 * y.ofLp x_3 * y.ofLp x_4 = 8 * s ^ 2
+rr1 :
+  ∀ (a b c : Fin 8),
+    x.ofLp b * x.ofLp a * x.ofLp c ^ 2 * y.ofLp a * y.ofLp b =
+      x.ofLp a * y.ofLp a * (x.ofLp b * y.ofLp b) * (x.ofLp c * x.ofLp c)
+rr2 :
+  ∀ (a b c : Fin 8),
+    x.ofLp b * x.ofLp a * x.ofLp c ^ 2 * y.ofLp b * y.ofLp a =
+      x.ofLp a * y.ofLp a * (x.ofLp b * y.ofLp b) * (x.ofLp c * x.ofLp c)
+rr3 :
+  ∀ (a b c : Fin 8),
+    x.ofLp b * x.ofLp c * x.ofLp a ^ 2 * y.ofLp b * y.ofLp c =
+      x.ofLp a * x.ofLp a * (x.ofLp b * y.ofLp b) * (x.ofLp c * y.ofLp c)
+rr4 :
+  ∀ (a b c : Fin 8),
+    x.ofLp b * x.ofLp c ^ 2 * x.ofLp a * y.ofLp a * y.ofLp b =
+      x.ofLp a * y.ofLp a * (x.ofLp b * y.ofLp b) * (x.ofLp c * x.ofLp c)
+rr5 :
+  ∀ (a b c : Fin 8),
+    x.ofLp b * x.ofLp c ^ 2 * x.ofLp a * y.ofLp b * y.ofLp a =
+      x.ofLp a * y.ofLp a * (x.ofLp b * y.ofLp b) * (x.ofLp c * x.ofLp c)
+rr6 :
+  ∀ (a b c : Fin 8),
+    x.ofLp a * x.ofLp b * x.ofLp c ^ 2 * y.ofLp a * y.ofLp b =
+      x.ofLp a * y.ofLp a * (x.ofLp b * y.ofLp b) * (x.ofLp c * x.ofLp c)
+rr7 :
+  ∀ (a b c : Fin 8),
+    x.ofLp b * x.ofLp a ^ 2 * x.ofLp c * y.ofLp b * y.ofLp c =
+      x.ofLp a * x.ofLp a * (x.ofLp b * y.ofLp b) * (x.ofLp c * y.ofLp c)
+rr8 :
+  ∀ (a b c : Fin 8),
+    x.ofLp b ^ 2 * x.ofLp c * x.ofLp a * y.ofLp a * y.ofLp c =
+      x.ofLp a * y.ofLp a * (x.ofLp b * x.ofLp b) * (x.ofLp c * y.ofLp c)
+rr9 :
+  ∀ (a b c : Fin 8),
+    x.ofLp a * x.ofLp b ^ 2 * x.ofLp c * y.ofLp a * y.ofLp c =
+      x.ofLp a * y.ofLp a * (x.ofLp b * x.ofLp b) * (x.ofLp c * y.ofLp c)
+rr10 :
+  ∀ (a b c : Fin 8),
+    x.ofLp b ^ 2 * x.ofLp a * x.ofLp c * y.ofLp a * y.ofLp c =
+      x.ofLp a * y.ofLp a * (x.ofLp b * x.ofLp b) * (x.ofLp c * y.ofLp c)
+rr11 :
+  ∀ (a b c : Fin 8),
+    x.ofLp a * x.ofLp b * x.ofLp c ^ 2 * y.ofLp b * y.ofLp a =
+      x.ofLp a * y.ofLp a * (x.ofLp b * y.ofLp b) * (x.ofLp c * x.ofLp c)
+rr12 :
+  ∀ (a b c : Fin 8),
+    x.ofLp a ^ 2 * x.ofLp b * x.ofLp c * y.ofLp b * y.ofLp c =
+      x.ofLp a * x.ofLp a * (x.ofLp b * y.ofLp b) * (x.ofLp c * y.ofLp c)
+rr13 :
+  ∀ (a b c : Fin 8),
+    x.ofLp b ^ 2 * x.ofLp c * x.ofLp a * y.ofLp c * y.ofLp a =
+      x.ofLp a * y.ofLp a * (x.ofLp b * x.ofLp b) * (x.ofLp c * y.ofLp c)
+rr14 :
+  ∀ (a b c : Fin 8),
+    x.ofLp a * x.ofLp b ^ 2 * x.ofLp c * y.ofLp c * y.ofLp a =
+      x.ofLp a * y.ofLp a * (x.ofLp b * x.ofLp b) * (x.ofLp c * y.ofLp c)
+rr15 :
+  ∀ (a b c : Fin 8),
+    x.ofLp b ^ 2 * x.ofLp a * x.ofLp c * y.ofLp c * y.ofLp a =
+      x.ofLp a * y.ofLp a * (x.ofLp b * x.ofLp b) * (x.ofLp c * y.ofLp c)
+⊢ s ^ 2 * 273 + (∑ x_1, ∑ x_2, ∑ x_3, x.ofLp x_3 * y.ofLp x_3 * x.ofLp x_2 * y.ofLp x_2 * x.ofLp x_1 ^ 2) * 30 +
+            (∑ x_1, ∑ x_2, ∑ x_3, x.ofLp x_2 * y.ofLp x_2 * x.ofLp x_1 * y.ofLp x_1 * x.ofLp x_3 ^ 2) * 5 +
+          (∑ x_1, ∑ x_2, ∑ x_3, x.ofLp x_3 * y.ofLp x_3 * x.ofLp x_1 * y.ofLp x_1 * x.ofLp x_2 ^ 2) * 10 +
+        (∑ x_1, ∑ x_2, ∑ x_3, x.ofLp x_2 * y.ofLp x_2 * x.ofLp x_1 ^ 2 * x.ofLp x_3 * y.ofLp x_3) * 30 +
+      (∑ x_1, ∑ x_2, ∑ x_3, x.ofLp x_3 * y.ofLp x_3 * x.ofLp x_2 ^ 2 * x.ofLp x_1 * y.ofLp x_1) * 12 =
+    s ^ 2 * 360
+KissingNumber\TestBCSplit.lean:181:23: warning: This simp argument is unused:
+  rr3
+
+Hint: Omit it from the simp argument list.
+  simp only [rr1, rr2, rr3̵,̵ ̵r̵r̵4, rr5, rr6, rr7, rr8, rr9, rr10, rr11, rr12, rr13, rr14, rr15]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+KissingNumber\TestBCSplit.lean:181:38: warning: This simp argument is unused:
+  rr6
+
+Hint: Omit it from the simp argument list.
+  simp only [rr1, rr2, rr3, rr4, rr5, rr6̵,̵ ̵r̵r̵7, rr8, rr9, rr10, rr11, rr12, rr13, rr14, rr15]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+KissingNumber\TestBCSplit.lean:181:43: warning: This simp argument is unused:
+  rr7
+
+Hint: Omit it from the simp argument list.
+  simp only [rr1, rr2, rr3, rr4, rr5, rr6, rr7̵,̵ ̵r̵r̵8, rr9, rr10, rr11, rr12, rr13, rr14, rr15]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+KissingNumber\TestBCSplit.lean:181:53: warning: This simp argument is unused:
+  rr9
+
+Hint: Omit it from the simp argument list.
+  simp only [rr1, rr2, rr3, rr4, rr5, rr6, rr7, rr8, rr9̵,̵ ̵r̵r̵10, rr11, rr12, rr13, rr14, rr15]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+KissingNumber\TestBCSplit.lean:181:64: warning: This simp argument is unused:
+  rr11
+
+Hint: Omit it from the simp argument list.
+  simp only [rr1, rr2, rr3, rr4, rr5, rr6, rr7, rr8, rr9, rr10, rr11̵,̵ ̵r̵r̵1̵2, rr13, rr14, rr15]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+KissingNumber\TestBCSplit.lean:181:70: warning: This simp argument is unused:
+  rr12
+
+Hint: Omit it from the simp argument list.
+  simp only [rr1, rr2, rr3, rr4, rr5, rr6, rr7, rr8, rr9, rr10, rr11, rr12̵,̵ ̵r̵r̵1̵3, rr14, rr15]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+KissingNumber\TestBCSplit.lean:181:76: warning: This simp argument is unused:
+  rr13
+
+Hint: Omit it from the simp argument list.
+  simp only [rr1, rr2, rr3, rr4, rr5, rr6, rr7, rr8, rr9, rr10, rr11, rr12, rr13̵,̵ ̵r̵r̵1̵4, rr15]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+KissingNumber\TestBCSplit.lean:181:82: warning: This simp argument is unused:
+  rr14
+
+Hint: Omit it from the simp argument list.
+  simp only [rr1, rr2, rr3, rr4, rr5, rr6, rr7, rr8, rr9, rr10, rr11, rr12, rr13, rr14̵,̵ ̵r̵r̵1̵5]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+KissingNumber\TestBCSplit.lean:181:88: warning: This simp argument is unused:
+  rr15
+
+Hint: Omit it from the simp argument list.
+  simp only [rr1, rr2, rr3, rr4, rr5, rr6, rr7, rr8, rr9, rr10, rr11, rr12, rr13, rr14,̵ ̵r̵r̵1̵5̵]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+KissingNumber\TestBCSplit.lean:186:6: warning: declaration uses `sorry`
+KissingNumber\TestBCSplit.lean:192:6: warning: declaration uses `sorry`

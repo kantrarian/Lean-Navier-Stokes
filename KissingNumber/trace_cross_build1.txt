@@ -1,0 +1,34 @@
+﻿⚠ [3069/3071] Replayed KissingNumber.TestBBSplit
+warning: KissingNumber/TestBBSplit.lean:266:70: This simp argument is unused:
+  Finset.sum_ite_eq'
+
+Hint: Omit it from the simp argument list.
+  simp (config := { maxSteps := 800000000 }) only [Finset.sum_ite_eq, F̵i̵n̵s̵e̵t̵.̵s̵u̵m̵_̵i̵t̵e̵_̵e̵q̵'̵,̵ ̵Finset.mem_univ, ite_true]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: KissingNumber/TestBBSplit.lean:268:70: This simp argument is unused:
+  Finset.sum_ite_eq'
+
+Hint: Omit it from the simp argument list.
+  simp (config := { maxSteps := 800000000 }) only [Finset.sum_ite_eq, F̵i̵n̵s̵e̵t̵.̵s̵u̵m̵_̵i̵t̵e̵_̵e̵q̵'̵,̵ ̵Finset.mem_univ, ite_true]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: KissingNumber/TestBBSplit.lean:270:70: This simp argument is unused:
+  Finset.sum_ite_eq'
+
+Hint: Omit it from the simp argument list.
+  simp (config := { maxSteps := 800000000 }) only [Finset.sum_ite_eq, F̵i̵n̵s̵e̵t̵.̵s̵u̵m̵_̵i̵t̵e̵_̵e̵q̵'̵,̵ ̵Finset.mem_univ, ite_true]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+✖ [3071/3071] Building KissingNumber.PSD6CrossTerms (448s)
+trace: .> LEAN_PATH=C:\v2_files\lean_proofs\KissingNumber\.lake\packages\Cli\.lake\build\lib\lean;C:\v2_files\lean_proofs\KissingNumber\.lake\packages\batteries\.lake\build\lib\lean;C:\v2_files\lean_proofs\KissingNumber\.lake\packages\Qq\.lake\build\lib\lean;C:\v2_files\lean_proofs\KissingNumber\.lake\packages\aesop\.lake\build\lib\lean;C:\v2_files\lean_proofs\KissingNumber\.lake\packages\proofwidgets\.lake\build\lib\lean;C:\v2_files\lean_proofs\KissingNumber\.lake\packages\importGraph\.lake\build\lib\lean;C:\v2_files\lean_proofs\KissingNumber\.lake\packages\LeanSearchClient\.lake\build\lib\lean;C:\v2_files\lean_proofs\KissingNumber\.lake\packages\plausible\.lake\build\lib\lean;C:\v2_files\lean_proofs\KissingNumber\.lake\packages\mathlib\.lake\build\lib\lean;C:\v2_files\lean_proofs\KissingNumber\.lake\build\lib\lean c:\Users\devildog\.elan\toolchains\leanprover--lean4---v4.28.0-rc1\bin\lean.exe C:\v2_files\lean_proofs\KissingNumber\KissingNumber\PSD6CrossTerms.lean -o C:\v2_files\lean_proofs\KissingNumber\.lake\build\lib\lean\KissingNumber\PSD6CrossTerms.olean -i C:\v2_files\lean_proofs\KissingNumber\.lake\build\lib\lean\KissingNumber\PSD6CrossTerms.ilean -c C:\v2_files\lean_proofs\KissingNumber\.lake\build\ir\KissingNumber\PSD6CrossTerms.c --setup C:\v2_files\lean_proofs\KissingNumber\.lake\build\ir\KissingNumber\PSD6CrossTerms.setup.json --json
+error: Lean exited with code 1
+Some required targets logged failures:
+- KissingNumber.PSD6CrossTerms
+lake : error: build failed
+At line:1 char:52
++ ... Encoding]::UTF8; lake build KissingNumber.PSD6CrossTerms 2>&1 | Out-F ...
++                      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (error: build failed:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 

@@ -1,0 +1,225 @@
+﻿Try this:
+  [apply] ring_nf
+  
+  The `ring` tactic failed to close the goal. Use `ring_nf` to obtain a normal form.
+    
+  Note that `ring` works primarily in *commutative* rings. If you have a noncommutative ring, abelian group or module, consider using `noncomm_ring`, `abel` or `module` instead.
+KissingNumber/PSD6CrossTerms.lean:200:35: error: unsolved goals
+x y : EuclideanSpace ℝ (Fin 8)
+hx : ‖x‖ = 1
+s : ℝ := ⟪x, y⟫
+hs : s = ∑ a, x.ofLp a * y.ofLp a
+hxn : ∑ a, x.ofLp a * x.ofLp a = 1
+r1 :
+  ∀ (a b c d : Fin 8),
+    x.ofLp a * x.ofLp b * x.ofLp c * x.ofLp c * x.ofLp d * x.ofLp d * (y.ofLp a * y.ofLp b) =
+      x.ofLp a * y.ofLp a * (x.ofLp b * y.ofLp b) * (x.ofLp c * x.ofLp c) * (x.ofLp d * x.ofLp d)
+r2 :
+  ∀ (a b c d : Fin 8),
+    x.ofLp a * x.ofLp b * x.ofLp c * x.ofLp d * x.ofLp c * x.ofLp d * (y.ofLp a * y.ofLp b) =
+      x.ofLp a * y.ofLp a * (x.ofLp b * y.ofLp b) * (x.ofLp c * x.ofLp c) * (x.ofLp d * x.ofLp d)
+r3 :
+  ∀ (a b c d : Fin 8),
+    x.ofLp a * x.ofLp b * x.ofLp c * x.ofLp d * x.ofLp d * x.ofLp c * (y.ofLp a * y.ofLp b) =
+      x.ofLp a * y.ofLp a * (x.ofLp b * y.ofLp b) * (x.ofLp c * x.ofLp c) * (x.ofLp d * x.ofLp d)
+r4 :
+  ∀ (a b c d : Fin 8),
+    x.ofLp a * x.ofLp b * x.ofLp c * x.ofLp b * x.ofLp d * x.ofLp d * (y.ofLp a * y.ofLp c) =
+      x.ofLp a * y.ofLp a * (x.ofLp c * y.ofLp c) * (x.ofLp b * x.ofLp b) * (x.ofLp d * x.ofLp d)
+r5 :
+  ∀ (a b c d : Fin 8),
+    x.ofLp a * x.ofLp b * x.ofLp c * x.ofLp d * x.ofLp b * x.ofLp d * (y.ofLp a * y.ofLp c) =
+      x.ofLp a * y.ofLp a * (x.ofLp c * y.ofLp c) * (x.ofLp b * x.ofLp b) * (x.ofLp d * x.ofLp d)
+r6 :
+  ∀ (a b c d : Fin 8),
+    x.ofLp a * x.ofLp b * x.ofLp c * x.ofLp d * x.ofLp d * x.ofLp b * (y.ofLp a * y.ofLp c) =
+      x.ofLp a * y.ofLp a * (x.ofLp c * y.ofLp c) * (x.ofLp b * x.ofLp b) * (x.ofLp d * x.ofLp d)
+r7 :
+  ∀ (a b c d : Fin 8),
+    x.ofLp a * x.ofLp b * x.ofLp b * x.ofLp c * x.ofLp d * x.ofLp d * (y.ofLp a * y.ofLp c) =
+      x.ofLp a * y.ofLp a * (x.ofLp c * y.ofLp c) * (x.ofLp b * x.ofLp b) * (x.ofLp d * x.ofLp d)
+r8 :
+  ∀ (a b c d : Fin 8),
+    x.ofLp a * x.ofLp b * x.ofLp c * x.ofLp d * x.ofLp b * x.ofLp c * (y.ofLp a * y.ofLp d) =
+      x.ofLp a * y.ofLp a * (x.ofLp d * y.ofLp d) * (x.ofLp b * x.ofLp b) * (x.ofLp c * x.ofLp c)
+r9 :
+  ∀ (a b c d : Fin 8),
+    x.ofLp a * x.ofLp b * x.ofLp c * x.ofLp d * x.ofLp c * x.ofLp b * (y.ofLp a * y.ofLp d) =
+      x.ofLp a * y.ofLp a * (x.ofLp d * y.ofLp d) * (x.ofLp b * x.ofLp b) * (x.ofLp c * x.ofLp c)
+r10 :
+  ∀ (a b c d : Fin 8),
+    x.ofLp a * x.ofLp b * x.ofLp b * x.ofLp c * x.ofLp d * x.ofLp c * (y.ofLp a * y.ofLp d) =
+      x.ofLp a * y.ofLp a * (x.ofLp d * y.ofLp d) * (x.ofLp b * x.ofLp b) * (x.ofLp c * x.ofLp c)
+r11 :
+  ∀ (a b c d : Fin 8),
+    x.ofLp a * x.ofLp b * x.ofLp c * x.ofLp b * x.ofLp d * x.ofLp c * (y.ofLp a * y.ofLp d) =
+      x.ofLp a * y.ofLp a * (x.ofLp d * y.ofLp d) * (x.ofLp b * x.ofLp b) * (x.ofLp c * x.ofLp c)
+r12 :
+  ∀ (a b c d : Fin 8),
+    x.ofLp a * x.ofLp b * x.ofLp c * x.ofLp c * x.ofLp d * x.ofLp b * (y.ofLp a * y.ofLp d) =
+      x.ofLp a * y.ofLp a * (x.ofLp d * y.ofLp d) * (x.ofLp b * x.ofLp b) * (x.ofLp c * x.ofLp c)
+r13 :
+  ∀ (a b c d : Fin 8),
+    x.ofLp a * x.ofLp b * x.ofLp b * x.ofLp c * x.ofLp c * x.ofLp d * (y.ofLp a * y.ofLp d) =
+      x.ofLp a * y.ofLp a * (x.ofLp d * y.ofLp d) * (x.ofLp b * x.ofLp b) * (x.ofLp c * x.ofLp c)
+r14 :
+  ∀ (a b c d : Fin 8),
+    x.ofLp a * x.ofLp b * x.ofLp c * x.ofLp b * x.ofLp c * x.ofLp d * (y.ofLp a * y.ofLp d) =
+      x.ofLp a * y.ofLp a * (x.ofLp d * y.ofLp d) * (x.ofLp b * x.ofLp b) * (x.ofLp c * x.ofLp c)
+r15 :
+  ∀ (a b c d : Fin 8),
+    x.ofLp a * x.ofLp b * x.ofLp c * x.ofLp c * x.ofLp b * x.ofLp d * (y.ofLp a * y.ofLp d) =
+      x.ofLp a * y.ofLp a * (x.ofLp d * y.ofLp d) * (x.ofLp b * x.ofLp b) * (x.ofLp c * x.ofLp c)
+r16 :
+  ∀ (a b c d : Fin 8),
+    x.ofLp a * x.ofLp b * x.ofLp c * x.ofLp a * x.ofLp d * x.ofLp d * (y.ofLp b * y.ofLp c) =
+      x.ofLp b * y.ofLp b * (x.ofLp c * y.ofLp c) * (x.ofLp a * x.ofLp a) * (x.ofLp d * x.ofLp d)
+r17 :
+  ∀ (a b c d : Fin 8),
+    x.ofLp a * x.ofLp b * x.ofLp c * x.ofLp d * x.ofLp a * x.ofLp d * (y.ofLp b * y.ofLp c) =
+      x.ofLp b * y.ofLp b * (x.ofLp c * y.ofLp c) * (x.ofLp a * x.ofLp a) * (x.ofLp d * x.ofLp d)
+r18 :
+  ∀ (a b c d : Fin 8),
+    x.ofLp a * x.ofLp b * x.ofLp c * x.ofLp d * x.ofLp d * x.ofLp a * (y.ofLp b * y.ofLp c) =
+      x.ofLp b * y.ofLp b * (x.ofLp c * y.ofLp c) * (x.ofLp a * x.ofLp a) * (x.ofLp d * x.ofLp d)
+r19 :
+  ∀ (a b c d : Fin 8),
+    x.ofLp a * x.ofLp b * x.ofLp a * x.ofLp c * x.ofLp d * x.ofLp d * (y.ofLp b * y.ofLp c) =
+      x.ofLp b * y.ofLp b * (x.ofLp c * y.ofLp c) * (x.ofLp a * x.ofLp a) * (x.ofLp d * x.ofLp d)
+r20 :
+  ∀ (a b c d : Fin 8),
+    x.ofLp a * x.ofLp b * x.ofLp c * x.ofLp d * x.ofLp a * x.ofLp c * (y.ofLp b * y.ofLp d) =
+      x.ofLp b * y.ofLp b * (x.ofLp d * y.ofLp d) * (x.ofLp a * x.ofLp a) * (x.ofLp c * x.ofLp c)
+r21 :
+  ∀ (a b c d : Fin 8),
+    x.ofLp a * x.ofLp b * x.ofLp c * x.ofLp d * x.ofLp c * x.ofLp a * (y.ofLp b * y.ofLp d) =
+      x.ofLp b * y.ofLp b * (x.ofLp d * y.ofLp d) * (x.ofLp a * x.ofLp a) * (x.ofLp c * x.ofLp c)
+r22 :
+  ∀ (a b c d : Fin 8),
+    x.ofLp a * x.ofLp b * x.ofLp a * x.ofLp c * x.ofLp d * x.ofLp c * (y.ofLp b * y.ofLp d) =
+      x.ofLp b * y.ofLp b * (x.ofLp d * y.ofLp d) * (x.ofLp a * x.ofLp a) * (x.ofLp c * x.ofLp c)
+r23 :
+  ∀ (a b c d : Fin 8),
+    x.ofLp a * x.ofLp b * x.ofLp c * x.ofLp a * x.ofLp d * x.ofLp c * (y.ofLp b * y.ofLp d) =
+      x.ofLp b * y.ofLp b * (x.ofLp d * y.ofLp d) * (x.ofLp a * x.ofLp a) * (x.ofLp c * x.ofLp c)
+r24 :
+  ∀ (a b c d : Fin 8),
+    x.ofLp a * x.ofLp b * x.ofLp c * x.ofLp c * x.ofLp d * x.ofLp a * (y.ofLp b * y.ofLp d) =
+      x.ofLp b * y.ofLp b * (x.ofLp d * y.ofLp d) * (x.ofLp a * x.ofLp a) * (x.ofLp c * x.ofLp c)
+r25 :
+  ∀ (a b c d : Fin 8),
+    x.ofLp a * x.ofLp b * x.ofLp a * x.ofLp c * x.ofLp c * x.ofLp d * (y.ofLp b * y.ofLp d) =
+      x.ofLp b * y.ofLp b * (x.ofLp d * y.ofLp d) * (x.ofLp a * x.ofLp a) * (x.ofLp c * x.ofLp c)
+r26 :
+  ∀ (a b c d : Fin 8),
+    x.ofLp a * x.ofLp b * x.ofLp c * x.ofLp a * x.ofLp c * x.ofLp d * (y.ofLp b * y.ofLp d) =
+      x.ofLp b * y.ofLp b * (x.ofLp d * y.ofLp d) * (x.ofLp a * x.ofLp a) * (x.ofLp c * x.ofLp c)
+r27 :
+  ∀ (a b c d : Fin 8),
+    x.ofLp a * x.ofLp b * x.ofLp c * x.ofLp c * x.ofLp a * x.ofLp d * (y.ofLp b * y.ofLp d) =
+      x.ofLp b * y.ofLp b * (x.ofLp d * y.ofLp d) * (x.ofLp a * x.ofLp a) * (x.ofLp c * x.ofLp c)
+r28 :
+  ∀ (a b c d : Fin 8),
+    x.ofLp a * x.ofLp a * x.ofLp b * x.ofLp c * x.ofLp d * x.ofLp d * (y.ofLp b * y.ofLp c) =
+      x.ofLp b * y.ofLp b * (x.ofLp c * y.ofLp c) * (x.ofLp a * x.ofLp a) * (x.ofLp d * x.ofLp d)
+r29 :
+  ∀ (a b c d : Fin 8),
+    x.ofLp a * x.ofLp b * x.ofLp c * x.ofLp d * x.ofLp a * x.ofLp b * (y.ofLp c * y.ofLp d) =
+      x.ofLp c * y.ofLp c * (x.ofLp d * y.ofLp d) * (x.ofLp a * x.ofLp a) * (x.ofLp b * x.ofLp b)
+r30 :
+  ∀ (a b c d : Fin 8),
+    x.ofLp a * x.ofLp b * x.ofLp c * x.ofLp d * x.ofLp b * x.ofLp a * (y.ofLp c * y.ofLp d) =
+      x.ofLp c * y.ofLp c * (x.ofLp d * y.ofLp d) * (x.ofLp a * x.ofLp a) * (x.ofLp b * x.ofLp b)
+r31 :
+  ∀ (a b c d : Fin 8),
+    x.ofLp a * x.ofLp a * x.ofLp b * x.ofLp c * x.ofLp d * x.ofLp c * (y.ofLp b * y.ofLp d) =
+      x.ofLp b * y.ofLp b * (x.ofLp d * y.ofLp d) * (x.ofLp a * x.ofLp a) * (x.ofLp c * x.ofLp c)
+r32 :
+  ∀ (a b c d : Fin 8),
+    x.ofLp a * x.ofLp b * x.ofLp c * x.ofLp a * x.ofLp d * x.ofLp b * (y.ofLp c * y.ofLp d) =
+      x.ofLp c * y.ofLp c * (x.ofLp d * y.ofLp d) * (x.ofLp a * x.ofLp a) * (x.ofLp b * x.ofLp b)
+r33 :
+  ∀ (a b c d : Fin 8),
+    x.ofLp a * x.ofLp a * x.ofLp b * x.ofLp c * x.ofLp c * x.ofLp d * (y.ofLp b * y.ofLp d) =
+      x.ofLp b * y.ofLp b * (x.ofLp d * y.ofLp d) * (x.ofLp a * x.ofLp a) * (x.ofLp c * x.ofLp c)
+r34 :
+  ∀ (a b c d : Fin 8),
+    x.ofLp a * x.ofLp b * x.ofLp c * x.ofLp a * x.ofLp b * x.ofLp d * (y.ofLp c * y.ofLp d) =
+      x.ofLp c * y.ofLp c * (x.ofLp d * y.ofLp d) * (x.ofLp a * x.ofLp a) * (x.ofLp b * x.ofLp b)
+r35 :
+  ∀ (a b c d : Fin 8),
+    x.ofLp a * x.ofLp b * x.ofLp c * x.ofLp b * x.ofLp d * x.ofLp a * (y.ofLp c * y.ofLp d) =
+      x.ofLp c * y.ofLp c * (x.ofLp d * y.ofLp d) * (x.ofLp a * x.ofLp a) * (x.ofLp b * x.ofLp b)
+r36 :
+  ∀ (a b c d : Fin 8),
+    x.ofLp a * x.ofLp a * x.ofLp b * x.ofLp c * x.ofLp d * x.ofLp b * (y.ofLp c * y.ofLp d) =
+      x.ofLp c * y.ofLp c * (x.ofLp d * y.ofLp d) * (x.ofLp a * x.ofLp a) * (x.ofLp b * x.ofLp b)
+r37 :
+  ∀ (a b c d : Fin 8),
+    x.ofLp a * x.ofLp b * x.ofLp a * x.ofLp c * x.ofLp d * x.ofLp b * (y.ofLp c * y.ofLp d) =
+      x.ofLp c * y.ofLp c * (x.ofLp d * y.ofLp d) * (x.ofLp a * x.ofLp a) * (x.ofLp b * x.ofLp b)
+r38 :
+  ∀ (a b c d : Fin 8),
+    x.ofLp a * x.ofLp b * x.ofLp a * x.ofLp c * x.ofLp b * x.ofLp d * (y.ofLp c * y.ofLp d) =
+      x.ofLp c * y.ofLp c * (x.ofLp d * y.ofLp d) * (x.ofLp a * x.ofLp a) * (x.ofLp b * x.ofLp b)
+r39 :
+  ∀ (a b c d : Fin 8),
+    x.ofLp a * x.ofLp b * x.ofLp c * x.ofLp b * x.ofLp a * x.ofLp d * (y.ofLp c * y.ofLp d) =
+      x.ofLp c * y.ofLp c * (x.ofLp d * y.ofLp d) * (x.ofLp a * x.ofLp a) * (x.ofLp b * x.ofLp b)
+r40 :
+  ∀ (a b c d : Fin 8),
+    x.ofLp a * x.ofLp a * x.ofLp b * x.ofLp c * x.ofLp b * x.ofLp d * (y.ofLp c * y.ofLp d) =
+      x.ofLp c * y.ofLp c * (x.ofLp d * y.ofLp d) * (x.ofLp a * x.ofLp a) * (x.ofLp b * x.ofLp b)
+r41 :
+  ∀ (a b c d : Fin 8),
+    x.ofLp a * x.ofLp b * x.ofLp b * x.ofLp c * x.ofLp a * x.ofLp d * (y.ofLp c * y.ofLp d) =
+      x.ofLp c * y.ofLp c * (x.ofLp d * y.ofLp d) * (x.ofLp a * x.ofLp a) * (x.ofLp b * x.ofLp b)
+⊢ s ^ 2 * 3 +
+                (∑ x_1,
+                    ∑ x_2,
+                      ∑ x_3,
+                        ∑ x_4, x.ofLp x_1 * y.ofLp x_1 * x.ofLp x_3 * y.ofLp x_3 * x.ofLp x_2 ^ 2 * x.ofLp x_4 ^ 2) *
+                  4 +
+              (∑ x_1,
+                  ∑ x_2,
+                    ∑ x_3, ∑ x_4, x.ofLp x_1 * y.ofLp x_1 * x.ofLp x_4 * y.ofLp x_4 * x.ofLp x_2 ^ 2 * x.ofLp x_3 ^ 2) *
+                8 +
+            (∑ x_1,
+                ∑ x_2,
+                  ∑ x_3, ∑ x_4, x.ofLp x_2 * y.ofLp x_2 * x.ofLp x_3 * y.ofLp x_3 * x.ofLp x_1 ^ 2 * x.ofLp x_4 ^ 2) *
+              5 +
+          (∑ x_1,
+              ∑ x_2,
+                ∑ x_3, ∑ x_4, x.ofLp x_2 * y.ofLp x_2 * x.ofLp x_4 * y.ofLp x_4 * x.ofLp x_1 ^ 2 * x.ofLp x_3 ^ 2) *
+            10 +
+        (∑ x_1,
+            ∑ x_2, ∑ x_3, ∑ x_4, x.ofLp x_3 * y.ofLp x_3 * x.ofLp x_4 * y.ofLp x_4 * x.ofLp x_1 ^ 2 * x.ofLp x_2 ^ 2) *
+          11 +
+      (∑ x_1,
+          ∑ x_2, ∑ x_3, ∑ x_4, x.ofLp x_1 ^ 2 * x.ofLp x_2 ^ 2 * x.ofLp x_3 * x.ofLp x_4 * y.ofLp x_3 * y.ofLp x_4) *
+        4 =
+    s ^ 2 * 45
+KissingNumber/PSD6CrossTerms.lean:265:39: error: unsolved goals
+x y : EuclideanSpace ℝ (Fin 8)
+hx : ‖x‖ = 1
+hxn : ∑ a, x.ofLp a * x.ofLp a = 1
+r1 :
+  ∀ (a b c : Fin 8),
+    x.ofLp a * x.ofLp a * x.ofLp b * x.ofLp b * x.ofLp c * x.ofLp c =
+      x.ofLp a * x.ofLp a * (x.ofLp b * x.ofLp b) * (x.ofLp c * x.ofLp c)
+r2 :
+  ∀ (a b c : Fin 8),
+    x.ofLp a * x.ofLp b * x.ofLp a * x.ofLp b * x.ofLp c * x.ofLp c =
+      x.ofLp a * x.ofLp a * (x.ofLp b * x.ofLp b) * (x.ofLp c * x.ofLp c)
+r3 :
+  ∀ (a b c : Fin 8),
+    x.ofLp a * x.ofLp b * x.ofLp c * x.ofLp a * x.ofLp b * x.ofLp c =
+      x.ofLp a * x.ofLp a * (x.ofLp b * x.ofLp b) * (x.ofLp c * x.ofLp c)
+⊢ 1 + ∑ x_1, ∑ x_2, ∑ x_3, x.ofLp x_1 * x.ofLp x_1 * x.ofLp x_2 * x.ofLp x_3 * x.ofLp x_2 * x.ofLp x_3 +
+              ∑ x_1, ∑ x_2, ∑ x_3, x.ofLp x_1 * x.ofLp x_1 * x.ofLp x_2 * x.ofLp x_3 * x.ofLp x_3 * x.ofLp x_2 +
+            (1 + ∑ x_1, ∑ x_2, ∑ x_3, x.ofLp x_1 * x.ofLp x_2 * x.ofLp x_1 * x.ofLp x_3 * x.ofLp x_2 * x.ofLp x_3 +
+              ∑ x_1, ∑ x_2, ∑ x_3, x.ofLp x_1 * x.ofLp x_2 * x.ofLp x_1 * x.ofLp x_3 * x.ofLp x_3 * x.ofLp x_2) +
+          (∑ x_1, ∑ x_2, ∑ x_3, x.ofLp x_1 * x.ofLp x_2 * x.ofLp x_2 * x.ofLp x_1 * x.ofLp x_3 * x.ofLp x_3 + 1 +
+            ∑ x_1, ∑ x_2, ∑ x_3, x.ofLp x_1 * x.ofLp x_2 * x.ofLp x_3 * x.ofLp x_1 * x.ofLp x_3 * x.ofLp x_2) +
+        (∑ x_1, ∑ x_2, ∑ x_3, x.ofLp x_1 * x.ofLp x_2 * x.ofLp x_2 * x.ofLp x_3 * x.ofLp x_1 * x.ofLp x_3 +
+            ∑ x_

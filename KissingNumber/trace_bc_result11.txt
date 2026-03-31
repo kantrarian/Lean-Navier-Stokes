@@ -1,0 +1,2 @@
+﻿KissingNumber/TestBCSplit.lean:193:6: warning: declaration uses `sorry`
+KissingNumber/TestBCSplit.lean:213:6: warning: declaration uses `sorry`
